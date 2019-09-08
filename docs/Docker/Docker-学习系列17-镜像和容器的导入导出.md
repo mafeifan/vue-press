@@ -22,7 +22,7 @@ docker load不能对载入的镜像重命名，而docker import可以为镜像�
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-22f93b16b5988b5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 json文件的内容如下：里面记录着这一层容器文件的元信息，通过parent，还能知道依赖的上一层的文件系统是什么。
-```
+```json
 {
 	"id": "dda6ce6f2c43f673353e2ce232b31d11ff15b444e338a0ef8f34b6ef74093d6c",
 	"parent": "b75acde96878455ce36208008bb1143d4ea17723257c991f8bfb33ad9e27251d",
@@ -88,6 +88,6 @@ json文件的内容如下：里面记录着这一层容器文件的元信息，�
 所以写dockerfile时，一行命令对于一层文件系统，要充分利用这样机制，层的数量尽可能少，只安装必要的依赖包。
 
 参考：
-https://blog.csdn.net/liukuan73/article/details/78089138
-https://yeasy.gitbooks.io/docker_practice/content/appendix/best_practices.html
-https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+* https://blog.csdn.net/liukuan73/article/details/78089138
+* https://yeasy.gitbooks.io/docker_practice/content/appendix/best_practices.html
+* https://docs.docker.com/develop/develop-images/dockerfile_best-practices/

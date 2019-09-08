@@ -18,17 +18,22 @@ BusyBox 是一个集成了三百多个最常用Linux命令和工具的软件。
 7. 如果想以交互式方式运行容器，并进入容器终端，就用 `docker run -it busybox sh` 注意 -it 一般是同时出现的
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-cd0c5ba98c0a9f31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
--t  tty的缩写 终端控制台
--i  interactive 可交互缩写
+::: tip
+* `-t`  tty的缩写 终端控制台
+* `-i`  interactive 可交互缩写
+
 如果想知道 run 后面都能带什么参数及含义，请使用 `docker run --help`
+:::
+
 8. 一些术语：
 * Docker Daemon - Docker为C/S架构，服务端为docker daemon，在后台运行，用于管理，构建，分发容器
 * Docker Client - 就是咱们用的命令行工具，还有 GUI 图形化的[Kitematic](https://kitematic.com/)
 * Docker Hub - 分享，查找镜像资源的网站
 
 ## WEBAPPS WITH DOCKER
-9. 我们运行一个容器 `docker run --rm prakhar1989/static-site`  [prakhar1989/static-site](https://hub.docker.com/r/prakhar1989/static-site/) 是作者维护的镜像
- --rm  当退出容器时自动移除
+9. 我们运行一个容器 `docker run --rm prakhar1989/static-site`  
+[prakhar1989/static-site](https://hub.docker.com/r/prakhar1989/static-site/) 是作者维护的镜像
+`--rm  当退出容器时自动移除`
 这里容器启动会显示了 nginx is running，但没有告诉更多的信息
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-48370494e43ee722.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 按 ctrl+c 退出

@@ -46,7 +46,7 @@ def pipeline(closure) {
 pipeline(codeBlack)
 ```
 
-// 因为括号是非必需的，下面几种写法结果是一样的，是不是和Jenkins pipeline很像呢
+因为括号是非必需的，下面几种写法结果是一样的，是不是和Jenkins pipeline很像呢
 ```groovy
 pipeline( {print "hello closure"} )
 pipeline { 

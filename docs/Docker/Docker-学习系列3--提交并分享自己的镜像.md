@@ -11,8 +11,8 @@ docker hub 平台注册账号 -> `docker login` (登录) -> `docker image ls`  (
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-adf6b309ae56fbfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 刷新docker hub的个人 REPOSITORY 页面，会看到已经存在了
-https://hub.docker.com/r/finleyma/phpenv/
+`https://hub.docker.com/r/finleyma/phpenv/`
 
 这样的话其他项目成员可以直接执行
-docker run -t -i -p 8089:80 -v [他的项目路径]:/var/www "finleyma/phpenv:tp3.2" /bin/bash
+`docker run -t -i -p 8089:80 -v [他的项目路径]:/var/www "finleyma/phpenv:tp3.2" /bin/bash`
 进到终端只需 `webserver start` 启动服务。

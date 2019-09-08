@@ -121,6 +121,6 @@ COPY --from=frontend /app/mix-manifest.json /var/www/html/mix-manifest.json
 多阶段构建的好处不言而喻，既可以很方便地将多个彼此依赖的项目通过一个Dockerfile就可轻松构建出期望的容器镜像，并且不用担心镜像太大、源码泄露等风险。不得不说，这是一个非常不错的改进。
 
 ### 参考：
-https://docs.docker.com/develop/develop-images/multistage-build/
-https://yq.aliyun.com/articles/181178
-https://laravel-news.com/multi-stage-docker-builds-for-laravel
+* https://docs.docker.com/develop/develop-images/multistage-build/
+* https://yq.aliyun.com/articles/181178
+* https://laravel-news.com/multi-stage-docker-builds-for-laravel

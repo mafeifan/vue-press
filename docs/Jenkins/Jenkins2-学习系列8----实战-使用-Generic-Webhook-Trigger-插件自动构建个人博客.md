@@ -7,7 +7,7 @@
 比如job名称是foo，token是123456，webhook地址就是`JENKINS_URL/job/=foo/build?token=123456`
 经测无论是get还是post请求都可以成功触发。当然如果你的需求更高，需要根据请求头请求或地址中的参数有条件的触发，就可以用Generic Webhook Trigger插件。
 
-> 如果返回'Authentication required'请检查地址中的token是否正确，还需要保证在Jenkins的'Configure Global Security'配置页面勾选了'Allow anonymous read access'。
+如果返回'Authentication required'请检查地址中的token是否正确，还需要保证在Jenkins的'Configure Global Security'配置页面勾选了'Allow anonymous read access'。
 
 需求：我的博客是用hexo搭建的，每次提交完代码都需要在托管的服务器上执行手动发布命令
 `deploy.sh`

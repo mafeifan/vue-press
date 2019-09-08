@@ -5,12 +5,12 @@ pipeline {
   stages {
      stage('example')  {
         steps {
-           script {
-               def browsers = ['chrome', 'firefox']
-                for (int i = 0; i < browsers .size(); i ++) {
-                    echo "testing ${browsers[i]}"
-                }
-           }
+          script {
+            def browsers = ['chrome', 'firefox']
+            for (int i = 0; i < browsers .size(); i ++) {
+               echo "testing ${browsers[i]}"
+            }
+          }
         }
      }
    }

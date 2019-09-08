@@ -76,6 +76,6 @@ Hosted -> Deployment policy: 请选择 Allow redeploy 否则无法上传 Docker 
 
 
 #### 参考
-[https://help.sonatype.com/repomanager3/formats/docker-registry](https://help.sonatype.com/repomanager3/formats/docker-registry)
-[https://jfrog.com/open-source/#](https://jfrog.com/open-source/#)
-[https://yeasy.gitbooks.io/docker_practice/repository/nexus3_registry.html](https://yeasy.gitbooks.io/docker_practice/repository/nexus3_registry.html)
+* [https://help.sonatype.com/repomanager3/formats/docker-registry](https://help.sonatype.com/repomanager3/formats/docker-registry)
+* [https://jfrog.com/open-source/#](https://jfrog.com/open-source/#)
+* [https://yeasy.gitbooks.io/docker_practice/repository/nexus3_registry.html](https://yeasy.gitbooks.io/docker_practice/repository/nexus3_registry.html)

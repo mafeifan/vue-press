@@ -38,7 +38,7 @@ CMD ["npm", "start"]
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-b0ac3d1703181ffa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 简单总结使用Docker的好处：
-1. 使用版本方便，比如服务器上跑着node6，而你的项目需要node8以上。使用docker因为是隔离的环境
+1. 使用版本方便，比如服务器上跑着node6，而你的项目需要node8以上。使用docker因为是隔离环境
 2. 部署分享也方便，一行命令完事
 
 问题：容器内的 node_modules 是本来就有还是容器执行 npm install 产生的呢？
@@ -47,6 +47,6 @@ CMD ["npm", "start"]
 
 
 ### 参考：
-https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
-https://www.imooc.com/article/19840
-https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md
+* https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+* https://www.imooc.com/article/19840
+* https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md

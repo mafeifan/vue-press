@@ -1,12 +1,12 @@
 1. COPY 和 ADD 命令具有相同的特点：只复制目录中的内容而不包含目录自身。
 比如 backend 目录的结构如下：
-```
+```yaml
  --- backend
      -- model
      -- controller
 ```
 如果执行
-```
+```bash
 WORKDIR /app
 COPY backend .
 ```
@@ -41,7 +41,7 @@ RUN npm install
 要根据实际情况，挂载可以节省空间，便于修改。如果是想文件COPY到容器，每次修改文件都需要重新制作镜像。
 5. 关于 docker-compose，对于镜像的版本，数据库密码等不建议直接写死到 docker-compose.yml 中，可以新建.env文件。
 docker-compose部分
-```
+```yaml
   mysql:
       build: ./docker-build/mysql
       ports:

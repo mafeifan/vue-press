@@ -59,7 +59,7 @@ Content 填写如下
         </tr>
 
         <tr>
-            <td><b><font color="#0B610B">历史变更记录:</font></b>
+            <td><b style="color='#0B610B'">历史变更记录:</b>
             <hr size="2" width="100%" align="center" /></td>
         </tr>
         <tr>
@@ -68,7 +68,7 @@ Content 填写如下
             </td>
         </tr>
         <tr>
-            <td><b><font color="#0B610B">构建日志(最后100行):</font></b>
+            <td><b style="color='#0B610B'">构建日志(最后100行):</b>
             <hr size="2" width="100%" align="center" /></td>
         </tr>
         <tr>

@@ -43,7 +43,7 @@ Run CI Validations...
   PASS: lowestEfficiency
 ```
 从输出信息可以得到很多有用的信息，集成到CI过程也就非常容易了。 dive本身支持添加`.dive-ci` 配置文件作为项目的CI配置，具体配置规则见文档。
-```
+```yaml
 rules:
   # If the efficiency is measured below X%, mark as failed.
   # Expressed as a percentage between 0-1.

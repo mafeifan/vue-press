@@ -14,9 +14,10 @@ sudo usermod -aG docker $USER
 docker run hello-world
 ```
 
-新建jenkins用户
+新建 jenkins 用户
 ```bash
-$ sudo useradd -mU jenkins -s /bin/bash #创建jenkins用户并添加同名组、创建用户目录,默认shell为bash
+# 创建jenkins用户并添加同名组、创建用户目录,默认shell为bash
+$ sudo useradd -mU jenkins -s /bin/bash 
 $ sudo passwd jenkins #重置密码
 $ su jenkins #使用jenkins用户登录
 $ cd ~ #进入/home/jenkins目录
@@ -54,7 +55,9 @@ services:
 
 浏览器打开Jenkins地址，地址应该是服务器ip:8088
 
-> 打不开的话检查下防火墙开放8088端口
+::: tip
+打不开的话检查下防火墙开放8088端口
+:::
 
 粘贴刚复制的密码，点Continue
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/2019/8/24/16cc3eaa6915503b?w=1240&h=907&f=png&s=139020)

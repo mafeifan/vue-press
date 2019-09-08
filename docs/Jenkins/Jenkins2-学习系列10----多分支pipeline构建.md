@@ -1,7 +1,7 @@
 Updated: 2019-08-15
 
-如果希望通过Webhook触发multibranch pipeline项目需要安装 [multibranch-scan-webhook-trigger-plugin](https://github.com/jenkinsci/multibranch-scan-webhook-trigger-plugin) 插件
-安装完之后，配置界面多出一个Scan by webhook选项
+如果希望通过 Webhook 触发 multibranch pipeline 项目需要安装 [multibranch-scan-webhook-trigger-plugin](https://github.com/jenkinsci/multibranch-scan-webhook-trigger-plugin) 插件
+安装完之后，配置界面多出一个 Scan by webhook 选项
 >  ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-e92092542fbe64a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 实际中一个项目的代码仓库可能会有很多分支，比如develop，master等。Jenkins 支持创建多分支pipeline的任务。
@@ -23,7 +23,9 @@ Tab中有很多配置项，比如 General，Branch Sources，Build Configuration
 * Health metric  健康指标
 我也不清楚有什么用，望指教
 
-> 配置完成后，Jenkins就会自动执行首次构建，首先扫描所有的分支，如果根据配置的路径去找Jenkinsfile，找到后就立即执行。
+::: warning
+配置完成后，Jenkins就会自动执行首次构建，首先扫描所有的分支，如果根据配置的路径去找Jenkinsfile，找到后就立即执行。
+:::
 
 根据发现的分支数量，比如这里3个就自动创建了3个pipeline项目，点进去后可以像pipeline任务一样进行详细配置。
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-300c5c35bc88c3f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -45,7 +47,7 @@ stage("deploy to test") {
 }
 ```
 
-可以使用when指令
+可以使用 when 指令
 ```groovy
 stage("deploy to test") {
   when {

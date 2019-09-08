@@ -47,9 +47,9 @@ node 除了 label 选项，还支持自定义工作目录
 ```groovy
 agent {
   node {
-      label 'jdk8'
-      customWorkspace '/var/lib/custom'
-   }
+    label 'jdk8'
+    customWorkspace '/var/lib/custom'
+  }
 }
 ```
 ####  不分配 agent

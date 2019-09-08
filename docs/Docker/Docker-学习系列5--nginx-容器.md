@@ -2,10 +2,10 @@
 
 1. 运行容器
 `docker run --name my-nginx -d -p 8088:80 --rm nginx:1.15`
--d：在后台运行
--p：容器的80端口映射到 宿主机的 8088
---rm：容器停止运行后，自动删除容器文件
---name：容器的名字为 my-nginx
+* -d：在后台运行
+* -p：容器的80端口映射到 宿主机的 8088 端口
+* --rm：容器停止运行后，自动删除容器文件
+* --name：容器的名字为 my-nginx
 
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-e508e54965926b10.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -17,10 +17,11 @@ docker run 其实等于 docker create + start
 2. 官方推荐通过 Dockerfile 的方式制作镜像并运行容器
 
 新建static-pages目录，结构如下：
+```
 static-pages
    -- index.html
    -- Dockerfile
-
+```
 index.html
 ```
 <h1>Hello World</h1>
@@ -53,8 +54,8 @@ COPY nginx /etc/
 然后修改 static-pages\nginx\conf.d\default.conf
 ```
 server {
-    listen       80;
-    server_name  ng.test;
+  listen       80;
+  server_name  ng.test;
 }
 ```
 C:\Windows\System32\drivers\etc\HOSTS

@@ -54,7 +54,9 @@ vars 目录下的全局变量可以直接在pipeline中使用，即当写`sayHel
 
 src 目录是标准的Java源码结构，目录中的类被称为类库(Library class)，而 `@Library('global-shared-library@master')` 就是一次性静态加载src目录下所有代码到classpath中。
 
-> src目录中的类，可以使用Groovy中的@Grab注解，自动下载第三方依赖包
+::: tip
+src目录中的类，可以使用Groovy中的@Grab注解，自动下载第三方依赖包
+:::
 
 2. Jenkins 管理后台配置仓库地址和版本等
 进入 Jenkins 的Manage Jenkins -> Configure System -> Global Pipeline Libraries 配置页面
@@ -137,7 +139,9 @@ generatePipeline('go')
 
 这里只是抛砖引玉，想写出更强大的共享库需要多了解Groovy。
 
-> 优先考虑使用自定义函数，如果此函数出现在了至少三个项目中，考虑移到共享库里，当发现项目的pipeline非常相似，考虑使用pipeline模块。
+::: tip
+优先考虑使用自定义函数，如果此函数出现在了至少三个项目中，考虑移到共享库里，当发现项目的pipeline非常相似，考虑使用pipeline模块。
+:::
 
 ### 参考
 [https://jenkins.io/zh/doc/book/pipeline/shared-libraries/](https://jenkins.io/zh/doc/book/pipeline/shared-libraries/)

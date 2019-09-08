@@ -7,9 +7,9 @@ Jenkins 2.x 支持 pipeline as code，可以通过”代码“来描述部署流
 * 更好地版本化:将pipeline提交到软件版本库中进行版本控制。
 * 更好地协作: pipeline的每次修改对所有人都是可见的。除此之外，还可以对pipeline进行代码审查。
 * 更好的重用性:手动操作没法重用，但是代码可以重用。
-
-> 总结：创建Jenkins 项目尽量使用 pipeline 风格。是2.x最大特别，也是官方主推的特性，是发展趋势。
-
+::: tip
+总结：创建Jenkins 项目尽量使用 pipeline 风格。是2.x最大特别，也是官方主推的特性，是发展趋势。
+:::
 ### Jenkinsfile 是什么
 
 Jenkinsfile就是一个文本文件，也就是部署流水线概念在Jenkins中的表现形式。像Dockerfile之于Docker。所有部署流水线的逻辑都写在Jenkinsfile中。
@@ -51,8 +51,16 @@ pipeline {
 * echo 是内置命令，用来输出一段文本，还有些命令是安装插件后才有的，参见[官方文档](https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/)。
 * step： 步骤，可拆分最小单元，真正“做事”的语句。如`echo "hello world"`表示输出一句话。
 
-> 有些插件安装后可以直接在pipeline中使用，如发送邮件的`Extended E-mail Notification`，安装后可以直接`steps { emailext to: 'mafeifan@qq.com', subject: "test", body:  "an email"}` 来发送邮件
+::: tip
+有些插件安装后可以直接在pipeline中使用，如发送邮件的`Extended E-mail Notification`，安装后可以直接
+```
+steps { 
+    emailext to: 'mafeifan@qq.com', subject: "test", body:  "email content"
+}
+```
+来发送邮件 
+:::
 
 ### 参考
-[流水线](https://jenkins.io/zh/doc/book/pipeline/)
-[流水线语法](https://jenkins.io/zh/doc/book/pipeline/syntax/)
+* [流水线](https://jenkins.io/zh/doc/book/pipeline/)
+* [流水线语法](https://jenkins.io/zh/doc/book/pipeline/syntax/)

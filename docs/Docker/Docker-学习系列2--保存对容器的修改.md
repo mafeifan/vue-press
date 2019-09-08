@@ -19,8 +19,9 @@ Docker容器虽然运行起来了。
 commit 会基于对container的修改创建一个新的镜像
 具体用法请参见官方文档：[commit](https://docs.docker.com/engine/reference/commandline/commit/)
 
-注意：
+::: warning
 经查，不推荐更改运行中的容器配置，容器本身是无状态的，当然也可以通过进入容器内部的方式进行更改: docker exec -it 这样的更改是无法持久化保存的，当容器重启后，更改就丢失了，正确的做法是将需要持久化保存的数据放在挂载的存储卷中，当配置需要改变时直接删除重建。
+:::
 
 回顾：
 ```

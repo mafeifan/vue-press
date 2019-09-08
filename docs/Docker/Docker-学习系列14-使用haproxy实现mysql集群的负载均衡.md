@@ -10,7 +10,7 @@
 1. 下载镜像 `docker pull haproxy`
 2. 宿主机创建 haproxy 的配置文件，比如路径是 D:\Docker\haproxy\haproxy.cfg
 3. 最重要的就是配置文件了。这里内容如下：
-```
+```ini
 global
         daemon
         # nbproc 1

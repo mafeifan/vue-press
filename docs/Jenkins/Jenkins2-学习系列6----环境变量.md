@@ -68,9 +68,10 @@ environment {
 }
 ```
 
-> **小技巧** ：
-> 1. 在调试pipeline时，可以再开始阶段加一句 `sh 'printenv'` 将所有env变量打印出来。
-> 2. 自定义变量时，为避免命名冲突，可根据项目或公司加上统一前缀，如`__server_name`，__就是前缀。
+::: tip
+1. 在调试pipeline时，可以再开始阶段加一句 `sh 'printenv'` 将所有env变量打印出来。
+2. 自定义变量时，为避免命名冲突，可根据项目或公司加上统一前缀，如`__server_name`，__就是前缀。
+:::
 
 3. 自定义全局环境变量
 定义全局环境变量可以跨pipeline使用
@@ -83,9 +84,9 @@ environment {
 上面的例子都是定义式pipeline，下面的例子是脚本式
 ```groovy
 node {
-      /* .. snip .. */
-      withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
-          sh 'mvn -B verify'
-      }
+  /* .. snip .. */
+  withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
+    sh 'mvn -B verify'
+  }
 }
 ```

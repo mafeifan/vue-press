@@ -53,6 +53,6 @@ Starting Nginx server.
 Done.
 ```
 
-参考：
-https://hub.docker.com/r/eriksencosta/php-dev/
-https://github.com/eriksencosta/silex-docker-example
+#### 参考：
+* https://hub.docker.com/r/eriksencosta/php-dev/
+* https://github.com/eriksencosta/silex-docker-example

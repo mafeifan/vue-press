@@ -16,7 +16,7 @@ docker daemon 支持三种方式的连接(unix，tcp 和 fd)。默认只使用�
 #### 修改 systemd unit 文件允许远程访问
 1. `sudo systemctl edit docker.service` 打开文件
 2. 添加或修改下面的
-```
+```ini
 [Service]
 ExecStart=
 ExecStart=/usr/bin/dockerd -H fd:// -H tcp://127.0.0.1:2375
@@ -28,9 +28,9 @@ ExecStart=/usr/bin/dockerd -H fd:// -H tcp://127.0.0.1:2375
 #### 修改 daemon.json 允许远程访问
 1. 打开Docker守护端的配置文件 `sudo vi /etc/docker/daemon.json`，检查host配置
 2. 讲host部分内容修改如下
-```
+```json
 {
-      "hosts": ["unix:///var/run/docker.sock", "tcp://127.0.0.1:2375"]
+  "hosts": ["unix:///var/run/docker.sock", "tcp://127.0.0.1:2375"]
 }
 ```
 3. 同上，重启，然后检查端口
@@ -73,7 +73,7 @@ sudo kill -SIGHUP $(pidof dockerd)
 允许Docker远程访问后一定要设置好防火墙或者用nignx加一层反向代理，也可以开启https访问，不过要生成证书，具体见下面参考中的链接。
 
 #### 参考 
-[daemon](https://docs.docker.com/config/daemon/)
-[dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file)
-[docker配置TLS认证开启远程访问](https://tankeryang.github.io/posts/docker%E9%85%8D%E7%BD%AETLS%E8%AE%A4%E8%AF%81%E5%BC%80%E5%90%AF%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/)
-[https://docs.docker.com/engine/security/https/](https://docs.docker.com/engine/security/https/)
+* [daemon](https://docs.docker.com/config/daemon/)
+* [dockerd](https://docs.docker.com/engine/reference/commandline/dockerd/#daemon-configuration-file)
+* [docker配置TLS认证开启远程访问](https://tankeryang.github.io/posts/docker%E9%85%8D%E7%BD%AETLS%E8%AE%A4%E8%AF%81%E5%BC%80%E5%90%AF%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE/)
+* [https://docs.docker.com/engine/security/https/](https://docs.docker.com/engine/security/https/)

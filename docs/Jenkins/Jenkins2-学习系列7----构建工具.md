@@ -14,7 +14,7 @@ tools指令默认支持3种工具: JDK、Maven、Gradle。 通过安装插件，
 * 在Jenkins机器上安装python和virtualenv(Python的虚拟环境管理工具)
 * 安装[pyenv-pipeline插件](https://plugins.jenkins.io/pyenv-pipeline)
 * 在pipeline中使用pyenv-pipeline插件提供的withPythonEnv方法，第一个参数是可执行Python的执行路径，在当前工作空间下创建一个virtualenv环境。第二个参数是一个闭包，闭包内的代码就执行在新建的virtualenv环境下。
-```
+```groovy
 withPythonEnv('/usr/bin/python3.5') {
     // Uses the specific python3.5 executable located in /usr/bin
     ...

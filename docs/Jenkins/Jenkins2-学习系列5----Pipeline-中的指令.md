@@ -12,9 +12,11 @@ Jenkins pipeline支持的指令有:
 * triggers: 用于定义执行pipeline的触发器。
 * when: 当满足when定义的条件时，阶段才执行。
 
-> parameters 和 when 的使用会在后面详情介绍
+::: tip
+parameters 和 when 的使用会在后面详情介绍
 
-> 在使用指令时，需要注意的是每个指令都有自己的"作用域"。如果指令使用的位置不正确，Jenkins将会报错。
+在使用指令时，需要注意的是每个指令都有自己的"作用域"。如果指令使用的位置不正确，Jenkins将会报错。
+:::
 
 options指令用于配置整个Jenkins pipeline本身的选项
 

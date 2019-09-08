@@ -49,5 +49,5 @@
 有很多细节没有讲到，请自行查看提供的文档。
 
 参考：
-http://guide.daocloud.io/dcs/ci-9863687.html
-https://github.com/Ye-Ting/docker-ci/blob/master/daocloud.md
+* http://guide.daocloud.io/dcs/ci-9863687.html
+* https://github.com/Ye-Ting/docker-ci/blob/master/daocloud.md

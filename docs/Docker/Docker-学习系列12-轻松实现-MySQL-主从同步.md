@@ -1,6 +1,6 @@
-docker的一大好处是在本地可以很方便快速的搭建负载均衡，主从同步等需要多主机的环境。
+Docker 的一大好处是在本地可以很方便快速的搭建负载均衡，主从同步等需要多主机的环境。
 可以说是极大方便了运维成本和难度。
-本节在本地搭建mysql的一主一从的集群环境。
+本节在本地搭建 mysql 的一主一从的集群环境。
 
 关于主从同步的流程图，放张网上找的流程图
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-9bd1d2570613f8de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -10,15 +10,16 @@ docker的一大好处是在本地可以很方便快速的搭建负载均衡，�
 1. 创建 mysql-master-slave 目录，比如完整路径是
 D:/docker/mysql-master-slave
 目录结构如下：
+```yaml
 -- master
   -- data
    mysqld.cnf
 -- slave
   -- data
       mysqld.cnf
-
-2.  其中master目录底下的 mysqld.cnf 配置文件内容为
 ```
+2.  其中master目录底下的 mysqld.cnf 配置文件内容为
+```ini
 [mysqld]
 pid-file	= /var/run/mysqld/mysqld.pid
 socket		= /var/run/mysqld/mysqld.sock
@@ -45,7 +46,7 @@ skip-name-resolve
 ```
 
 slave 目录底下的 mysqld.cnf 内容为
-```
+```ini
 [mysqld]
 pid-file	        = /var/run/mysqld/mysqld.pid
 socket		= /var/run/mysqld/mysqld.sock
@@ -128,8 +129,8 @@ Relay Log 文件中进行记录。另一方面，SQL 线程则将 Relay Log 读�
 ### 问题：
 1. 如何添加slave节点服务器，如何主主备份
 更多细节还得啃官方[文档](https://dev.mysql.com/doc/refman/5.7/en/replication.html)
-2. 使用 docker compose 配置mysql主从 http://tarunlalwani.com/post/mysql-master-slave-using-docker/
+2. 使用 docker compose 配置 mysql 主从 http://tarunlalwani.com/post/mysql-master-slave-using-docker/
 
 ### 参考：
-https://www.cnblogs.com/w2206/p/6963065.html
-https://github.com/Junnplus/blog/issues/1
+* https://www.cnblogs.com/w2206/p/6963065.html
+* https://github.com/Junnplus/blog/issues/1

@@ -40,7 +40,7 @@ pipeline {
 * 删除Docker远程主机中构建好的镜像，不占用空间
 * 不包含目标主机中部署镜像
 其实就说上篇文章中的pipeline版本
-```
+```groovy
 #!groovy
 
 pipeline {
