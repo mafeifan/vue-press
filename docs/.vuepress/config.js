@@ -1,6 +1,6 @@
 module.exports = {
   title: 'mafeifan 的技术博客',
-  description: 'Just playing around',
+  description: '学习使我无比充实和快乐',
   port: '8099',
   markdown: {
     lineNumbers: true // 代码块显示行号
@@ -40,6 +40,14 @@ module.exports = {
       {text: 'External', link: 'https://google.com'},
     ],
     sidebar: [
+      {
+        title: 'Laravel 6',
+        collapsable: true,
+        children: [
+          ['Laravel/Model/Laravel-Fix-non-object.md', 'Model/避免 Trying to get property of non-object 错误的几种方法'],
+          ['Laravel/Model/Laravel-useful-attribute.md', 'Model/模型常用属性']
+        ]
+      },
       {
         title: 'Docker 系统',
         collapsable: true,

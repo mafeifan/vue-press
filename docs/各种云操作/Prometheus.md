@@ -60,8 +60,3 @@ scrape_configs:
 
 <relabel_config> 配置是通过修改 label 来控制某些时间序列不被写入远端
 relabel行为中，drop and keep行为(特殊)类似与过滤器，如果label不匹配，相应数据会被丢弃；而其它的relabel行为，会继续处理数据(不论匹配与否)
-
-作者：xufeibuaa
-链接：https://www.jianshu.com/p/2c49e59c6fdd
-来源：简书
-简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
