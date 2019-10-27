@@ -268,3 +268,53 @@ Laravel 会自动给Channel加前缀，默认把这行掉
 laravel-echo-server  start
 ```
 `pm2 start socket.sh`
+
+
+### 关于数字含义
+[socket.io的frame里面，每个片段前面的数字代表什么意思？](https://segmentfault.com/q/1010000008013361/a-1020000008022641)
+
+这是 Engine .io协议，其中的数字是数据包编码：
+
+`<Packet type id> [<data>]`
+例：
+
+2probe
+这些是不同的数据包类型：
+
+0 open
+
+在打开新传输时从服务器发送（重新检查）
+
+1 close
+
+请求关闭此传输，但不关闭连接本身。
+
+2 ping
+
+由客户端发送。服务器应该用包含相同数据的乓包应答
+
+示例1.客户端发送：2probe 2.服务器发送：3probe
+
+3 pong
+
+由服务器发送以响应ping数据包。
+
+4 message
+
+实际消息，客户端和服务器应该使用数据调用它们的回调。
+
+实施例1
+
+服务器发送：4HelloWorld客户端接收并调用回调socket.on（'message'，function（data）{console.log（data）;}）;
+
+实施例2
+
+客户端发送：4HelloWorld服务器接收并调用回调socket.on（'message'，function（data）{console.log（data）;}）;
+
+5 upgrade
+
+在engine.io切换传输之前，它测试，如果服务器和客户端可以通过这个传输进行通信。如果此测试成功，客户端发送升级数据包，请求服务器刷新其在旧传输上的缓存并切换到新传输。
+
+6 noop
+
+noop数据包。主要用于在接收到传入WebSocket连接时强制轮询周期。
