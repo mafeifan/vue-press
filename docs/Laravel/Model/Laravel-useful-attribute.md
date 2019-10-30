@@ -64,5 +64,4 @@ $searchable = [
     'columns' => [],
     'joins' => [],
 ];
-}
 ```

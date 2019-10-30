@@ -48,6 +48,7 @@ module.exports = {
           ['Laravel/Model/Laravel-useful-attribute.md', 'Model/模型常用属性'],
           ['Laravel/Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
           ['Laravel/Doc/Laravel-事件的使用.md', 'Laravel-事件的使用'],
+          ['Laravel/Doc/Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
         ]
       },
       {
