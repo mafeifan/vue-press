@@ -18,6 +18,7 @@
 #### git commit --amend
 修改commit信息 `git commit --amend`
 修改commit的author `git commit --amend --author "New Author Name "`
+修改commit的提交时间 `git commit --amend --date="$(date -R)" `
 
 ####  git pull
 git pull = git fetch + git merge ， 所以 fetch 更安全些

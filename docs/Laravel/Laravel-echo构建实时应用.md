@@ -252,11 +252,6 @@ Laravel 会自动给Channel加前缀，默认把这行掉
 
 ![image.png](https://hexo-blog.pek3b.qingstor.com/images/2019/10/26/0981fce6958cba6c6eb4846d06eec6b9.png)
 
-### 参考
-* [使用 Laravel-echo-server 构建实时应用](https://learnku.com/laravel/t/13101/using-laravel-echo-server-to-build-real-time-applications)
-* [Laravel 5.8 Laravel-echo-server教程 坑满满](https://blog.csdn.net/sym134/article/details/100569257)
-* [深入浅出 Laravel Echo](https://learnku.com/articles/17327)
-
 
 ### 正式环境
 1. 修改 `laravel-echo-server.json` 关闭 devMode
@@ -318,3 +313,8 @@ laravel-echo-server  start
 6 noop
 
 noop数据包。主要用于在接收到传入WebSocket连接时强制轮询周期。
+
+### 参考
+* [使用 Laravel-echo-server 构建实时应用](https://learnku.com/laravel/t/13101/using-laravel-echo-server-to-build-real-time-applications)
+* [Laravel 5.8 Laravel-echo-server教程 坑满满](https://blog.csdn.net/sym134/article/details/100569257)
+* [深入浅出 Laravel Echo](https://learnku.com/articles/17327)
