@@ -1,3 +1,5 @@
+2019-11-6 更新 [lazydocker](https://github.com/jesseduffield/lazydocker) 终端UI的docker和docker-compose
+
 2019-3-8 更新 [dockstation](https://dockstation.io/) Docker的GUI管理工具
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-aaad497aabec7f5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -58,3 +60,10 @@ google出品了[cAdvisor](https://github.com/google/cadvisor)
 
 cAdvisor提供的页面非常简洁。
 页面上的数据可以通过他[暴露的API](https://github.com/google/cadvisor/blob/master/docs/api.md)直接获取，可以把 cAdvisor 定位为一个监控数据收集器，收集和导出数据是它的强项，而非展示数据。所以可以结合其他工具一块使用。
+
+### lazydocker
+lazydocker，一个简单的 docker 和 docker-compose 终端用户界面，用更懒惰的方式来管理所有的 docker。
+
+其界面采用 gocui 开发。
+> ![image.png](https://static.oschina.net/uploads/space/2019/0630/141740_uL43_3734192.gif)
+
