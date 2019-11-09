@@ -140,7 +140,8 @@ module.exports = {
         title: '前端',
         collapsable: false,
         children: [
-          ['HTML5/CSS3实现未知宽高元素的垂直居中和水平居中', 'css/css3实现未知宽高元素的垂直居中和水平居中']
+          ['HTML5/CSS3实现未知宽高元素的垂直居中和水平居中', 'css/css3实现未知宽高元素的垂直居中和水平居中'],
+          ['HTML5/巧解checkbox未选中不提交数据', '巧解checkbox未选中不提交数据'],
         ]
       },
     ]
