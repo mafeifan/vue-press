@@ -1,6 +1,6 @@
 module.exports = {
   title: 'mafeifan 的技术博客',
-  description: '学习使我无比充实和快乐',
+  description: '生命在于试错和积累',
   port: '8099',
   markdown: {
     lineNumbers: true // 代码块显示行号
@@ -29,14 +29,15 @@ module.exports = {
           // {text: 'React', link: '/React/'}
         ]
       },
-      // {
-      //   text: 'Backend',
-      //   items: [
-      //     {text: 'Laravel', link: '/Laravel/'},
-      //     {text: 'Symfony', link: '/Symfony/'}
-      //   ]
-      // },
+      {
+        text: 'Backend',
+        items: [
+          {text: 'Laravel', link: '/Laravel/Model/Laravel-model-tips/'},
+        ]
+      },
+      {text: 'Demo', link: '/demo/'},
       {text: 'Home', link: '/'},
+
     ],
     sidebar: [
       {
@@ -49,6 +50,7 @@ module.exports = {
           ['Laravel/Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
           ['Laravel/Doc/Laravel-事件的使用.md', 'Laravel-事件的使用'],
           ['Laravel/Doc/Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
+          ['Laravel/Doc/Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
         ]
       },
       {
