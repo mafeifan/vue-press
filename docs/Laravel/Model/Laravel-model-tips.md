@@ -1,7 +1,7 @@
 收集一些模型的使用技巧
 
 
-1. 嵌套作用域查询
+### 1. 嵌套作用域查询
 
 Laravel 支持将查用的查询封装为[作用域](https://learnku.com/docs/laravel/6.x/eloquent/5176#local-scopes)
 
@@ -53,20 +53,23 @@ Model 中 scopeWithOrder 又包含了两个小作用域
     
 ```
 
-2. 在 find 方法中指定属性
+### 2. 在 find 方法中指定属性
+
 ```php
 User::find(1, ['name', 'email']);
 User::findOrFail(1, ['name', 'email']);
 ```
 
-3. Clone 一个 Model
+### 3. Clone 一个 Model
+
 ```php
 $user = User::find(1);
 $newUser = $user->replicate();
 $newUser->save();
 ```
 
-4. 判断两个 Model 是否相同
+### 4. 判断两个 Model 是否相同
+
 ```php
 $user = User::find(1);
 $sameUser = User::find(1);
@@ -75,7 +78,8 @@ $user->is($sameUser); // true
 $user->is($diffUser); // false;
 ```
 
-5. 重新加载一个 Model
+### 5. 重新加载一个 Model
+
 ```php
 $user = User::find(1);
 $user->name; // 'Peter'
@@ -84,7 +88,8 @@ $user->refresh();
 $user->name; // John
 ```
 
-6. 加载新的 Model
+### 6. 加载新的 Model
+
 ```php
 $user = App\User::first();
 $user->name;    // John
@@ -94,7 +99,7 @@ $updatedUser->name;  // Peter
 $user->name;    // John
 ```
 
-7. 更新带关联的 Model
+### 7. 更新带关联的 Model
 
 在更新关联的时候，使用 push 方法可以更新所有 Model
 
@@ -114,7 +119,7 @@ $user->push(); // 更新 User 和 Phone Model
 ```
  
  
-8. 自定义软删除字段
+### 8. 自定义软删除字段
 
 Laravel 默认使用 deleted_at 作为软删除字段，我们通过以下方式将 deleted_at 改成 is_deleted
 
@@ -144,7 +149,7 @@ class User extends Model
 ```
 
 
-9. 查询 Model 更改的属性
+### 9. 查询 Model 更改的属性
 
 
 ```php
@@ -162,7 +167,7 @@ dd($user->getChanges());
 ```
 
 
-10. 查询 Model 是否已更改
+### 10. 查询 Model 是否已更改
 
 ```php
 $user = User::first();
@@ -181,7 +186,7 @@ getChanges() 方法用在 save() 方法之后输出结果集
 
 getDirty() 方法用在 save() 方法之前输出结果集
 
-11. 查询修改前的 Model 信息
+### 11. 查询修改前的 Model 信息
 
 ```php
 $user = App\User::first();
