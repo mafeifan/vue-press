@@ -35,7 +35,19 @@ module.exports = {
           {text: 'Laravel', link: '/Laravel/Model/Laravel-model-tips/'},
         ]
       },
-      {text: 'Demo', link: '/demo/'},
+      {
+        text: 'WOW',
+        items: [
+          {text: '游戏', link: '/_WOW/'},
+          {text: '截图', link: '/_WOW/screenshots/'},
+          {text: '德鲁伊', link: '/_WOW/Druid/'},
+        ],
+        link: '/_WOW/'
+      },
+      {
+        text: 'Demo',
+        link: '/_DEMO/'
+      },
       {text: 'Home', link: '/'},
 
     ],
@@ -121,7 +133,7 @@ module.exports = {
       },
       {
         title: 'Ansible',
-        collapsable: false,
+        collapsable: true,
         children: [
           ['Ansible/Ansible-2----1-介绍与使用场景', '1 介绍与使用场景'],
           ['Ansible/Ansible-2----2-安装与配置', '2 安装与配置'],
@@ -133,14 +145,14 @@ module.exports = {
       },
       {
         title: 'Linux',
-        collapsable: false,
+        collapsable: true,
         children: [
           ['Linux/SSH--技巧', 'SSH--技巧']
         ]
       },
       {
         title: '前端',
-        collapsable: false,
+        collapsable: true,
         children: [
           ['HTML5/CSS3实现未知宽高元素的垂直居中和水平居中', 'css/css3实现未知宽高元素的垂直居中和水平居中'],
           ['HTML5/巧解checkbox未选中不提交数据', '巧解checkbox未选中不提交数据'],

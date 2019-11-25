@@ -33,6 +33,5 @@ Ansible将部署逻辑放在一个称为"playbook”的YAML文件中。通常，
 Ansible是导演，受控机器列表(inventory) 为演员列表，开发者则是编剧。开发者只要把剧本(playbook.yml) 写好，Ansible拿着剧本与invenstory一对上号，演员就会按照剧本如实表演，不会有任何个人发挥。
 
 ### 参考
-https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html?highlight=ansible_user
-官方提供的playbook的大量例子
-https://github.com/ansible/ansible-examples
+* https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html?highlight=ansible_user
+* [官方提供的playbook的大量例子](https://github.com/ansible/ansible-examples)

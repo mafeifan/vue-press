@@ -55,8 +55,6 @@ Laravel6 默认是使用 phpredis 驱动
 #### 启动后端
 `laravel-echo-server start`
 
-![image.png](https://cdn.learnku.com/uploads/images/201806/08/3853/KJe05s8Ss8.png?imageView2/2/w/1240/h/0)
-
 
 #### 开启 BroadcastServiceProvider
 
