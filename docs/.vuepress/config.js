@@ -1,7 +1,7 @@
+
 module.exports = {
   // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html#
   plugins: ['@vuepress/medium-zoom'],
-
   title: 'mafeifan 的技术博客',
   description: '生命在于试错和积累',
   port: '8099',
