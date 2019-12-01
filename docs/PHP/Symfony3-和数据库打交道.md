@@ -31,7 +31,7 @@ entity 有点类似模型，
 表名  setting 字段 field, data,
 
 
- 不想添加新字段的话直接在 press <return> 处回车。
+ 不想添加新字段的话直接在 `press <return>` 处回车。
 
 多了两个文件
 /src/Finley/BlogBundle/Entity/Setting.php

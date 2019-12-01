@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.0.0-rc.1",
     "vuepress": "^1.0.4"
   }
 }
