@@ -1,7 +1,18 @@
 
 module.exports = {
   // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html#
-  plugins: ['@vuepress/medium-zoom'],
+  plugins: [
+    [
+      'vuepress-plugin-zooming',
+      {
+        delay: 500,
+        options: {
+          bgColor: 'black',
+          zIndex: 10000,
+        },
+      },
+    ],
+  ],
   title: 'mafeifan 的技术博客',
   description: '生命在于试错和积累',
   port: '8099',
