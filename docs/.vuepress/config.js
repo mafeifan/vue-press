@@ -41,6 +41,7 @@ module.exports = {
         text: 'Frontend',
         items: [
           {text: 'Html & CSS', link: '/HTML5/'},
+          {text: 'Angular', link: '/Angular/'},
           // {text: 'React', link: '/React/'}
         ]
       },
@@ -144,6 +145,10 @@ module.exports = {
       '/HTML5/': [
         ['CSS3实现未知宽高元素的垂直居中和水平居中', 'CSS3 实现未知宽高元素的垂直居中和水平居中'],
         ['巧解checkbox未选中不提交数据', '巧解checkbox未选中不提交数据'],
+      ],
+
+      '/Angular/': [
+        ['Angular-共享数据', 'Angular-共享数据']
       ],
 
       '/Laravel/': [
