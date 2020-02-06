@@ -22,6 +22,9 @@ var arr2 = ['one', ...arr1, 'four', 'five'];
 var arr = [1,2,3];
 var arr2 = [...arr]; // 和arr.slice()差不多
 arr2.push(4)
+// arr2 此时变成 [1, 2, 3, 4]
+// arr 不受影响
+
 ```
 记住：数组中的对象依然是引用值，所以不是任何东西都“拷贝”过去了。
 
@@ -30,6 +33,9 @@ arr2.push(4)
 let ab = { ...a, ...b };
 // 等同于
 let ab = Object.assign({}, a, b);
+// 实际上, 展开语法和 Object.assign() 行为一致, 执行的都是浅拷贝(只遍历一层)。 
+
+{...{name: "finley"}, ...{name: "xx"}} 结果 {name: "xx"}
 ```
 
 #### module 模块

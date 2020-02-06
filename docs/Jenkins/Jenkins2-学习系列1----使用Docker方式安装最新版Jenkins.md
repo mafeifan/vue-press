@@ -42,11 +42,11 @@ services:
     volumes:
      - /var/run/docker.sock:/var/run/docker.sock
      - /usr/bin/docker:/usr/bin/docker
-    // 路径改为实际的
+    # 路径改为实际的
      - ~/jenkins-compose:/var/jenkins_home
 ```
 
-执行 `docker-compose run -d` 会下载镜像并在后台启动
+执行 `docker-compose up -d jenkins-compose` 会下载镜像并在后台启动
 然后 `docker-compose logs`  查看日志
 
 留意并复制红框中的密码

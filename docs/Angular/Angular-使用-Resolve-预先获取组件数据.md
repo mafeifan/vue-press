@@ -57,8 +57,14 @@ this.service.getAccountList().subscribe( (res: Account) => {
 });
 ```
 改为如下，这里route.snapshot.data 就是后台返回的数据
+import { ActivatedRoute, Router } from '@angular/router';
 ```
-let result = this.route.snapshot.data.data;
+constructor(
+    private route: ActivatedRoute,
+) { }
+ngOnInit() {
+    let result = this.route.snapshot.data.data;
+}
 ```
 
 参考：[https://angular.cn/guide/router#resolve-pre-fetching-component-data](https://angular.cn/guide/router#resolve-pre-fetching-component-data)
