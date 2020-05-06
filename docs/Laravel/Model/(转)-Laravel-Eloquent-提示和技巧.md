@@ -301,12 +301,33 @@ public function getFullNameAttribute()
 
 ### 14\. Replicate: 制作一行的副本
 
-制作数据库条目副本的最佳方法:
+快速复制数据的最佳方法:
 
 ```
   $task = Task::find(1);
   $newTask = $task->replicate();
   $newTask->save();
+```
+
+复制并修改其中的一部分数据:
+```
+$article = Article::find(1)->replicate();
+$article->title = 'Laravel 复制数据并修改标题';
+$article->save();
+dd(Article::all()->toArray());
+```
+
+复制模型及关系:
+```
+$article = Article::with('tags')->find(1);
+$clone = $article->replicate();
+// 复制关系
+$clone->push();
+
+foreach($article->tags as $tag)
+{
+    $clone->tags()->attach($tag);
+}
 ```
 
 ### 15\. chunk() 方法批量处理大数据量
