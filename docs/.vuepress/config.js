@@ -162,7 +162,8 @@ module.exports = {
         ['Doc/Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
         ['Doc/Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
         ['Doc/Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
-        ['Doc/Laravel-mix.md', 'Laravel-mix'],
+        ['Doc/Laravel-mix.md', 'Laravel Mix介绍'],
+        ['Doc/Laravel-ingnition.md', 'Laravel Ignition介绍'],
       ],
 
       // fallback
