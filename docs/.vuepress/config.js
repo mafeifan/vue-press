@@ -164,6 +164,7 @@ module.exports = {
         ['Doc/Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
         ['Doc/Laravel-mix.md', 'Laravel Mix介绍'],
         ['Doc/Laravel-ingnition.md', 'Laravel Ignition介绍'],
+        ['Doc/Laravel-best-practices.md', 'Laravel 开发最佳实践'],
       ],
 
       // fallback
