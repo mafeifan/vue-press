@@ -124,7 +124,8 @@ module.exports = {
         ['Docker-学习系列18-关于PHP5-6', '18 关于PHP5.6'],
         ['Docker-学习系列19-容器化Angular项目', '19 容器化Angular项目'],
         ['Docker-学习系列20-工具推荐，dive--分析镜像层的工具', '20 工具推荐，dive--分析镜像层的工具'],
-        ['Docker-学习系列21-配置远程访问Docker', '22 配置远程访问Docker'],
+        ['Docker-学习系列21-配置远程访问Docker', '21 配置远程访问Docker'],
+        ['Docker-学习系列22-Docker-Layer-Caching.md', '22 Docker-Layer-Caching.md'],
         ['Docker-及-docker-compose-使用总结', 'docker 及 docker-compose 使用总结'],
         ['Docker-学习资源', 'Docker 一些相关资源'],
       ],
@@ -165,6 +166,8 @@ module.exports = {
         ['Doc/Laravel-mix.md', 'Laravel Mix介绍'],
         ['Doc/Laravel-ingnition.md', 'Laravel Ignition介绍'],
         ['Doc/Laravel-best-practices.md', 'Laravel 开发最佳实践'],
+        ['Doc/Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
+        ['Core/Laravel-pipeline.md', 'Laravel Pipeline管道'],
       ],
 
       // fallback
