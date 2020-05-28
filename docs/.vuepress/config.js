@@ -61,6 +61,10 @@ module.exports = {
         link: '/_WOW/'
       },
       {
+        text: 'Tool',
+        link: '/_TOOL/'
+      },
+      {
         text: 'Demo',
         link: '/_DEMO/'
       },

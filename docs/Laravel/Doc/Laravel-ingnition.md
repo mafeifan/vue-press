@@ -18,5 +18,8 @@ https://flareapp.io/share/17xDBK7b，可以把该地址分享给他人，默认�
 
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/2019/233778AC0E1BE6A8B322E084631713FB.jpg)
 
-4.在Stack trace，也就是堆栈追踪页面，鼠标放到代码行中，后面会出现编辑图标，点击就可以用PHPStorm打开该文件，并定位到该行，其原理是
-浏览器打开的是形如`phpstorm://open?file=%2FUsers%2Fmafei%2Fsites%2Flara6-golf%2Fvendor%2Flaravel%2Fframework%2Fsrc%2FIlluminate%2FView%2FFileViewFinder.php&line=131`
+4.在Stack trace，也就是堆栈追踪页面，鼠标放到代码行中，后面会出现编辑图标，点击就可以用PHPStorm打开该文件，并定位到该行，其原理是 URL schema
+应用内跳转
+比如浏览器打开的地址是`phpstorm://open?file=%2FUsers%2Fmafei%2Fsites%2Flara6-golf%2Fvendor%2Flaravel%2Fframework%2Fsrc%2FIlluminate%2FView%2FFileViewFinder.php&line=131`
+就会启动phpstorm，打开文件`/Users/mafei/sites/lara6-golf/vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php`
+并定位到131行

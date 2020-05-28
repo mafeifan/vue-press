@@ -16,7 +16,7 @@
 生成这样的表单，当checkbox未选中的时候，提交的是hidden表单。值0就被提交到服务器了。
 当checkbox都选中的时候，hidden和checkbox表单都被提交了，但是因为它们的name是一样的，所以hidden的值被checkbox覆盖了。所以就得到了数值1。
 
-经测试，在PHP中，如果有多个name相同的表单，post到服务器
+在PHP中，如果有多个name相同的表单，都可以post到服务器
 
 ### 参考
 https://www.cnblogs.com/jcydd/p/10590440.html
