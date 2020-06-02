@@ -195,3 +195,30 @@ $user->name = "Peter";   //Peter
 $user->getOriginal('name'); //John
 $user->getOriginal();   //Original $user record
 ```
+
+### 12. 使用 withDefault 保持返回格式统一
+
+```php
+public function _city()
+{
+    return $this->hasOne(City::class, 'id', 'city_id');
+}
+```
+
+比如student和city是一对一关系，如果一个student表中city字段为空，返回的结果可能是
+
+`{name: "jack", _city: null}`
+
+这样会造成的问题是前端如果使用了`student._city.name`会造成undefined等错误。
+为了避免可以改为
+```php
+public function _city()
+{
+    return $this->hasOne(City::class, 'id', 'city_id')->withDefault([
+      'name' => '',
+    ]);
+}
+```
+这样即使找不到也不会报错
+返回的结果是:
+`{name: "jack", _city: {id: null, name: ""}}`
