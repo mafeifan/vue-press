@@ -8,3 +8,8 @@
 欢迎Star！
 
 我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=v7er73kcqd35
+
+觉得有收获欢迎打赏，您的支持是我写作的动力！
+
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/images/alipay-dashang.png)
+
