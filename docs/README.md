@@ -11,5 +11,6 @@
 
 觉得有收获欢迎打赏，您的支持是我写作的动力！
 
-> ![image.png](https://hexo-blog.pek3b.qingstor.com/images/alipay-dashang.png)
+<img src="https://hexo-blog.pek3b.qingstor.com/images/alipay-dashang.png" width="200" height="200">
+
 
