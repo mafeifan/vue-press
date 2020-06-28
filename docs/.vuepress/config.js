@@ -172,6 +172,7 @@ module.exports = {
         ['Doc/Laravel-ingnition.md', 'Laravel Ignition介绍'],
         ['Doc/Laravel-best-practices.md', 'Laravel 开发最佳实践'],
         ['Doc/Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
+        ['Doc/Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
         ['Core/Laravel-pipeline.md', 'Laravel Pipeline管道'],
       ],
 
