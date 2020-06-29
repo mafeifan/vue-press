@@ -1,4 +1,3 @@
-
 module.exports = {
   // https://v1.vuepress.vuejs.org/zh/plugin/official/plugin-medium-zoom.html#
   plugins: [
@@ -47,9 +46,15 @@ module.exports = {
       },
       {
         text: 'Backend',
-        items: [
-          {text: 'Laravel', link: '/Laravel/'},
-        ]
+        items: [{
+          text: 'Laravel',
+          items: [
+            {text: 'Model', link: '/Laravel-model/Laravel-model-tips'},
+            {text: '类库使用', link: '/Laravel-3rd-party/Laravel-常用第三方类库'},
+            {text: '开发收集', link: '/Laravel-feature/Laravel-best-practices'},
+            {text: '源码研究', link: '/Laravel-core/Laravel-pipeline'},
+          ]
+        }],
       },
       {
         text: 'WOW',
@@ -68,7 +73,9 @@ module.exports = {
         text: 'Demo',
         link: '/_DEMO/'
       },
-      {text: 'Home', link: '/'},
+      {
+        text: 'Home', link: '/'
+      },
     ],
 
     sidebar: {
@@ -159,21 +166,38 @@ module.exports = {
       ],
 
       '/Laravel/': [
-        ['Model/Laravel-model-tips.md', 'Model/使用技巧'],
-        ['Model/Laravel-Fix-non-object.md', 'Model/避免 Trying to get property of non-object 错误的几种方法'],
-        ['Model/Laravel-useful-attribute.md', 'Model/模型常用属性'],
-        ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
         ['Doc/Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
         ['Doc/Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
         ['Doc/Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
-        ['Doc/Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
-        ['Doc/Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
-        ['Doc/Laravel-mix.md', 'Laravel Mix介绍'],
-        ['Doc/Laravel-ingnition.md', 'Laravel Ignition介绍'],
-        ['Doc/Laravel-best-practices.md', 'Laravel 开发最佳实践'],
-        ['Doc/Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
-        ['Doc/Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
-        ['Core/Laravel-pipeline.md', 'Laravel Pipeline管道'],
+
+      ],
+
+
+      '/Laravel-core/': [
+        ['Laravel-pipeline.md', 'Laravel Pipeline管道'],
+      ],
+
+      '/Laravel-feature/': [
+        ['Laravel-best-practices.md', 'Laravel 开发最佳实践'],
+        ['Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
+        ['Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
+        ['Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
+      ],
+
+
+      '/Laravel-model/': [
+        ['Laravel-model-tips.md', 'Laravel model使用技巧'],
+        ['Laravel-Fix-non-object.md', '避免 Trying to get property of non-object 错误的几种方法'],
+        ['Laravel-useful-attribute.md', '模型常用属性'],
+        ['Laravel-Eloquent-提示和技巧.md', 'Eloquent提示和技巧'],
+      ],
+
+      '/Laravel-3rd-party/': [
+        ['Laravel-常用第三方类库.md', 'Laravel-常用第三方类库'],
+        ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
+        ['Laravel-mix.md', 'Laravel Mix介绍'],
+        ['Laravel-ingnition.md', 'Laravel Ignition介绍'],
+        ['Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
       ],
 
       // fallback
