@@ -167,9 +167,7 @@ module.exports = {
         ['Doc/Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
         ['Doc/Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
         ['Doc/Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
-
       ],
-
 
       '/Laravel-core/': [
         ['Laravel-pipeline.md', 'Laravel Pipeline管道'],
