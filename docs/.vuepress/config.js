@@ -56,15 +56,15 @@ module.exports = {
           ]
         }],
       },
+      /*
       {
         text: 'WOW',
         items: [
-          // {text: '游戏', link: '/_WOW/'},
           {text: '截图', link: '/_WOW/screenshots/'},
-          // {text: '德鲁伊', link: '/_WOW/Druid/'},
         ],
         link: '/_WOW/'
       },
+      */
       // {
       //   text: 'Tool',
       //   link: '/_TOOL/'
@@ -112,7 +112,6 @@ module.exports = {
         ['Jenkins-sh-step', 'Jenkins内置sh详讲'],
       ],
 
-
       '/Docker/': [
         ['Dockerfile-中的-COPY-与-ADD-命令', 'Dockerfile 中的 COPY 与 ADD 命令'],
         ['Docker-学习系列1-使用-Docker-快速实现多版本PHP切换', '1 使用-Docker-快速实现多版本PHP切换'],
@@ -140,7 +139,6 @@ module.exports = {
         ['Docker-及-docker-compose-使用总结', 'docker 及 docker-compose 使用总结'],
         ['Docker-学习资源', 'Docker 一些相关资源'],
       ],
-
 
       '/Ansible/': [
         ['Ansible-2----1-介绍与使用场景', '1 介绍与使用场景'],
@@ -183,7 +181,6 @@ module.exports = {
         ['Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
         ['Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
       ],
-
 
       '/Laravel-model/': [
         ['Laravel-model-tips.md', 'Laravel model使用技巧'],
