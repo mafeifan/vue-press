@@ -163,12 +163,6 @@ module.exports = {
         ['Angular-共享数据', 'Angular-共享数据']
       ],
 
-      '/Laravel/': [
-        ['Doc/Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
-        ['Doc/Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
-        ['Doc/Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
-      ],
-
       '/Laravel-core/': [
         ['Laravel-pipeline.md', 'Laravel Pipeline管道'],
       ],
@@ -178,6 +172,9 @@ module.exports = {
         ['Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
         ['Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
         ['Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
+        ['Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
+        ['Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
+        ['Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
       ],
 
       '/Laravel-model/': [
