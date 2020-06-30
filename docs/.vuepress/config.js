@@ -165,6 +165,7 @@ module.exports = {
 
       '/Laravel-core/': [
         ['Laravel-pipeline.md', 'Laravel Pipeline管道'],
+        ['Laravel-tap.md', 'Laravel tap'],
       ],
 
       '/Laravel-feature/': [
