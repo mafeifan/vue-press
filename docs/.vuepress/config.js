@@ -109,6 +109,7 @@ module.exports = {
         ['Jenkins2-学习系列27----pipeline-中-Docker-操作', '27 pipeline 中 Docker 操作'],
         ['Jenkins2-学习系列28----优化多分支流水线任务', '28 优化多分支流水线任务'],
         ['Jenkins2-学习系列29----安装指定版本插件', '29 安装指定版本插件'],
+        ['Jenkins-resource', 'Jenkins资源收集'],
         ['Jenkins-sh-step', 'Jenkins内置sh详讲'],
       ],
 
