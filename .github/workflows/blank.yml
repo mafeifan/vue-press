@@ -30,6 +30,6 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.KEY }}
+        key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        script: cd /var/www/vue-press && git pull && npm i && npm run build
