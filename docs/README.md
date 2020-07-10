@@ -14,3 +14,4 @@
 <img src="https://hexo-blog.pek3b.qingstor.com/images/alipay-dashang.png" width="200" height="200">
 
 
+![CI](https://github.com/mafeifan/vue-press/workflows/CI/badge.svg?branch=master)
