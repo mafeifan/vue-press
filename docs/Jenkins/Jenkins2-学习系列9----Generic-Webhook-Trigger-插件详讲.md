@@ -43,6 +43,8 @@ pipeline {
 然后我们用postman 发起一次 HTTP POST 请求。
 ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-8795c75afd706922.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+或者直接用curl命令 `curl -vs http://140.xxx.xxx.xxx/generic-webhook-trigger/invoke\?token\=first-pipeline\&foo\=bar`
+
 接着，我们就看到 pipeline 被触发！
 
 GenericTrigger 触发条件由GWT插件提供。此触发条件可以说是GWT的所有内容。
