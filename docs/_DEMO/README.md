@@ -18,7 +18,7 @@ lang: zh
 :tada: :100:
 
 ::: tip
-This is a tip
+This is a tip~~~
 :::
 
 ::: warning
