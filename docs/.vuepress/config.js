@@ -40,6 +40,7 @@ module.exports = {
         text: 'Frontend',
         items: [
           {text: 'Html & CSS', link: '/HTML5/'},
+          {text: 'Javascript', link: '/Javascript/'},
           {text: 'Angular', link: '/Angular/'},
           // {text: 'React', link: '/React/'}
         ]
@@ -160,6 +161,10 @@ module.exports = {
         ['禁止内部元素的事件响应', '禁止内部元素的事件响应'],
       ],
 
+      '/Javascript/': [
+        ['说下js中的bind', '说下js中的bind']
+      ],
+
       '/Angular/': [
         ['Angular-共享数据', 'Angular-共享数据']
       ],
@@ -199,7 +204,7 @@ module.exports = {
         '',
         ['/Jenkins/', 'Jenkins2系列'],
         ['/Docker/', 'Docker系列'],
-        ['/HTML5/', 'HTML5'],
+        ['/HTML5/', 'HTML5&CSS3'],
         ['/Laravel/', 'Laravel系列'],
       ]
     }
