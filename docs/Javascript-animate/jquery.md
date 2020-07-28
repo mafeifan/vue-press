@@ -32,7 +32,7 @@ fadeIn(淡入), fadeOut(淡出)，本质是随时间修改元素的opacity属性
 详细的例子可以[见w3school](https://www.w3school.com.cn/jquery/jquery_animate.asp)
 
 jQuery自带效果有限，可以使用 [jQuery Easing Plugin](http://gsgd.co.uk/sandbox/jquery/easing/)
-
+另外[jQuery UI](https://jqueryui.com/hide/) 提供了更多的特效，如颤动，心跳，爆炸等
 
 ### animate 队列
 

@@ -4,19 +4,21 @@
 
 [snappy](https://github.com/KnpLabs/snappy)是一个对wkhtmltopdf封装的类库，使用非常简单。
 
-而这里介绍的[laravel-snappy](https://github.com/barryvdh/laravel-snappy)则又是对snappy的封装，只不过方便集成到Laravel框架中。
+而这里介绍的 [laravel-snappy](https://github.com/barryvdh/laravel-snappy) 则又是对snappy的封装，只不过方便集成到Laravel框架中。
 
-在使用laravel-snappy之前我建议先浏览下[wkhtmltopdf官方文档](https://wkhtmltopdf.org/usage/wkhtmltopdf.txt)
+在使用laravel-snappy之前我建议先浏览下 [wkhtmltopdf官方文档](https://wkhtmltopdf.org/usage/wkhtmltopdf.txt)
 wkhtmltopdf下载后之后就是一个bin二进制文件，提供了非常多的参数。
 
 这里介绍下怎么在Laravel6中使用laravel-snappy并生成pdf文件
 
 1. 首先下载安装wkhtmltopdf，以Ubuntu为例，来到https://wkhtmltopdf.org/downloads.html下载对应的版本
 ```shell
+# 下载安装包
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.
 bionic_amd64.deb
+# 安装
 sudo dpkg -i wkhtmltox_0.12.6-1.bionic_amd64.deb
-
+# 如果报错，如缺少依赖，可以执行下面这个
 sudo apt-get -f install
 
 # 检查是否安装成功 
@@ -29,7 +31,7 @@ which wkhtmltoimage
 
 ```
 
-2. 按照laravel-snappy教程，添加Facade，生成config/snappy.php
+2. 按照 laravel-snappy 教程，添加Facade，生成config/snappy.php
 
 3. 新建`resources/views/pos/receipt-pdf.blade.php`模板, 这里面有一些变量需要Controller传给视图，需要注意字体和图片的引用。
 ```html
@@ -65,22 +67,6 @@ which wkhtmltoimage
         }
         tr {
             page-break-inside: avoid;
-        }
-        .badge {
-            display: inline-block;
-            padding: .25em .4em;
-            font-size: 75%;
-            font-weight: 700;
-            line-height: 1;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: baseline;
-            border-radius: .25rem;
-            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        }
-        .badge-danger {
-            color: #fff;
-            background-color: #dc3545;
         }
         .mt-5 {
             margin-top: 3rem;
