@@ -191,6 +191,7 @@ module.exports = {
         ['Laravel-常用第三方类库.md', 'Laravel-常用第三方类库'],
         ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
         ['Laravel-mix.md', 'Laravel Mix介绍'],
+        ['Laravel-snappy生成PDF', 'Laravel-snappy生成PDF'],
         ['Laravel-ingnition.md', 'Laravel Ignition介绍'],
         ['Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
       ],
