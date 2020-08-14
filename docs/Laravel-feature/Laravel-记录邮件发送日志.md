@@ -1,4 +1,4 @@
-版本 Laravel 6.0
+## 如何每次发送邮件自动记录日志
 
 根据[文档说明](https://learnku.com/docs/laravel/6.x/mail/5165#events)
 
@@ -54,3 +54,6 @@ Laravel 在处理邮件消息发送时触发两个事件。`MessageSending` 事�
         ...
 ```
 
+## 如何每次发送邮件把日志记录到数据库中
+
+机制一样，根据MessageSending事件搞事情，直接安装这个[laravel-email-database-log](https://github.com/shvetsgroup/laravel-email-database-log)即可

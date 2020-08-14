@@ -1,6 +1,5 @@
 原文：https://github.com/alexeymezenin/laravel-best-practices/blob/master/chinese.md
 
-## 内容
 
 [单一职责原则](#单一职责原则)
 

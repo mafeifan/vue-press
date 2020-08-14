@@ -2,16 +2,18 @@
 
 [Docker —— 从入门到实践](https://yeasy.gitbooks.io/docker_practice)
 
-http://www.itboth.com/tag/docker
-
 ## 部署私有仓库
-https://docs.docker.com/registry/deploying/
-https://github.com/goharbor/harbor
-https://blog.csdn.net/weixin_41465338/article/details/80146218
-https://yq.aliyun.com/articles/337795
+* https://docs.docker.com/registry/deploying/
+* https://github.com/goharbor/harbor
+* https://blog.csdn.net/weixin_41465338/article/details/80146218
 
+awesome系列
 
-## 推荐两个好用的Docker开源公共镜像提供商
+https://github.com/veggiemonk/awesome-docker
+
+## Docker开源公共镜像提供商
+
+推荐两个好用的Docker开源公共镜像提供商
 第一个是 [Bitnami](https://github.com/bitnami)，提供wordpress, Laravel, Magento, Sonarqube, Redmine，Joomla 等镜像。
 
 第二个是 [CircleCI images](https://github.com/circleci/circleci-images)
