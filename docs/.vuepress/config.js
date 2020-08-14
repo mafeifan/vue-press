@@ -53,7 +53,6 @@ module.exports = {
             {text: 'Model', link: '/Laravel-model/Laravel-model-tips'},
             {text: '类库使用', link: '/Laravel-3rd-party/Laravel-常用第三方类库'},
             {text: '开发收集', link: '/Laravel-feature/Laravel-best-practices'},
-            {text: '源码研究', link: '/Laravel-core/Laravel-pipeline'},
           ]
         }],
       },
