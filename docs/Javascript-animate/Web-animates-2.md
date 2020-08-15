@@ -111,10 +111,14 @@ Note: 如果您是动画初学者，那么说明一下，关键帧是来自手�
   }
 }
 ```
+<iframe height="265" style="width: 100%;" scrolling="no" title="box-move-simple" src="https://codepen.io/mafeifan/embed/KKzpNjN?height=265&theme-id=light&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/mafeifan/pen/KKzpNjN'>box-move-simple</a> by finley
+  (<a href='https://codepen.io/mafeifan'>@mafeifan</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 借助 CSS 动画，可独立于目标元素来定义动画本身，并且使用 animation-name 属性来选择所需的动画。
 
-CSS 动画在某种程度上仍采用供应商前缀，在 Safari、Safari Mobile 和 Android 浏览器中使用-webkit-。Chrome、Opera、Internet Explorer 和 Firefox 均不采用前缀。许多工具可帮助您创建所需的 CSS 前缀版本，使您能够在源文件中编写无前缀的版本。
+CSS 动画在某种程度上仍采用浏览器厂商前缀，在 Safari、Safari Mobile 和 Android 浏览器中使用-webkit-。Chrome、Opera、Internet Explorer 和 Firefox 均不采用前缀。许多工具可帮助您创建所需的 CSS 前缀版本，使您能够在源文件中编写无前缀的版本。
 
 
 #### 使用 JavaScript 和 Web Animations API 编写动画
