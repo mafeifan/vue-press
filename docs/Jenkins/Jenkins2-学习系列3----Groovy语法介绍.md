@@ -1,6 +1,37 @@
 写 pipeline 就是写 Groovy 代码，Jenkins pipeline 其实就是基于Groovy语言实现的一种DSL。
 了解一些Groovy语法知识是很有必要的
 
+Groovy是一门同时具有静态和动态特定的脚本语言，或者胶水语言，也是面向对象的。非常适合编写简洁容易的自动化测试代码，例如我再次强调的pipeline的构建任务，就是一个典型的使用领域。
+
+Groovy是apache下的一个产品，所以叫Apache Groovy，官网地址是http://groovy-lang.org/
+
+Groovy是由 James Strachan 设计，第一个发布版本在2003年。
+
+核心特点就是Java平台的多面语言，下面特点就是描述这个多面。
+
+Flat learning curve
+
+* 直接翻译就是平坦的学习曲线，什么可读性强，简洁，表达性强的，易于Java开发人员学习的编程语言。
+
+Powerful features
+
+* 功能强大，支持闭包，构建器，运行时和编译时元编程，函数编程，类型推断和静态编译。
+
+Smooth Java integration
+
+* 就是无缝和Java集成，Java的语法Groovy都支持。
+
+Domain-Specific Languages
+
+* 特定领域语言，灵活的语法，高度集成和自定义机制。这个我使用来看，由于Jenkins平台Pipeline插件是采用Groovy开发，在特定领域语言，我认为就是指pipeline。
+
+Vibrant and rich ecosystem
+
+* 充满活力和丰富的生态系统，这个，我学习比较基础，理解不了。在测试工具中，有一个很强大的框架spcok就能测试Java和groovy开发的项目，这个我认为是一个生态。
+
+Scripting and testing glue
+
+
 不想本地安装Groovy环境的话，可以打开 [groovy-playground](https://groovy-playground.appspot.com/) 运行线上groovy代码，查看结果
 该网站可能需要会科学上网。
 
