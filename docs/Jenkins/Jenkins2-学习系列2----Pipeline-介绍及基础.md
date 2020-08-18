@@ -63,5 +63,6 @@ steps {
 
 
 ### 参考
+* https://blog.csdn.net/u011541946/article/details/78220110
 * [流水线](https://jenkins.io/zh/doc/book/pipeline/)
 * [流水线语法](https://jenkins.io/zh/doc/book/pipeline/syntax/)
