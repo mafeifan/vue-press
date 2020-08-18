@@ -176,6 +176,7 @@ module.exports = {
         ['Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
         ['Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
         ['Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
+        ['Laravel-view-composers.md', 'Laravel 视图合成器的使用场景'],
         ['Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
       ],
 
