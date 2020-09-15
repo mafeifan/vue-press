@@ -133,6 +133,7 @@ module.exports = {
         ['Docker-学习系列20-工具推荐，dive--分析镜像层的工具', '20 工具推荐，dive--分析镜像层的工具'],
         ['Docker-学习系列21-配置远程访问Docker', '21 配置远程访问Docker'],
         ['Docker-学习系列22-Docker-Layer-Caching.md', '22 Docker-Layer-Caching.md'],
+        ['Docker-学习系列23-推荐一款自动更新 Docker 镜像与容器的神器 Watchtower.md', '23 推荐一款自动更新 Docker 镜像与容器的神器 Watchtower'],
         ['Docker-及-docker-compose-使用总结', 'docker 及 docker-compose 使用总结'],
         ['Docker-学习资源', 'Docker 一些相关资源'],
       ],
