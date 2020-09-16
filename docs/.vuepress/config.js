@@ -178,6 +178,7 @@ module.exports = {
         ['Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
         ['Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
         ['Laravel-view-composers.md', 'Laravel 视图合成器的使用场景'],
+        ['Laravel-collection.md', 'Laravel 集合与实例'],
         ['Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
       ],
 
