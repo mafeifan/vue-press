@@ -162,6 +162,6 @@ dd($result);
 
 
 ### 参考
-[教程：Laravel 集合（Collection）的基础用法](https://learnku.com/laravel/t/26110)
-[官方文档](https://learnku.com/docs/laravel/6.x/collections/5161)
-[Laravel 集合类中 GroupBy 方法的使用技巧](https://learnku.com/laravel/t/8713/the-use-of-the-groupby-method-in-the-laravel-collection-class)
+* [教程：Laravel 集合（Collection）的基础用法](https://learnku.com/laravel/t/26110)
+* [官方文档](https://learnku.com/docs/laravel/6.x/collections/5161)
+* [Laravel 集合类中 GroupBy 方法的使用技巧](https://learnku.com/laravel/t/8713/the-use-of-the-groupby-method-in-the-laravel-collection-class)
