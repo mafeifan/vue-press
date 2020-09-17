@@ -52,19 +52,19 @@ stage("deploy to test") {
 stage("deploy to test") {
   when {
     branch 'testing'
+   }
     steps {
       echo 'deploy to test'
     }
-  }
 }
 
 stage("deploy to prod") {
   when {
     branch 'production'
-    steps {
-      echo 'deploy to prod'
-    }
   }
+   steps {
+      echo 'deploy to prod'
+   }
 }
 ```
 
