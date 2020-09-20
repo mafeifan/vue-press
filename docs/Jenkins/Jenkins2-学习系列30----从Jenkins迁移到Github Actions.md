@@ -5,6 +5,9 @@ Github推出了自己的CI服务，叫[Actions](https://docs.github.com/en/actio
 2. 免费提供了每月2000分钟构建时长，和2核7G内存硬件配额，算是非常大方了。
 3. Actions workflow 语法简单，如果你懂Jenkins pipeline几分钟就可以转移过去。
 
+关于Jenkins pipeline和Action的语法区别。官方文档有[表格](https://docs.github.com/cn/actions/learn-github-actions/migrating-from-jenkins-to-github-actions)
+
+
 Github Action 使用非常简单，我专门录制了[视频-Github Action 实现SSH登录部署和Slack通知]https://www.bilibili.com/video/BV1wt4y1X7sY
 
 这里贴下我正在使用的workflow脚本。
