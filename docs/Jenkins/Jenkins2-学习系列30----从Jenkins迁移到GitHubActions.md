@@ -1,6 +1,7 @@
 Github推出了自己的CI服务，叫[Actions](https://docs.github.com/en/actions)
 对于个人或小的，部署需求也非常简单的项目，非常推荐使用Github Actions。
-比起Jenkins的优势：
+
+## 比起Jenkins的优势：
 1. 比起自己搞服务器，安装部署Jenkins省事多了
 2. 免费提供了每月2000分钟构建时长，和2核7G内存硬件配额，算是非常大方了。
 3. Actions workflow 语法简单，如果你懂Jenkins pipeline几分钟就可以转移过去。
