@@ -40,7 +40,7 @@ module.exports = {
         text: 'Frontend',
         items: [
           {text: 'Html & CSS', link: '/HTML5/'},
-          {text: 'Javascript动画', link: '/Javascript-animate/'},
+          // {text: 'Javascript动画', link: '/Javascript-animate/'},
           {text: 'Angular', link: '/Angular/'},
           // {text: 'React', link: '/React/'}
         ]
@@ -203,7 +203,7 @@ module.exports = {
       '/': [
         '',
         ['/Jenkins/', 'Jenkins2系列'],
-        ['/Javascript-animate/', 'Javascript动画'],
+        // ['/Javascript-animate/', 'Javascript动画'],
         ['/Docker/', 'Docker系列'],
         ['/HTML5/', 'HTML5&CSS3'],
         ['/Laravel/', 'Laravel系列'],
