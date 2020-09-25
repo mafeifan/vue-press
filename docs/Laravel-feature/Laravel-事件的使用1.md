@@ -1,11 +1,13 @@
-### 场景
+## 场景
 
 比如Order订单表的发货状态发生了变化，当变为已付款要给相关角色发送邮件通知。
 
-### 事件系统
+## 事件系统
+
 本质上实现方式是观察者订阅者,和JS中的AddListener和类似
 
-### 原生实现事件类
+## 原生实现事件类
+
 ```php
 class Event 
 { 
@@ -89,5 +91,6 @@ Event::trigger('walkOnce');
 
 下篇介绍Laravel中的事件系统
 
-### 参考
+## 参考
+
 https://www.cnblogs.com/sgm4231/p/9820794.html

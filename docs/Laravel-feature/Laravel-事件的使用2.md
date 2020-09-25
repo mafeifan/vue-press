@@ -1,4 +1,4 @@
-### Laravel 中的事件系统
+## Laravel 中的事件系统
 
 执行 `php artisan event:generate` 会生成事件相关类文件
 路径 `app/Events/Event.php`
@@ -24,8 +24,7 @@
 ```
 
 
-
-### 项目中的运用
+## 项目中的运用
 打开 `app/Providers/EventServiceProvider.php`
 更新
 ```php
@@ -94,8 +93,6 @@ Riot/Sku/Controllers/SkuController.php
     }
 ```
 
-
-
 Listener 具体逻辑
 主要是同步SKU信息
 ```php
@@ -146,5 +143,5 @@ Route:get('/', function() {
 
 ```
 
-### 参考
+## 参考
 https://www.cnblogs.com/sgm4231/p/9820794.html

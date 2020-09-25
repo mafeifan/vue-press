@@ -111,7 +111,6 @@ module.exports = {
       ],
 
       '/Docker/': [
-        ['Dockerfile-中的-COPY-与-ADD-命令', 'Dockerfile 中的 COPY 与 ADD 命令'],
         ['Docker-学习系列1-使用-Docker-快速实现多版本PHP切换', '1 使用-Docker-快速实现多版本PHP切换'],
         ['Docker-学习系列2--保存对容器的修改', '2 保存对容器的修改'],
         ['Docker-学习系列3--提交并分享自己的镜像', '3 提交并分享自己的镜像'],
@@ -136,6 +135,7 @@ module.exports = {
         ['Docker-学习系列22-Docker-Layer-Caching.md', '22 Docker-Layer-Caching.md'],
         ['Docker-学习系列23-推荐一款自动更新 Docker 镜像与容器的神器 Watchtower.md', '23 推荐一款自动更新 Docker 镜像与容器的神器 Watchtower'],
         ['Docker-及-docker-compose-使用总结', 'docker 及 docker-compose 使用总结'],
+        ['Dockerfile-中的-COPY-与-ADD-命令', 'Dockerfile 中的 COPY 与 ADD 命令'],
         ['Docker-学习资源', 'Docker 一些相关资源'],
       ],
 

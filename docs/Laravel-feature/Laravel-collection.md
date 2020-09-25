@@ -1,6 +1,6 @@
 Laravel 集合是 Laravel 框架中一个十分有用的工具。
 
-### 集合（Collection)
+## 集合（Collection)
 
 `Illuminate\Support\Collection` 类了提供一个便捷的操作数组的封装。
 
@@ -10,7 +10,7 @@ Laravel 集合是 Laravel 框架中一个十分有用的工具。
 `IteratorAggregate` - 用于创建外部迭代器的接口。
 `JsonSerializable`
 
-### 创建一个新的集合
+## 创建一个新的集合
 一个集合可以使用 collect() 帮助函数基于一个数组被创建或者直接通过 `Illuminate\Support\Collection` 类实例化。
 
 一个非常简单的使用 collect() 帮助函数的示例：
@@ -21,7 +21,7 @@ dd($newCollection);
 用 dd() 帮助函数来在浏览器中显示集合。看起来大概会是这样子。
 > ![image.png](https://cdn.learnku.com/uploads/images/201903/26/1/1L5ErpgwUZ.png!large)
 
-### Eloquent ORM 集合
+## Eloquent ORM 集合
 Eloquent ORM 的调用会以集合的形式返回数据
 ```php
 /**
@@ -51,7 +51,7 @@ public function firstUser()
 }
 ```
 
-### 实例1
+## 实例1
 有如下订单数组，要求按日期分组计算出总价
 ```php
 $orders = [
@@ -95,7 +95,7 @@ dd($result->all());
 
 ```
 
-### 实例2
+## 实例2
 使用tap调试集合
 有时候我们希望在某集合处理过程中查看结果，这时可以使用tap
 ```php
@@ -135,7 +135,7 @@ return collect($items)
 // David Charleston, Megan Tarash, Jonathan Phaedrus, Paul Jackson, John Doe
 ```
 
-### 实例3
+## 实例3
 常用技巧
 使用map添加新属性
 
@@ -160,8 +160,7 @@ dd($result);
 ```
 
 
-
-### 参考
+## 参考
 * [教程：Laravel 集合（Collection）的基础用法](https://learnku.com/laravel/t/26110)
 * [官方文档](https://learnku.com/docs/laravel/6.x/collections/5161)
 * [Laravel 集合类中 GroupBy 方法的使用技巧](https://learnku.com/laravel/t/8713/the-use-of-the-groupby-method-in-the-laravel-collection-class)

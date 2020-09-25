@@ -1,8 +1,8 @@
-项目支持多语言是很常见的功能，Laravel支持本地化，详见[官方文档](https://learnku.com/docs/laravel/6.x/localization/5148)
+项目支持多语言切换是很常见的功能，Laravel本身支持本地化，详见[官方文档](https://learnku.com/docs/laravel/6.x/localization/5148)
 
 简单说先创建语言包文件
 
-比如我的项目要支持英语和荷兰语，我需要创建`resources/lang/en/auth.php`和`resources/lang/nl/auth.php`
+比如项目要支持英语和荷兰语，需要创建`resources/lang/en/auth.php`和`resources/lang/nl/auth.php`
 
 ```php
 <?php
@@ -87,7 +87,6 @@ const i18n = new VueI18n({
     messages,
 });
 ```
-
 
 
 ### 参考
