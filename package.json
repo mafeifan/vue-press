@@ -12,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vuepress/plugin-medium-zoom": "^1.5.2",
-    "vuepress": "^1.5.2"
+    "@vuepress/plugin-medium-zoom": "^1.6.0",
+    "vuepress": "^1.6.0"
   },
   "dependencies": {
-    "vuepress-plugin-zooming": "^1.1.7"
+    "vuepress-plugin-zooming": "^1.1.8"
   }
 }
