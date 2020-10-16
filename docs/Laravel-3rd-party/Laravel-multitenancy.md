@@ -8,10 +8,15 @@
 1. 根据不同域名访问不同数据库
 2. 泛域名解析
 
-####  解决1
+####  泛域名解析
 
+这个其他文章里有介绍
 我们先复杂问题简单化，假设只有两个客户A和B，登录域名已经配好
 demo.test 和 lara6.test
+
+#### 大致思路
+1. 创建一个admin数据库，库中包含一个tenants表，用来保存租户的基本信息，如名称，数据库，域名
+2. 创建一个TenancyServiceProvider，每次请求中调用这个Provider，在里面实现根据当前访问域名动态切换数据库的方法
 
 
 #### 讨论：
@@ -25,3 +30,5 @@ https://learnku.com/laravel/t/44228
 
 数据库切换：
 https://learnku.com/articles/28142
+
+DB::unprepared("USE intogolf_demo;");
