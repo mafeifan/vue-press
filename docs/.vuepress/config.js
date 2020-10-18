@@ -151,7 +151,8 @@ module.exports = {
 
       '/GithubActions/': [
         ['自用github-actions-workflow', '自用github-actions-workflow'],
-        ['只针对某些提交触发构建', '只针对某些提交触发构建']
+        ['只针对某些提交触发构建', '只针对某些提交触发构建'],
+        ['相关资源', '相关资源']
       ],
 
       '/Linux/': [
