@@ -1,3 +1,7 @@
+通过ssh登录服务器，然后执行git pull, npm build等构建命令 
+需要提前在github仓库的setting页面配置ssh host，password，user等环境变量
+
+```yaml
 # This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -6,7 +10,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ master, develop ]
   pull_request:
     branches: [ master ]
 
@@ -16,8 +20,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    if: "contains(github.event.head_commit.message, '[build]')"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,7 +36,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT }}
-        script: cd /var/www/vue-press && git reset --hard origin/master && git pull && npm i && npm run build
+        script: cd /home/mafei20191103/IntoGolfV3 && git reset --hard origin/develop && git pull && npm run prod && php artisan migrate && composer install && php artisan telescope:prune && composer dump-autoload -o;
 
     # Slack Notification
     - name: Slack Notification
@@ -43,6 +45,8 @@ jobs:
         status: ${{ job.status }}
         fields: repo,message,commit,author,action,eventName,ref,workflow,job,took # selectable (default: repo,message)
       env:
-        # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # optional
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }} # optional
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
       if: always() # Pick up events even if the job fails or is canceled.
+
+```

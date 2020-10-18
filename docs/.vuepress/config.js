@@ -33,6 +33,7 @@ module.exports = {
           {text: 'Jenkins', link: '/Jenkins/Jenkins2-学习系列1----使用Docker方式安装最新版Jenkins'},
           {text: 'Docker', link: '/Docker/Docker-学习系列1-使用-Docker-快速实现多版本PHP切换'},
           {text: 'Ansible', link: '/Ansible/Ansible-2----1-介绍与使用场景'},
+          {text: 'Github Actions', link: '/GithubActions/自用github-actions-workflow'},
           {text: 'Linux', link: '/Linux/SSH--技巧'}
         ]
       },
@@ -146,6 +147,11 @@ module.exports = {
         ['Ansible-2----4-常用模块及常用API', '4 常用模块及常用API'],
         ['Ansible-2----5-playbook-语法', '5 playbook 语法'],
         ['Ansible-2----6-playbook-管理', '6 playbook 管理'],
+      ],
+
+      '/GithubActions/': [
+        ['自用github-actions-workflow', '自用github-actions-workflow'],
+        ['只针对某些提交触发构建', '只针对某些提交触发构建']
       ],
 
       '/Linux/': [
