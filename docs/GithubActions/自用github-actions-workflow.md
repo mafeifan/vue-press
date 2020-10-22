@@ -2,8 +2,10 @@
 通过ssh登录服务器，然后执行git pull, npm build等构建命令 
 需要提前在github仓库的setting页面配置ssh host，password，user等环境变量
 
-优点：简单粗暴
-缺点：直接在服务器上拉代码并不是最好的办法，而且还需要配置ssh，对于前端项目一般只需要构建后的dist目录。而且有时候国内服务器直接拉github仓库的代码会超时。
+
+**优点**：简单粗暴
+
+**缺点**：直接在服务器上拉代码并不是最好的办法，而且还需要配置ssh，对于前端项目一般只需要构建后的dist目录。而且有时候国内服务器直接拉github仓库的代码会超时。
 
 ```yaml
 # This is a basic workflow to help you get started with Actions
@@ -58,7 +60,8 @@ jobs:
 #### 优化方案，使用rsync 同步文件
 基于[ssh deploy](https://github.com/marketplace/actions/ssh-deploy)
 原理是在action的机器中拉代码，构建，然后使用rsync命令将产物同步到目标服务器的指定目录中
-好处：解决了超时问题，同步速度也不慢
+
+**好处**：解决了超时问题，同步速度也不慢
 
 待优化，如果文件非常多，是否可以压缩后然后再目标服务器上解压。
 
