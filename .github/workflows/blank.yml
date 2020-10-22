@@ -39,6 +39,7 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         ARGS: "-rltgoDzvO --delete"
         SOURCE: "dist/"
+        REMOTE_PORT : ${{ secrets.PORT }}
         REMOTE_HOST: ${{ secrets.HOST }}
         REMOTE_USER: ${{ secrets.USERNAME }}
         TARGET: "/var/www/vue-press/docs/.vuepress/dist"
