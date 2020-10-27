@@ -33,7 +33,7 @@ module.exports = {
                     {text: 'Jenkins', link: '/Jenkins/Jenkins2-学习系列1----使用Docker方式安装最新版Jenkins'},
                     {text: 'Docker', link: '/Docker/Docker-学习系列1-使用-Docker-快速实现多版本PHP切换'},
                     {text: 'Ansible', link: '/Ansible/Ansible-2----1-介绍与使用场景'},
-                    {text: 'Github Actions', link: '/GithubActions/自用github-actions-workflow'},
+                    {text: 'Github Actions', link: '/GithubActions/入门'},
                     {text: 'Linux', link: '/Linux/SSH--技巧'}
                 ]
             },
@@ -158,7 +158,8 @@ module.exports = {
             ],
 
             '/Linux/': [
-                ['SSH--技巧', 'SSH--技巧']
+                ['SSH--技巧', 'SSH--技巧'],
+                ["使用Let’s Encrypt生成免费通配https证书", "使用Let’s Encrypt生成免费通配https证书"]
             ],
 
             '/HTML5/': [
