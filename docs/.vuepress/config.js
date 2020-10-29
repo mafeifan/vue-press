@@ -30,19 +30,19 @@ module.exports = {
             {
                 text: 'DevOps',
                 items: [
-                    {text: 'Jenkins', link: '/Jenkins/Jenkins2-学习系列1----使用Docker方式安装最新版Jenkins'},
-                    {text: 'Docker', link: '/Docker/Docker-学习系列1-使用-Docker-快速实现多版本PHP切换'},
-                    {text: 'Ansible', link: '/Ansible/Ansible-2----1-介绍与使用场景'},
-                    {text: 'Github Actions', link: '/GithubActions/入门'},
-                    {text: 'Linux', link: '/Linux/SSH--技巧'}
+                    {text: 'Jenkins', link: '/DevOps/Jenkins/Jenkins2-学习系列1----使用Docker方式安装最新版Jenkins'},
+                    {text: 'Docker', link: '/DevOps/Docker/Docker-学习系列1-使用-Docker-快速实现多版本PHP切换'},
+                    {text: 'Ansible', link: '/DevOps/Ansible/Ansible-2----1-介绍与使用场景'},
+                    {text: 'Github Actions', link: '/DevOps/GithubActions/入门'},
+                    {text: 'Linux', link: '/DevOps/Linux/SSH--技巧'}
                 ]
             },
             {
                 text: 'Frontend',
                 items: [
-                    {text: 'Html & CSS', link: '/HTML5/'},
+                    {text: 'Html & CSS', link: '/Frontend/HTML5/'},
                     // {text: 'Javascript动画', link: '/Javascript-animate/'},
-                    {text: 'Angular', link: '/Angular/'},
+                    {text: 'Angular', link: '/Frontend/Angular/'},
                     // {text: 'React', link: '/React/'}
                 ]
             },
@@ -51,11 +51,18 @@ module.exports = {
                 items: [{
                     text: 'Laravel',
                     items: [
-                        {text: 'Model', link: '/Laravel-model/Laravel-model-tips'},
-                        {text: '类库使用', link: '/Laravel-3rd-party/Laravel-常用第三方类库'},
-                        {text: '开发收集', link: '/Laravel-feature/Laravel-best-practices'},
+                        {text: 'Model', link: '/Backend/Laravel/Laravel-model/Laravel-model-tips'},
+                        {text: '类库使用', link: '/Backend/Laravel/Laravel-3rd-party/Laravel-常用第三方类库'},
+                        {text: '开发收集', link: '/Backend/Laravel/Laravel-feature/Laravel-best-practices'},
                     ]
-                }],
+                },
+                    /*
+                {
+                    text: 'Database',
+                    items: [
+                        {text: 'MySQL', link: '/Backend/Database/MySQL/总结'},
+                    ]
+                }*/],
             },
             /*
             {
@@ -76,7 +83,7 @@ module.exports = {
         ],
 
         sidebar: {
-            '/Jenkins/': [
+            '/DevOps/Jenkins/': [
                 ['Jenkins2-学习系列1----使用Docker方式安装最新版Jenkins', '1 使用Docker方式安装最新版Jenkins'],
                 ['Jenkins2-学习系列2----Pipeline-介绍及基础', '2 Pipeline 介绍及基础'],
                 ['Jenkins2-学习系列3----Groovy语法介绍', '3 Groovy语法介绍'],
@@ -111,7 +118,7 @@ module.exports = {
                 ['Jenkins-sh-step', 'Jenkins内置sh详讲'],
             ],
 
-            '/Docker/': [
+            '/DevOps/Docker/': [
                 ['Docker-学习系列1-使用-Docker-快速实现多版本PHP切换', '1 使用-Docker-快速实现多版本PHP切换'],
                 ['Docker-学习系列2--保存对容器的修改', '2 保存对容器的修改'],
                 ['Docker-学习系列3--提交并分享自己的镜像', '3 提交并分享自己的镜像'],
@@ -140,7 +147,7 @@ module.exports = {
                 ['Docker-学习资源', 'Docker 一些相关资源'],
             ],
 
-            '/Ansible/': [
+            '/DevOps/Ansible/': [
                 ['Ansible-2----1-介绍与使用场景', '1 介绍与使用场景'],
                 ['Ansible-2----2-安装与配置', '2 安装与配置'],
                 ['Ansible-2----3-配置文件', '3 配置文件'],
@@ -149,7 +156,7 @@ module.exports = {
                 ['Ansible-2----6-playbook-管理', '6 playbook 管理'],
             ],
 
-            '/GithubActions/': [
+            '/DevOps/GithubActions/': [
                 ['入门', '入门'],
                 ['如何手动触发构建', '如何手动触发构建'],
                 ['自用github-actions-workflow', '自用github-actions-workflow'],
@@ -157,31 +164,31 @@ module.exports = {
                 ['相关资源', '相关资源'],
             ],
 
-            '/Linux/': [
+            '/DevOps/Linux/': [
                 ['SSH--技巧', 'SSH--技巧'],
                 ["使用Let’s Encrypt生成免费通配https证书", "使用Let’s Encrypt生成免费通配https证书"]
             ],
 
-            '/HTML5/': [
+            '/Frontend/HTML5/': [
                 ['CSS3实现未知宽高元素的垂直居中和水平居中', 'CSS3 实现未知宽高元素的垂直居中和水平居中'],
                 ['巧解checkbox未选中不提交数据', '巧解checkbox未选中不提交数据'],
                 ['禁止内部元素的事件响应', '禁止内部元素的事件响应'],
             ],
 
-            '/Javascript/': [
+            '/Frontend/Javascript/': [
                 ['说下js中的bind', '说下js中的bind']
             ],
 
-            '/Angular/': [
+            '/Frontend/Angular/': [
                 ['Angular-共享数据', 'Angular-共享数据']
             ],
 
-            '/Laravel-core/': [
+            '/Backend/Laravel/Laravel-core/': [
                 ['Laravel-pipeline.md', 'Laravel Pipeline管道'],
                 ['Laravel-tap.md', 'Laravel tap'],
             ],
 
-            '/Laravel-feature/': [
+            '/Backend/Laravel/Laravel-feature/': [
                 ['Laravel-best-practices.md', 'Laravel 开发最佳实践'],
                 ['Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
                 ['Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
@@ -193,14 +200,14 @@ module.exports = {
                 ['Laravel-使用简单的方法跟踪用户是否在线.md', 'Laravel-使用简单的方法跟踪用户是否在线'],
             ],
 
-            '/Laravel-model/': [
+            '/Backend/Laravel/Laravel-model/': [
                 ['Laravel-model-tips.md', 'Laravel model使用技巧'],
                 ['Laravel-Fix-non-object.md', '避免 Trying to get property of non-object 错误的几种方法'],
                 ['Laravel-useful-attribute.md', '模型常用属性'],
                 ['Laravel-Eloquent-提示和技巧.md', 'Eloquent提示和技巧'],
             ],
 
-            '/Laravel-3rd-party/': [
+            '/Backend/Laravel/Laravel-3rd-party/': [
                 ['Laravel-常用第三方类库.md', 'Laravel-常用第三方类库'],
                 ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
                 ['Laravel-mix.md', 'Laravel Mix介绍'],
@@ -212,11 +219,11 @@ module.exports = {
             // fallback
             '/': [
                 '',
-                ['/Jenkins/', 'Jenkins2系列'],
+                ['/DevOps/Jenkins/', 'Jenkins2系列'],
                 // ['/Javascript-animate/', 'Javascript动画'],
-                ['/Docker/', 'Docker系列'],
-                ['/HTML5/', 'HTML5&CSS3'],
-                ['/Laravel/', 'Laravel系列'],
+                ['/DevOps/Docker/', 'Docker系列'],
+                ['/Frontend/HTML5/', 'HTML5&CSS3'],
+                ['/Backend/Laravel/', 'Laravel系列'],
             ]
         }
     }
