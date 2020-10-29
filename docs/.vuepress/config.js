@@ -56,13 +56,12 @@ module.exports = {
                         {text: '开发收集', link: '/Backend/Laravel/Laravel-feature/Laravel-best-practices'},
                     ]
                 },
-                    /*
                 {
                     text: 'Database',
                     items: [
                         {text: 'MySQL', link: '/Backend/Database/MySQL/总结'},
                     ]
-                }*/],
+                }],
             },
             /*
             {
@@ -212,8 +211,13 @@ module.exports = {
                 ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
                 ['Laravel-mix.md', 'Laravel Mix介绍'],
                 ['Laravel-snappy生成PDF', 'Laravel-snappy生成PDF'],
-                ['Laravel-ingnition.md', 'Laravel Ignition介绍'],
+                ['Laravel-ingnition.md', 'Laravel Ignition异常详情组件介绍'],
                 ['Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
+            ],
+
+            '/Backend/Database/MySQL/': [
+                ['总结.md', '总结'],
+                ['索引.md', '索引'],
             ],
 
             // fallback

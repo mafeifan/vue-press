@@ -4,9 +4,9 @@
 
 [snappy](https://github.com/KnpLabs/snappy)是一个对wkhtmltopdf封装的类库，使用非常简单。
 
-而这里介绍的 [laravel-snappy](https://github.com/barryvdh/laravel-snappy) 则又是对snappy的封装，只不过方便集成到Laravel框架中。
+而这里介绍的 [laravel-snappy](https://github.com/barryvdh/laravel-snappy) 则又是对snappy的封装，只不过方便集成到`Laravel`框架中。
 
-在使用laravel-snappy之前我建议先浏览下 [wkhtmltopdf官方文档](https://wkhtmltopdf.org/usage/wkhtmltopdf.txt)
+在使用 laravel-snappy 之前我建议先浏览下 [wkhtmltopdf官方文档](https://wkhtmltopdf.org/usage/wkhtmltopdf.txt)
 wkhtmltopdf下载后之后就是一个bin二进制文件，提供了非常多的参数。
 
 这里介绍下怎么在Laravel6中使用laravel-snappy并生成pdf文件
@@ -262,4 +262,5 @@ class PosOrderReceipt extends Mailable
 
 ### 参考
 https://segmentfault.com/a/1190000018988358
+
 https://wkhtmltopdf.org/usage/wkhtmltopdf.txt

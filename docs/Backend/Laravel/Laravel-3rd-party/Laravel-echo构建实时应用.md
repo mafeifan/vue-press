@@ -1,4 +1,4 @@
-### 环境要求
+## 环境要求
 
 * Laravel 6 (实际低版本也能用)
 * PHP7.2 且开启redis扩展 (pecl install redis)
@@ -263,7 +263,7 @@ laravel-echo-server  start
 `pm2 start socket.sh`
 
 
-### 关于数字含义
+## 关于数字含义
 [socket.io的frame里面，每个片段前面的数字代表什么意思？](https://segmentfault.com/q/1010000008013361/a-1020000008022641)
 
 这是 Engine .io协议，其中的数字是数据包编码：
@@ -312,7 +312,7 @@ laravel-echo-server  start
 
 noop数据包。主要用于在接收到传入WebSocket连接时强制轮询周期。
 
-### 参考
+## 参考
 * [使用 Laravel-echo-server 构建实时应用](https://learnku.com/laravel/t/13101/using-laravel-echo-server-to-build-real-time-applications)
 * [Laravel 5.8 Laravel-echo-server教程 坑满满](https://blog.csdn.net/sym134/article/details/100569257)
 * [深入浅出 Laravel Echo](https://learnku.com/articles/17327)
