@@ -77,6 +77,10 @@ module.exports = {
                 link: '/_DEMO/'
             },
             {
+                text: 'Finance',
+                link: '/Finance/'
+            },
+            {
                 text: 'Home', link: '/'
             },
         ],
@@ -228,6 +232,7 @@ module.exports = {
                 ['/DevOps/Docker/', 'Docker系列'],
                 ['/Frontend/HTML5/', 'HTML5&CSS3'],
                 ['/Backend/Laravel/', 'Laravel系列'],
+                ['/Finance/', '财报'],
             ]
         }
     }
