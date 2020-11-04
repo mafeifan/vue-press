@@ -114,6 +114,9 @@ class UiCommand extends Command
             throw new InvalidArgumentException('Invalid preset.');
         }
 
+        // 这句很牛逼
+        // 如果type是vue，就执行 $this->vue()
+        // 如果type是react，就执行 $this->react()
         $this->{$this->argument('type')}();
 
         if ($this->option('auth')) {
@@ -165,6 +168,172 @@ class UiCommand extends Command
 
 ```
 
+Vue.php
+这里学到一些如何用php解析package.json，操作文件或目录的命令
+```php
+<?php
+
+namespace Laravel\Ui\Presets;
+
+use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Arr;
+
+class Vue extends Preset
+{
+    /**
+     * Install the preset.
+     *
+     * @return void
+     */
+    public static function install()
+    {
+        // 先检查 resouces/js/components目录是否存在
+        static::ensureComponentDirectoryExists();
+        // 更新 package.json插入vue相关依赖
+        static::updatePackages();
+        // 拷贝 vue-stubs/webpack.mix.js 到 resouces/webpack.mix.js
+        static::updateWebpackConfiguration();
+        // 拷贝 vue-stubs/app.js 到 js/app.js
+        static::updateBootstrapping();
+        // 拷贝 Vue 相关组件文件到resouces目录
+        static::updateComponent();
+        // 删除 node_modules 目录和 yarn.lock 文件
+        static::removeNodeModules();
+    }
+
+    /**
+     * Update the given package array.
+     *
+     * @param  array  $packages
+     * @return array
+     */
+    protected static function updatePackageArray(array $packages)
+    {
+        return [
+            'resolve-url-loader' => '^2.3.1',
+            'sass' => '^1.20.1',
+            'sass-loader' => '^8.0.0',
+            'vue' => '^2.5.17',
+            'vue-template-compiler' => '^2.6.10',
+        ] + Arr::except($packages, [
+            '@babel/preset-react',
+            'react',
+            'react-dom',
+        ]);
+    }
+
+    /**
+     * Update the Webpack configuration.
+     *
+     * @return void
+     */
+    protected static function updateWebpackConfiguration()
+    {
+        copy(__DIR__.'/vue-stubs/webpack.mix.js', base_path('webpack.mix.js'));
+    }
+
+    /**
+     * Update the example component.
+     *
+     * @return void
+     */
+    protected static function updateComponent()
+    {
+        (new Filesystem)->delete(
+            resource_path('js/components/Example.js')
+        );
+
+        copy(
+            __DIR__.'/vue-stubs/ExampleComponent.vue',
+            resource_path('js/components/ExampleComponent.vue')
+        );
+    }
+
+    /**
+     * Update the bootstrapping files.
+     *
+     * @return void
+     */
+    protected static function updateBootstrapping()
+    {
+        copy(__DIR__.'/vue-stubs/app.js', resource_path('js/app.js'));
+    }
+}
+
+```
+
+操作vue和react的公共方法
+
+updatePackages php操作编辑package.json
+
+```php
+<?php
+
+namespace Laravel\Ui\Presets;
+
+use Illuminate\Filesystem\Filesystem;
+
+class Preset
+{
+    /**
+     * Ensure the component directories we need exist.
+     *
+     * @return void
+     */
+    protected static function ensureComponentDirectoryExists()
+    {
+        $filesystem = new Filesystem;
+
+        if (! $filesystem->isDirectory($directory = resource_path('js/components'))) {
+            $filesystem->makeDirectory($directory, 0755, true);
+        }
+    }
+
+    /**
+     * Update the "package.json" file.
+     *
+     * @param  bool  $dev
+     * @return void
+     */
+    protected static function updatePackages($dev = true)
+    {
+        if (! file_exists(base_path('package.json'))) {
+            return;
+        }
+
+        $configurationKey = $dev ? 'devDependencies' : 'dependencies';
+
+        $packages = json_decode(file_get_contents(base_path('package.json')), true);
+
+        $packages[$configurationKey] = static::updatePackageArray(
+            array_key_exists($configurationKey, $packages) ? $packages[$configurationKey] : [],
+            $configurationKey
+        );
+
+        ksort($packages[$configurationKey]);
+
+        file_put_contents(
+            base_path('package.json'),
+            json_encode($packages, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT).PHP_EOL
+        );
+    }
+
+    /**
+     * Remove the installed Node modules.
+     *
+     * @return void
+     */
+    protected static function removeNodeModules()
+    {
+        tap(new Filesystem, function ($files) {
+            $files->deleteDirectory(base_path('node_modules'));
+
+            $files->delete(base_path('yarn.lock'));
+        });
+    }
+}
+
+```
 
 ## 参考
 

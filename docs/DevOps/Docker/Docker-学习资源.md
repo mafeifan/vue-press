@@ -7,9 +7,9 @@
 * https://github.com/goharbor/harbor
 * https://blog.csdn.net/weixin_41465338/article/details/80146218
 
-awesome系列
+[Awesome系列](https://github.com/veggiemonk/awesome-docker)
 
-https://github.com/veggiemonk/awesome-docker
+[Docker Cheat Sheet Docker速查表](https://github.com/wsargent/docker-cheat-sheet/blob/master/zh-cn/README.md)
 
 ## Docker开源公共镜像提供商
 
