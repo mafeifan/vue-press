@@ -14,7 +14,7 @@ Ansible配置以ini格式存储配置数据，在Ansible中几乎所有配置都
 ### ansible.cfg 配置文件
 Ansible有很多配置参数，以下是几个默认的配置参数：
 ```
- inventory = /root/ansible/hosts
+ inventory = /etc/ansible/hosts
  library = /usr/share/my_modules/
  forks = 5
  sudo_user = root
