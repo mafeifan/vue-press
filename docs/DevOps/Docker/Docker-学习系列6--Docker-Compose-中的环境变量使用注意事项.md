@@ -44,7 +44,8 @@ docker-compose.yml
 # define env var default value.
 DOCKER_MYSQL_PASSPORD=root
 ```
-4. 使用docker-compose.yml中的env_file语法
+4. 使用`docker-compose.yml`中的env_file语法
+
 service节点下支持 env_file属性，即环境变量从额外的文件中读取。
 如下面的例子，如果local.env和common.env有相同key。则下面的优先级高。
 ```yaml
@@ -66,7 +67,7 @@ service节点下支持 env_file属性，即环境变量从额外的文件中读�
         - ./common.env
         - ./local.env
 ```
-假设 local.env 中内容是`A:1`，common.env 是 `A:2`
+假设 `local.env` 中内容是`A:1`，`common.env` 是 `A:2`
 ```yaml
       environment:
         A: 3
@@ -79,7 +80,8 @@ service节点下支持 env_file属性，即环境变量从额外的文件中读�
 5. 配置不同场景下的环境变量
 我们可以把不同场景下的环境变量定义在不同的 shell 脚本中并导出，
 然后在执行 `docker-compose` 命令前先执行 source 命令把 shell 脚本中定义的环境变量导出到当前的 shell 中。
-通过这样的方式可以减少维护环境变量的地方，下面的例子中我们分别在 `docker-compose.yml` 文件所在的目录创建 `test.sh` 和 `prod.sh`，
+通过这样的方式可以减少维护环境变量的地方，下面的例子中我们分别在 `docker-compose.yml` 文件所在的目录创建 `test.sh` 和 `prod.sh`。
+
 `test.sh` 的内容如下：
 ```bash
 #!/bin/bash
@@ -89,7 +91,8 @@ export APPNAME=HelloWorld
 export AUTHOR=Nick Li
 export VERSION=1.0
 ```
-prod.sh 的内容如下：
+
+`prod.sh` 的内容如下：
 ```bash
 #!/bin/bash
 # define env var default value.
