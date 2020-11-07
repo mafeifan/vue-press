@@ -36,7 +36,7 @@ if(Auth::check()) {
 ` \App\Http\Middleware\LogLastUserActivity::class,`
 
 最后，添加一个方法从缓存中读数据
-在 `app/User.ph`p 我们添加下面的方法:
+在 `app/User.php` 我们添加下面的方法:
 ```php
 public function isOnline()
 {
@@ -44,7 +44,7 @@ public function isOnline()
 }
 ```
 这样，在页面中调用方法
-```html
+```php
 @if($user->isOnline())
     user is online!!
 @endif

@@ -125,4 +125,4 @@ script模块用于控制远程主机执行脚本。在执行脚本前，ansible�
 
 ### 参考
 模块非常多，有什么需求先去官网查，然后看文档
-[官方模块说明](https://docs.ansible.com/ansible/latest/modules/modules_by_category.html)
+[官方模块说明](https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html)
