@@ -31,7 +31,7 @@ module.exports = {
                 text: 'DevOps',
                 items: [
                     {text: 'Jenkins', link: '/DevOps/Jenkins/Jenkins2-学习系列1----使用Docker方式安装最新版Jenkins'},
-                    {text: 'Docker', link: '/DevOps/Docker/Docker-学习系列1-使用-Docker-快速实现多版本PHP切换'},
+                    {text: 'Docker', link: '/DevOps/Docker/Docker-学习系列1--使用-Docker-快速实现多版本PHP切换'},
                     {text: 'Ansible', link: '/DevOps/Ansible/Ansible-2----1-介绍与使用场景'},
                     {text: 'Github Actions', link: '/DevOps/GithubActions/入门'},
                     {text: 'Linux', link: '/DevOps/Linux/SSH--技巧'}
