@@ -1,7 +1,11 @@
 理解Laravel中的Macroable
+
+计算机科学里的宏（Macro)，是一种批量处理的称谓。
+比如有些重复的动作，可以打包记录为一个宏，给宏名字，调用这个宏，就等于执行这一系列动作了。
+
+## 源码分析
 ```
 <?php
-
 trait Macroable
 {
     /**
@@ -34,13 +38,16 @@ trait Macroable
      */
     public static function mixin($mixin, $replace = true)
     {
+        // 通过反射获取该对象中所有公开和受保护的方法
         $methods = (new ReflectionClass($mixin))->getMethods(
             ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PROTECTED
         );
 
         foreach ($methods as $method) {
             if ($replace || ! static::hasMacro($method->name)) {
+                // 设置方法可访问，因为受保护的不能在外部调用
                 $method->setAccessible(true);
+                // 调用 macro 方法批量创建宏指令
                 static::macro($method->name, $method->invoke($mixin));
             }
         }
@@ -132,6 +139,11 @@ class Father
             echo 'eat';
         };
     }
+
+    protected function test()
+    {
+         echo 'eat';
+    }
 }
 
 class Child
@@ -149,10 +161,56 @@ $child->say();
 $child->show();
 // 输出:eat
 $child->eat();
+// 因为 Macroable 加了 __callStatic 支持静态调用
+$child::eat();
+// 这样调用会报错，因为test返回的不是闭包
+$child->test();
 ```
 
+## Laravel中使用
+在Laravel中，很多类都实现了Macroable，比如下列（in Laravel5.4）
+```php
+Illuminate\Database\Query\Builder
+Illuminate\Database\Eloquent\Builder
+Illuminate\Database\Eloquent\Relations\Relation
+Illuminate\Http\Request
+Illuminate\Http\RedirectResponse
+Illuminate\Http\UploadedFile
+Illuminate\Routing\Router
+Illuminate\Routing\ResponseFactory
+Illuminate\Routing\UrlGenerator
+Illuminate\Support\Arr
+Illuminate\Support\Str
+Illuminate\Support\Collection
+Illuminate\Cache\Repository
+Illuminate\Console\Scheduling\Event
+Illuminate\Filesystem\Filesystem
+Illuminate\Foundation\Testing\TestResponse
+Illuminate\Translation\Translator
+Illuminate\Validation\Rule
+```
+我们就可以这么搞
+```
+use Illuminate\Support\Collection;
 
+// 定义一个宏
+Collection::macro('someMethod', function ($arg1 = 1, $arg2 = 1) {
+    // count 是 collection对象内置的方法
+    return $this->count() + $arg1 + $arg2;
+});
+
+// 调用宏
+// 我们只是向类中添加了一个以前不存在的方法，而无需接触任何源文件。
+
+$coll = new Collection([1, 2, 3]);
+echo $coll->someMethod(1, 2);
+```
+
+也就是说，我们可以通过宏扩展原有的功能，看这个例子，[往Query Build中添加list方法](https://stackoverflow.com/questions/43396489/add-lists-method-in-query-builder-in-laravel-5-4)
 ## 参考
 
 https://learnku.com/articles/2769/laravel-pipeline-realization-of-the-principle-of-single-component
+
 https://segmentfault.com/a/1190000022566835
+
+https://learnku.com/articles/35970
