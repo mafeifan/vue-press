@@ -4,7 +4,7 @@
 比如有些重复的动作，可以打包记录为一个宏，给宏名字，调用这个宏，就等于执行这一系列动作了。
 
 ## 源码分析
-```
+```php
 <?php
 trait Macroable
 {
@@ -190,7 +190,7 @@ Illuminate\Translation\Translator
 Illuminate\Validation\Rule
 ```
 我们就可以这么搞
-```
+```php
 use Illuminate\Support\Collection;
 
 // 定义一个宏
@@ -207,10 +207,8 @@ echo $coll->someMethod(1, 2);
 ```
 
 也就是说，我们可以通过宏扩展原有的功能，看这个例子，[往Query Build中添加list方法](https://stackoverflow.com/questions/43396489/add-lists-method-in-query-builder-in-laravel-5-4)
+
 ## 参考
-
-https://learnku.com/articles/2769/laravel-pipeline-realization-of-the-principle-of-single-component
-
-https://segmentfault.com/a/1190000022566835
+https://asklagbox.com/blog/laravel-macros
 
 https://learnku.com/articles/35970
