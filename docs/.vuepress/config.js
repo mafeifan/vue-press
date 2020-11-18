@@ -168,6 +168,7 @@ module.exports = {
             ],
 
             '/DevOps/Linux/': [
+                ['SSH--无密码登录', 'SSH--无密码登录'],
                 ['SSH--技巧', 'SSH--技巧'],
                 ["使用Let’s Encrypt生成免费通配https证书", "使用Let’s Encrypt生成免费通配https证书"]
             ],
@@ -187,6 +188,7 @@ module.exports = {
             ],
 
             '/Backend/Laravel/Laravel-core/': [
+                ['Laravel-Macroable.md', '使用Laravel Macroable宏'],
                 ['Laravel-pipeline.md', 'Laravel Pipeline管道'],
                 ['Laravel-tap.md', 'Laravel tap'],
             ],
