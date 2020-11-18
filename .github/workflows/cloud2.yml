@@ -33,6 +33,7 @@ jobs:
     - name: Deploy to Server Cloud 1
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
+        # 本地公钥传到部署服务器的authorized_keys中，本地私钥存到secrets中
         SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         ARGS: "-rltgoDzvO --delete"
         SOURCE: "docs/.vuepress/dist/"
