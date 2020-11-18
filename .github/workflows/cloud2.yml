@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to Server
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
-        SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY2 }}
         ARGS: "-rltgoDzvO --delete"
         SOURCE: "docs/.vuepress/dist/"
         REMOTE_PORT : ${{ secrets.PORT2 }}
