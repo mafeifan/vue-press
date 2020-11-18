@@ -206,9 +206,50 @@ $coll = new Collection([1, 2, 3]);
 echo $coll->someMethod(1, 2);
 ```
 
+使用macro往一个类中添加新方法
+```php
+$macroableClass = new class() {
+    use Macroable;
+};
+
+$macroableClass::macro('concatenate', function(... $strings) {
+   return implode('-', $strings);
+};
+
+$macroableClass->concatenate('one', 'two', 'three'); // returns 'one-two-three'
+```
+
+使用mixin方法往一个类追加多个方法
+```php
+$mixin = new class() {
+    public function mixinMethod()
+    {
+       return function() {
+          return 'mixinMethod';
+       };
+    }
+    
+    public function anotherMixinMethod()
+    {
+       return function() {
+          return 'anotherMixinMethod';
+       };
+    }
+};
+
+$macroableClass->mixin($mixin);
+
+$macroableClass->mixinMethod() // returns 'mixinMethod';
+
+$macroableClass->anotherMixinMethod() // returns 'anotherMixinMethod';
+```
+
+
 也就是说，我们可以通过宏扩展原有的功能，看这个例子，[往Query Build中添加list方法](https://stackoverflow.com/questions/43396489/add-lists-method-in-query-builder-in-laravel-5-4)
 
 ## 参考
 https://asklagbox.com/blog/laravel-macros
 
 https://learnku.com/articles/35970
+
+https://github.com/spatie/macroable
