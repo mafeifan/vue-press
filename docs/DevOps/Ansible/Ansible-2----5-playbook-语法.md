@@ -21,7 +21,7 @@ tasks下定义一系列的task任务列表，依次执行，如果执行某任�
 
 ### 示例
 playbook.yml
-```
+```yaml
 ---  # yaml文件可以以 --- 开头
   - name: the first demo  # 使用 '-' 减号作为列表项，会被解析为json数组，注意在playbook中name属性不是必须的，表示描述，表示圈定一个范围，范围内的项都属于该列表。
     hosts: cloud  # cloud 是定义的主机，每一个playbook中必须包含"hosts"和"tasks"项
@@ -49,7 +49,7 @@ playbook.yml
 --diff 报告更改，比如操作文件，会告诉用户之前之后发生了哪些变化，由于会产生大量输出，最好在单一主机使用
 
 另外例子
-```
+```yaml
  ---
 - hosts: localhost # 列表1
   remote_user: root
@@ -100,7 +100,7 @@ playbook 例子，包含了1个play，3个tasks，1个handlers
 ### notify和handler
 ansible中几乎所有的模块都具有幂等性，这意味着被控主机的状态是否发生改变是能被捕捉的，即每个任务的 changed=true或changed=false。ansible在捕捉到changed=true时，可以触发notify组件(如果定义了该组件)。
 notify是一个组件，并非一个模块，它可以直接定义action，其主要目的是调用handler。例如:
-```
+```yaml
 tasks:
      - name: copy template file to remote host
        template: src=/etc/ansible/nginx.conf.j2 dest=/etc/nginx/nginx.conf

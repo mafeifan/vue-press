@@ -6,7 +6,6 @@
 
 > ![image.png](https://upload-images.jianshu.io/upload_images/71414-dc1fde154ebedafc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-
 选择ES2，创建一台服务器实例
 > ![image.png](https://upload-images.jianshu.io/upload_images/71414-9a0eb276ed28d34c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

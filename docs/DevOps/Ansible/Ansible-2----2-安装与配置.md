@@ -12,7 +12,7 @@ ansible 2.7.1
   python version = 3.7.1 (default, Nov  6 2018, 18:46:03) [Clang 10.0.0 (clang-1000.11.45.5)]
 ```
 2. 创建目录和配置文件
-/etc/ansible/host
+`/etc/ansible/hosts`
 3. 添加要连接的 host 主机节点信息，内容如下：
 [主机组名称]
 ip:端口 ansible_user=登录的用户名
@@ -36,7 +36,7 @@ ping 就是模块名
 > 如果要指定非root用户运行ansible命令，则加上"--sudo"或"-s"来提升为sudo_user配置项所指定用户的权限。`ansible webservers -m ping -u ubuntu --sudo` ；或者使用 become 提升权限 `ansible webservers -m ping -b --become-user=root --become-method=sudo`
 
 5. 我们更新下host文件，添加一组主机
-```
+```shell script
 [cloud]
 140.122.182.183:1234 ansible_user=ubuntu
 [fxa]
@@ -45,7 +45,7 @@ ping 就是模块名
 145.130.287.79:31 ansible_user=devuser
 ```
 也可以用下面的写法
-```
+```shell script
 [cloud]
 40.122.182.183  ansible_port=1234 ansible_user=ubuntu
 

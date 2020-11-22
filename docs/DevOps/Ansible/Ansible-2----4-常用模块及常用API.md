@@ -59,7 +59,7 @@ tasks:
    - shell: touch helloworld.txt creates=/tmp/hello.txt
 ```
 但建议，在参数可能产生歧义的情况下，使用args来传递ansible的参数。如:
-```
+```yaml
 - shell: touch helloworld.txt
    args:
      creates: /tmp/hello.txt
@@ -110,7 +110,7 @@ script模块用于控制远程主机执行脚本。在执行脚本前，ansible�
 
 例如，将ansible端/tmp/a.sh发送到各被控节点上执行，但如果被控节点的/tmp下有hello.t xt ，则不执行。
 
-```
+```yaml
 ---
      - hosts: centos
        remote_user: root

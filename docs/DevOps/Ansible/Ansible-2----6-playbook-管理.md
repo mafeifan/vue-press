@@ -2,7 +2,7 @@
 
 ### 使用 tag 为 task 分类
 
-```
+```yaml
 tasks:
     - name: make sure apache is running
       service: name=httpd state=started
@@ -31,7 +31,7 @@ include_tasks, include_role 等
 导入task可以使用 
 import_tasks：
 include_tasks 
-```
+```yaml
 # playbook.yaml
 # -- task/ntupdate.yml
 ---
@@ -50,7 +50,7 @@ include_tasks
 ###### 导入 playbook
 即加载一个或多个play
 导入playbook可以使用  import_playbook
-```
+```yaml
 ---
   - name: first demo
     hosts: cloud
@@ -74,7 +74,7 @@ role 需要一个特定的目录结构，执行时会自动加载定义好的文
 roles 可以解决文件混乱和playbook臃肿的问题
 
 示例项目结构
-```
+```yaml
 site.yml
 webservers.yml
 fooservers.yml
