@@ -102,6 +102,6 @@ Slack 有时候国内速度访问比较慢，如果公司喜欢用钉钉，也�
 * [https://jenkins.io/doc/pipeline/steps/email-ext/](https://jenkins.io/doc/pipeline/steps/email-ext/)
 * [https://www.cnblogs.com/yangxia-test/p/4366172.html](https://www.cnblogs.com/yangxia-test/p/4366172.html)
 * [https://github.com/jenkinsci/slack-plugin](https://github.com/jenkinsci/slack-plugin)
-* [Jenkins 钉钉通知插件](https://github.com/jenkinsci/dingding-notifications-plugin/blob/master/readme-cn.md)
+* [Jenkins 钉钉通知插件](https://github.com/jenkinsci/dingtalk-plugin)
 * [http://www.mydlq.club/article/7/](http://www.mydlq.club/article/7/)
 

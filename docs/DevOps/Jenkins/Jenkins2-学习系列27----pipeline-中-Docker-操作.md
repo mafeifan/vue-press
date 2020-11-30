@@ -104,4 +104,5 @@ pipeline {
 
 #### 参考
 https://jenkins.io/doc/pipeline/steps/docker-workflow
-https://jenkins.io/doc/book/pipeline/docker
+
+https://www.jenkins.io/doc/book/pipeline/docker/

@@ -31,6 +31,8 @@ services:
   jenkins-compose:
     # 注意镜像名称，lts表示长期支持版
     image: jenkins/jenkins:lts
+    privileged: true # 解决权限问题
+    restart: always 
     # 正式环境不要使用root用户运行Jenkins
     # user: root
     # privileged: true
