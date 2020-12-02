@@ -33,9 +33,6 @@ services:
     image: jenkins/jenkins:lts
     privileged: true # 解决权限问题
     restart: always 
-    # 正式环境不要使用root用户运行Jenkins
-    # user: root
-    # privileged: true
     ports:
      - "8088:8080"
      - "50000:50000"
@@ -44,8 +41,7 @@ services:
     volumes:
      - /var/run/docker.sock:/var/run/docker.sock
      - /usr/bin/docker:/usr/bin/docker
-    # 路径改为实际的
-     - ~/jenkins-compose:/var/jenkins_home
+     - /home/ubuntu/jenkins-compose:/var/jenkins_home
 ```
 
 执行 `docker-compose up -d jenkins-compose` 会下载镜像并在后台启动
