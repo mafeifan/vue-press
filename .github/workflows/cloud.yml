@@ -10,6 +10,10 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  CI: true
+  NODE: 14.x
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -24,9 +28,11 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: "${{ env.NODE }}"
+
     - name: Install npm dependencies
-      run: npm install
+      run: npm ci
+
     - name: Run build task
       run: npm run build --if-present
 
