@@ -17,7 +17,7 @@ GitHub 是一个代码托管平台，如果开发者想要在本地进行开发�
 
 ##### 图 1\. Git Bash
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-8fbb7bd4ddd34b12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-8fbb7bd4ddd34b12.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N10089)
 
@@ -36,13 +36,13 @@ GitHub 提供了两种克隆方式：HTTPS 和 SSH。我们可以点击仓库页
 
 ##### 图 2\. 查看 HTTPS 克隆链接
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-363a4b5bc4090d80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-363a4b5bc4090d80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N100B1)
 
 ##### 图 3\. 查看 SSH 克隆链接
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-df49141b06c7bf3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-df49141b06c7bf3b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N100BB)
 
@@ -88,7 +88,7 @@ To https://github.com/caozhi/repo-for-developerworks.git
 使用 SSH 方式进行克隆，需要一步额外的配置 SSH-KEY 的操作。首先需要本地生成一个 SSH Key。我们可以借助 ssh-keygen 工具生成一对 RSA 的秘钥：私钥 id_rsa 和公钥 id_rsa.pub。生成的秘钥文件会默认放在 home 目录下的 .ssh 目录下，如图 4 所示：
 ##### 图 4\. 使用 ssh-keygen 生成 RSA 秘钥
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-d661d82aee2699bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-d661d82aee2699bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N100FB)
 
@@ -96,7 +96,7 @@ To https://github.com/caozhi/repo-for-developerworks.git
 
 ##### 图 5\. 查看 id_rsa.pub 公钥文件
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-4be399c862e5e47e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-4be399c862e5e47e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N1010D)
 
@@ -104,7 +104,7 @@ To https://github.com/caozhi/repo-for-developerworks.git
 
 ##### 图 6\. 打开 GitHub 设置
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-4b9c763f68af2725.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-4b9c763f68af2725.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N1011C)
 
@@ -112,7 +112,7 @@ To https://github.com/caozhi/repo-for-developerworks.git
 
 ##### 图 7\. 打开 SSH and GPG keys 的配置页面
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-0062406fdac85fac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-0062406fdac85fac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N1012E)
 
@@ -120,13 +120,13 @@ To https://github.com/caozhi/repo-for-developerworks.git
 
 ##### 图 8\. 输入 Key 的名称及其内容
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-5143176619d5deea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-5143176619d5deea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 页面自动跳转回 **SSH and GPG keys** 设置页面，您可以看到在我的账号下成功新增了一个 SSH Key，如图 9 所示：
 
 ##### 图 9\. 查看已经添加的 Key
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-63956f5dea65ec3c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-63956f5dea65ec3c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N1014C)
 
@@ -174,7 +174,7 @@ Hi caozhi! You've successfully authenticated, but GitHub does not provide shell 
 
 ##### 图 10\. local_path 为空
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-01f1cea644abbc4e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-01f1cea644abbc4e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N101BC)
 
@@ -184,7 +184,7 @@ Hi caozhi! You've successfully authenticated, but GitHub does not provide shell 
 
 ##### 图 11\. local_path 参数为指定路径
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-ed1d0d5f68062f17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-ed1d0d5f68062f17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N101D9)
 
@@ -194,7 +194,7 @@ Hi caozhi! You've successfully authenticated, but GitHub does not provide shell 
 
 ##### 图 12\. local_path 参数为当前目录
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-d1db7788f850cbfa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-d1db7788f850cbfa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N101F6)
 
@@ -206,7 +206,7 @@ Hi caozhi! You've successfully authenticated, but GitHub does not provide shell 
 
 ##### 图 13\. 克隆特定分支
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-593ee8304b605e81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-593ee8304b605e81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N10215)
 
@@ -230,7 +230,7 @@ Hi caozhi! You've successfully authenticated, but GitHub does not provide shell 
 
 ##### 图 14\. 查看 commit 的 user 信息
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-fa49188e5985bb8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-fa49188e5985bb8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 我们可以配置 `user.name` 和 `user.email` 的值来配置 user 信息，如清单 6 所示:
 
@@ -248,7 +248,7 @@ Git 提供了很多有用的命令，我们可以将一些比较常用的命令�
 
 ##### 图 15\. 短名称的日志
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-fb2eba79af6f3d71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-fb2eba79af6f3d71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N1028B)
 
@@ -267,7 +267,7 @@ git config --global alias.cm "commit"
 
 ##### 图 16\. 查看配置
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-12dd3b3b603e5fb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-12dd3b3b603e5fb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N102AC)
 
@@ -277,7 +277,7 @@ git config --global alias.cm "commit"
 
 ##### 图 17\. ~/.gitconfig 文件里的配置
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-84715d6b24cc170b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-84715d6b24cc170b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 设置 Git 忽略提交规则
 
@@ -319,7 +319,7 @@ web.xml` |
 
 ##### 图 18\. 强制添加被忽略的文件
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-9d9e0ed5a39de51c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-9d9e0ed5a39de51c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html#N10385)
 

@@ -17,7 +17,7 @@ Git 中有三个工作区域与上述三种状态相对应，如下图 1 所示�
 
 ##### 图 1\. 三个工作区域和三种状态
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-6ee1e6b481a3f8e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-6ee1e6b481a3f8e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10099)
@@ -48,7 +48,7 @@ Git 中有三个工作区域与上述三种状态相对应，如下图 1 所示�
 
 ##### 图 2\. 查看分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-e6dbd62c90f4805c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-e6dbd62c90f4805c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N100E0)
@@ -62,7 +62,7 @@ Git 中有三个工作区域与上述三种状态相对应，如下图 1 所示�
 
 ##### 图 3\. 查看分支对应的 commit
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-e717736302a3a33a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-e717736302a3a33a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N100F3)
@@ -73,7 +73,7 @@ Git 中有三个工作区域与上述三种状态相对应，如下图 1 所示�
 
 ##### 图 4\. 查看本地仓库指向的远端仓库
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-e4e836bdd8edd3cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-e4e836bdd8edd3cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1010B)
 
@@ -81,7 +81,7 @@ Git 中有三个工作区域与上述三种状态相对应，如下图 1 所示�
 
 ##### 图 5\. 添加本地仓库
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-77b23973730eefad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-77b23973730eefad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10120)
 
@@ -95,7 +95,7 @@ HEAD 针是指向当前工作分支中的最新的分支或者 commit。Git 通�
 
 ##### 图6\. 切换HEAD指针指向的分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-c6fc67a77ee6687f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-c6fc67a77ee6687f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10136)
@@ -104,7 +104,7 @@ HEAD 针是指向当前工作分支中的最新的分支或者 commit。Git 通�
 
 ##### 图7\. 切换HEAD指针指向任意 commit
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-f43bcd4d27a4cd69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-f43bcd4d27a4cd69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1014B)
 
@@ -116,7 +116,7 @@ HEAD 针是指向当前工作分支中的最新的分支或者 commit。Git 通�
 
 ##### 图 8\. push 失败
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-efd5e562366b49f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-efd5e562366b49f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1016E)
 
@@ -141,7 +141,7 @@ fetch 和 pull 操作都可以用来同步远端代码到本地。在多数开�
 
 ##### 图 9\. 查看分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-2b28dedf87ae784c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-2b28dedf87ae784c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N101C2)
@@ -150,7 +150,7 @@ fetch 和 pull 操作都可以用来同步远端代码到本地。在多数开�
 
 #### 图 10\. 创建本地分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-4cb6e7a1dd561f9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-4cb6e7a1dd561f9c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N101D3)
@@ -159,21 +159,21 @@ fetch 和 pull 操作都可以用来同步远端代码到本地。在多数开�
 
 ##### 图 11\. 推送本地分支到远端
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-e3961cdb55693788.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-e3961cdb55693788.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N101E9)
 
 ##### 图 12\. 在 GitHub 上查看推送的分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-fe268b52c6173a43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-fe268b52c6173a43.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 *   切换工作分支：`git checkout branchname`，如图 13 所示：
 
 ##### 图 13\. 切换工作分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-013745aa5be5c50f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-013745aa5be5c50f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10203)
@@ -182,7 +182,7 @@ fetch 和 pull 操作都可以用来同步远端代码到本地。在多数开�
 
 ##### 图 14\. 删除本地分支
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-da944546931ad6ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-da944546931ad6ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10210)
 
@@ -190,13 +190,13 @@ fetch 和 pull 操作都可以用来同步远端代码到本地。在多数开�
 
 ##### 图 15\. 删除远端分支
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-96d675bc58b10441.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-96d675bc58b10441.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1021D)
 
 ##### 图 16\. 在 GitHub 上查看被删除的分支
 
-![image](http://upload-images.jianshu.io/upload_images/71414-04b5d41e69935b71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-04b5d41e69935b71.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### GitHub 分支操作
 
@@ -204,20 +204,20 @@ fetch 和 pull 操作都可以用来同步远端代码到本地。在多数开�
 
 ##### 图 17\. GitHub 中创建分支
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-8b7673729e484662.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-8b7673729e484662.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10239)
 
 ##### 图 18\. 查看创建的分支
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-82e2cd98529aafc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-82e2cd98529aafc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 在 GitHub 上我们也可以直接删除分支。首先我们进入代码库的 **branches **页面，该页面列出了我们所有的分支, 如图 19 和图 20 所示:
 
 
 ##### 图 19\. 进入 branches 页面
 
->  ![image.png](https://upload-images.jianshu.io/upload_images/71414-bb833af4035c193a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>  ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-bb833af4035c193a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10252)
@@ -226,21 +226,21 @@ fetch 和 pull 操作都可以用来同步远端代码到本地。在多数开�
 
 ##### 图 20\. 在 GitHub 上删除分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-e41dfd9804655045.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-e41dfd9804655045.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10261)
 
 ##### 图 21\. 删除分支后
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-dbef9a6a858333a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-dbef9a6a858333a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1026B)
 
 ##### 图 22\. 代码库主界面再次查看该分支
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-521cc9948fcb0f69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-521cc9948fcb0f69.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 分支的其它进阶操作，如合并分支、比较分支差异等我们将在下一篇进行介绍。
@@ -268,7 +268,7 @@ Log 命令用于查看代码库的提交历史。结合 log 命令提供的各�
 
 ##### 图 23\. log 的 --oneline 选项
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-a7b5c106afc66bae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-a7b5c106afc66bae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N102C3)
 
@@ -276,7 +276,7 @@ Log 命令用于查看代码库的提交历史。结合 log 命令提供的各�
 
 ##### 图 24\. log 的 -p 选项
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-76724f2794b7a100.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-76724f2794b7a100.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N102D2)
@@ -285,7 +285,7 @@ Log 命令用于查看代码库的提交历史。结合 log 命令提供的各�
 
 ##### 图 25\. log 的-number 选项
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-87d8f58a106ddcd4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-87d8f58a106ddcd4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N102E1)
@@ -294,7 +294,7 @@ Log 命令用于查看代码库的提交历史。结合 log 命令提供的各�
 
 ##### 图 26\. log 的 --name-only 选项
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-327e2422258494e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-327e2422258494e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N102F0)
@@ -303,7 +303,7 @@ Log 命令用于查看代码库的提交历史。结合 log 命令提供的各�
 
 ##### 图 27\. log 的 --name-status 选项
 
->  ![image.png](https://upload-images.jianshu.io/upload_images/71414-bfb7bf6b291472e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>  ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-bfb7bf6b291472e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N102FF)
 
@@ -311,7 +311,7 @@ Log 命令用于查看代码库的提交历史。结合 log 命令提供的各�
 
 ##### 图 28\. log 的 --stat 选项
 
->  ![image.png](https://upload-images.jianshu.io/upload_images/71414-a2c223075bd04336.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>  ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-a2c223075bd04336.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1030E)
@@ -322,7 +322,7 @@ Blame 命令是一个非常实用但是鲜为人知的命令，它可以用来�
 
 ##### 图 29\. git blame 操作
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-4626853419ecfd81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-4626853419ecfd81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10324)
@@ -341,7 +341,7 @@ git blame -L 20,-5 filename
 
 ##### 图 30\. 执行 git blame -L
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-edc3e9c269309cf7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-edc3e9c269309cf7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10345)
@@ -352,7 +352,7 @@ git blame -L 20,-5 filename
 
 ##### 图 31\. 无修改时执行 git status 操作
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-bd77061b0624de77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-bd77061b0624de77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1035F)
 
@@ -364,7 +364,7 @@ git blame -L 20,-5 filename
 
 ##### 图 32\. 有修改时执行 git status
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-3fc3bcdd9e0a67fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-3fc3bcdd9e0a67fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N10375)
@@ -377,7 +377,7 @@ Diff 操作用于查看比较两个 commit 或者两个不同代码区域的文�
 
 ##### 图 33\. 比较工作区和暂存区
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-5f6ce0c047fdbde5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-5f6ce0c047fdbde5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1038C)
@@ -386,7 +386,7 @@ Diff 操作用于查看比较两个 commit 或者两个不同代码区域的文�
 
 ##### 图 34\. 比较暂存区和本地代码库
 
->  ![image.png](https://upload-images.jianshu.io/upload_images/71414-d5dab72b8a8aaf32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+>  ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-d5dab72b8a8aaf32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N1039B)
@@ -395,7 +395,7 @@ Diff 操作用于查看比较两个 commit 或者两个不同代码区域的文�
 
 ##### 图 35\. 比较工作区和暂存区
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-86ec2169a8b0d326.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-86ec2169a8b0d326.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html#N103A8)

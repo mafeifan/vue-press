@@ -45,11 +45,11 @@ scrape_configs:
 
 先来到监控界面
 [http://localhost:9090/targets](http://localhost:9090/targets)
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-33b36eea65b6db4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-33b36eea65b6db4a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 这里只是抓取本机的数据
 
 还可以查看当前配置
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-726ea269bdcf9639.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-726ea269bdcf9639.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 <relabel_config> 配置是通过修改 label 来控制某些 target 不被抓取

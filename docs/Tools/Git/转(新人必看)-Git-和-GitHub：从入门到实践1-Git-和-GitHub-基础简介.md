@@ -78,7 +78,7 @@ and the repository exists.
 
 ##### 图 1\. 查看提交历史
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-bab7a7b3620fb88c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-bab7a7b3620fb88c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html#N100F4)
 
@@ -117,7 +117,7 @@ drwxr-xr-x   3 caozhi  staff   96  8  5 10:48 src
 
 ##### 图 2\. 增量方式
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-b75b39e3f05cecab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-b75b39e3f05cecab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html#N1012D)
 
@@ -125,7 +125,7 @@ drwxr-xr-x   3 caozhi  staff   96  8  5 10:48 src
 
 ##### 图 3\. 快照方式
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-4b3a3fca9868a5bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-4b3a3fca9868a5bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html#N10139)
 
@@ -304,7 +304,7 @@ GitHub 是全球最大的开源代码托管平台，在开源界有着不可撼�
 
 ##### 图 4\. 添加仓库或组织
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-1a8f16bcce596244.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-1a8f16bcce596244.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html#N101E5)
 
@@ -312,13 +312,13 @@ GitHub 是全球最大的开源代码托管平台，在开源界有着不可撼�
 
 ##### 图 5\. Fork Linux 代码库
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-95da95447b0a7fd4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-95da95447b0a7fd4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html#N101F2)
 
 ##### 图 6\. 选择 Fork 的目标
 
-> ![image](http://upload-images.jianshu.io/upload_images/71414-d5b30fdf2bdfddfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-d5b30fdf2bdfddfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 [点击查看大图](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html#N101FC)
 

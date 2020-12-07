@@ -1,4 +1,4 @@
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-032f67c239c25f09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-032f67c239c25f09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ```
 import { initMixin } from './init'

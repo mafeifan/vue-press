@@ -1,8 +1,8 @@
 先对比版本号，然后更新包
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-981ae54a2cea41ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-981ae54a2cea41ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-> ![image.png](https://upload-images.jianshu.io/upload_images/71414-eda680d0e22e1bd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+> ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-eda680d0e22e1bd0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 与H5的区别
 优点：
