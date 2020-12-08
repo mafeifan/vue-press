@@ -1,4 +1,5 @@
-原文地址：https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html
+[原文地址](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-3/index.html)
+
 在本系列的前两篇文章讲解了 Git 的[基础特性](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html)和[基础配置](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html)。从本篇文章开始，我将结合实验和实际的场景详细讲解如何在日常工作中使用 Git 和 GitHub。Git 有六大特性，[第一篇](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html)中介绍了前五个特性，本文将介绍 Git 的最后一个特性：三种状态和三个工作区，然后介绍 Git 的核心功能：Git 分支，最后介绍 Git 的一些日常操作，例如如何进行一次完整的代码提交以及其它常用操作 log、status 等。
 
 ## Git 的三种状态和三个工作区域

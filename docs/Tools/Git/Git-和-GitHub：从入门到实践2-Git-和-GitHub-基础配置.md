@@ -1,4 +1,5 @@
-原文地址：https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html
+[原文地址](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-2/index.html)
+
 ## 前言
 
 在本系列的[第一篇](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html)文章中着重介绍了 Git 的基础特性。本文作为本系列的第二篇文章将介绍 Git 和 GitHub 的基础配置，包括 Git 安装、使用 Git 克隆 GitHub 上的代码库、使用 Git 克隆远端代码仓库、Git 的基本配置和设置忽略提交规则。您在阅读完本文将有能力完成本地 Git 环境的基础配置，为接下来的 Git 日常使用做基础。

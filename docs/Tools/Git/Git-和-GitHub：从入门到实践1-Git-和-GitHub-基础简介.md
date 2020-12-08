@@ -1,4 +1,6 @@
-原文地址：https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html
+[原文地址](https://www.ibm.com/developerworks/cn/opensource/os-cn-git-and-github-1/index.html)
+
+
 ## 前言
 
 Git 是目前业界最流行的版本控制系统（Version Control System），而 GitHub 是开源代码托管平台的翘楚。越来越多的从业者、从业团队以及开源贡献者首选二者用于管理项目代码。本文首先从概念的角度介绍版本控制系统、Git 和 GitHub，并着重通过一些实验来演示 Git 的基础特性，使您能够对 Git 和 GitHub 有更清晰的认识。

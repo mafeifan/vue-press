@@ -38,6 +38,12 @@ module.exports = {
                 ]
             },
             {
+                text: 'Tools',
+                items: [
+                    {text: 'Git', link: '/Tools/Git/Git-和-GitHub：从入门到实践1-Git-和-GitHub-基础简介'},
+                ]
+            },
+            {
                 text: 'Frontend',
                 items: [
                     {text: 'Html & CSS', link: '/Frontend/HTML5/'},
@@ -171,6 +177,14 @@ module.exports = {
                 ['SSH--无密码登录', 'SSH--无密码登录'],
                 ['SSH--技巧', 'SSH--技巧'],
                 ["使用Let’s Encrypt生成免费通配https证书", "使用Let’s Encrypt生成免费通配https证书"]
+            ],
+
+            '/Tools/Git/': [
+                ['Git-和-GitHub：从入门到实践1-Git-和-GitHub-基础简介', 'Git-和-GitHub-基础简介'],
+                ['Git-和-GitHub：从入门到实践2-Git-和-GitHub-基础配置', 'Git-和-GitHub-基础配置'],
+                ['Git-和-GitHub：从入门到实践3-Git-分支简介、Git-和-GitHub-日常操作', 'Git-分支简介、Git-和-GitHub-日常操作'],
+                ['Git-和-GitHub：从入门到实践4-Git 进阶-比较、回滚、撤销、分支合并和冲突解决', 'Git 进阶：比较、回滚、撤销、分支合并和冲突解决'],
+                ['Git-和-GitHub：从入门到实践5-分支策略管理', 'Git 进阶：分支策略管理']
             ],
 
             '/Frontend/HTML5/': [
