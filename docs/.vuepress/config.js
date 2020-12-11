@@ -198,7 +198,20 @@ module.exports = {
             ],
 
             '/Frontend/Angular/': [
-                ['Angular-共享数据', 'Angular-共享数据']
+                ['Angular-共享数据', 'Angular-共享数据'],
+                ['Angular-样式使用注意事项', 'Angular-样式使用注意事项'],
+                ['Angular-模板变量', 'Angular-模板变量'],
+                ['Angular-pipe管道介绍及使用', 'Angular-pipe管道介绍及使用'],
+                ['Angular-component-组件内使用原生pipe', 'Angular-component-组件内使用原生pipe'],
+                ['Angular-使用-RxJS-优化处理Http请求', 'Angular-使用-RxJS-优化处理Http请求'],
+                ['Angular-表单1--响应式表单', 'Angular-表单1--响应式表单'],
+                ['Angular-表单2--响应式表单-处理异步数据', 'Angular-表单2--响应式表单-处理异步数据'],
+                ['Angular-表单3--响应式表单-复杂验证', 'Angular-表单3--响应式表单-复杂验证'],
+                ['Angular-依赖注入-初认', 'Angular-依赖注入-初认'],
+                ['Angular-依赖注入-运用', 'Angular-依赖注入-运用'],
+                ['Angular-实现一个Dialog组件', 'Angular-实现一个Dialog组件'],
+                ['Angular-修改build后的静态资源目录路径', 'Angular-修改build后的静态资源目录路径'],
+                ['使用CircleCI持续集成Angular项目', '使用CircleCI持续集成Angular项目'],
             ],
 
             '/Backend/Laravel/Laravel-core/': [

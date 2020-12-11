@@ -2,7 +2,7 @@ Angular 提供了两种不同的方法来通过表单处理用户输入：响应
 本节先讲响应式表单。
 最终实例[demo](https://stackblitz.com/edit/jianshu-async-reactive-form-builder-2?file=src/app/app.component.ts)
 app-component.ts
-```
+```typescript
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
@@ -40,7 +40,7 @@ export class AppComponent {
 
 ```
 app-component.html
-```
+```html
 <form [formGroup]="form" (ngSubmit)="submit()">
   <label for="firstname">First Name</label>
   <input id="firstname" formControlName="firstName" />
@@ -64,7 +64,7 @@ app-component.html
 1. 使用响应式表单，需要组件所在的module引入[ReactiveFormsModule](https://angular.cn/api/forms/ReactiveFormsModule) 该module提供了很多指令。比如已Accessor结尾的，如`NumberValueAccessor` 是专门处理<input type=number>, `RadioControlValueAccessor` 处理 <input type=radio>等等。
 2. 模板中表单元素需要绑定FormControlName属性与TS中定义的FormControl匹配。
 TS中的定义表单可以使用FormControl，如果嫌麻烦，有更简便的FormBuilder.group
-```
+```typescript
 this.personForm = this.formBuilder.group({
   username: ['', Validators.required],
   email: ['', [Validators.required, Validators.email]],

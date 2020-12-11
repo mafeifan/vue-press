@@ -16,7 +16,7 @@ CircleCI的好处(截止当前的政策2019.2)：
 #### 具体实现
 Angular项目根目录新建`.circleci`目录(注意以点开头)，然后在这个目录里面再新建`config.yml`文件
 下面是我正在使用的配置，具体语法可以见[官方介绍](https://circleci.com/docs/2.0/sample-config/#section=configuration)
-```
+```yaml
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 # See: https://github.com/ci-samples/angular-cli-circleci/blob/master/.circleci/config.yml
