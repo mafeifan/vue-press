@@ -1,11 +1,10 @@
 首先介绍 Angular 中依赖注入的相关概念:
 
-
 ### Service 服务
 [Service](https://angular.cn/guide/architecture-services) 的表现形式是一个class，可以用来在组件中复用
 比如 Http 请求获取数据，日志处理，验证用户输入等都写成Service，供组件使用。
 
-```
+```typescript
 import { Injectable } from '@angular/core';
 // 在 Angular 中，要把一个类定义为服务，就要用 `@Injectable` 装饰器来提供元数据
 
@@ -28,7 +27,7 @@ export class LoggerService {
 是一个对象，告诉 Injector 应该如何获取或创建依赖。
 
 打开Angular看下面的代码片段 app.module.ts
-```
+```typescript
 @NgModule({
   declarations: [
     ....
@@ -71,7 +70,7 @@ useClass属性指定实例化方式，表示是 new 一个 ProductService，如�
 除了useClass写法，还可以使用 userFactory 工厂方法，这个方法返回的实例作为构造函数中productService参数的内容。
 `providers: [{provide: ProductService, userFactory: () => {}} ]`
 这样可以根据条件具体实例化某对象，更加灵活
-```
+```typescript
 providers: [{
   provide: ProductService, 
   userFactory: () => {
@@ -87,7 +86,7 @@ providers: [{
 ```
 上面的写法有个弊端LoggerService和ProductService耦合太强
 进一步优化，利用deps参数，指工厂声明所依赖的参数。
-```
+```typescript
 providers: [{
     provide: ProductService, 
     userFactory: (logger: LoggerService) => {
@@ -104,7 +103,7 @@ providers: [{
 ]
 ```
 再次优化，定义第三个提供器，token是IS_DEV_ENV，值是具体的false
-```
+```typescript
 providers: [{
     provide: ProductService, 
     // 注入的 顺序和deps对应
@@ -122,7 +121,7 @@ providers: [{
 ]
 ```
 一般来说可以创建一个类型为对象的提供器供注入
-```
+```typescript
 providers: [{
     provide: ProductService, 
     // 注入的 顺序和deps对应
@@ -152,7 +151,7 @@ provide声明在某组件中，只对该组件及其子组件可见。其他组�
 ### @Injectable 装饰器
 表示FooService可以通过构造函数注入其他服务
 举个例子，如果注释掉
-```
+```typescript
 // @Injectable({
 //   providedIn: 'root'
 // })
@@ -167,7 +166,7 @@ provide声明在某组件中，只对该组件及其子组件可见。其他组�
 同时Component又是Directive的子类，所以所有的组件都是指令。
 
 ### 手动注入
-```
+```typescript
 import { Component, OnInit, Injector } from '@angular/core';
 import { LoggerService } from '../_service/logger.service';
 

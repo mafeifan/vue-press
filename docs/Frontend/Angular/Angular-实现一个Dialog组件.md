@@ -36,7 +36,7 @@
 
 默认情况下，遮盖层是不显示的
 
-```
+```typescript
   @Input() dialogTitle = '';
   /*
   * 显示/隐藏
@@ -57,7 +57,7 @@
 ```
 
 4. 制作弹窗Dialog区域
-```
+```html
 <div class="overlay"></div>
 <div class="dialog-container">
   <div class="dialog-content">
@@ -97,7 +97,7 @@
 这里有一个细节是`base-dialog`的`z-index`一定要大于`overlay`的，已保证dialog能显示在遮盖层上方。
 
 5. 打开`app.component.html`, 加入下面的代码
-```
+```html
 <button (click)="dialogRef.show()">Show</button>
 
 <app-my-dialog class="dialog-container"  dialogTitle="这是标题" #dialogRef>

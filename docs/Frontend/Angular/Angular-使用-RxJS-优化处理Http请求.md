@@ -1,5 +1,5 @@
 Angular自带有http模块可以方便的进行Http请求。不必像Vue那样安装配置axios。
-```
+```typescript
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -22,7 +22,7 @@ export class AppComponent {
 
 #### 优化有顺序依赖的多个请求
 有些时候我们需要按顺序发起多个请求，根据第一个请求返回的结果中的某些内容，作为第二个请求的参数，比如下面代码。
-```
+```javascript
   ngOnInit() {
     this.http.get('/api/people/1').subscribe(character => {
       this.http.get(character.homeworld).subscribe(homeworld => {
@@ -33,7 +33,7 @@ export class AppComponent {
   }
 ```
 上面的嵌套写法可读性不那么好，我们可以使用RxJS提供的`mergeMap`操作符来优化上述代码
-```
+```typescript
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
@@ -60,8 +60,7 @@ mergeMap 操作符用于从内部的 Observable 对象中获取值，然后返�
 
 #### 处理并发请求
 forkJoin 是 Rx 版本的 Promise.all()，即表示等到所有的 Observable 都完成后，才一次性返回值。
-```
-
+```typescript
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
@@ -94,7 +93,7 @@ export class AppComponent {
 使用 catchError  处理observable中的错误，需要返回一个新的 observable 或者直接抛出error
 
 例1 ，在请求方法内部处理错误，若请求失败返回一个默认值，看起来用户也感知不到发生了错误
-```
+```typescript
   // http.service.ts
   getPostDetail(id) {
     return this.http
@@ -122,7 +121,7 @@ export class AppComponent {
 
 ```
 例2 直接把错误抛出来，在外部处理错误，比如来个弹窗，提示告诉用户
-```
+```typescript
   getPostDetail(id) {
     return this.http
     .get<any>(`${this.endpoint}/posts2/${id}`)

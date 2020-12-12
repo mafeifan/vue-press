@@ -1,13 +1,12 @@
 https://angular.cn/guide/template-syntax#template-reference-variables--var-
 
 模板引用变量通常用来引用模板中的某个 DOM 元素，它还可以引用 Angular 组件或指令或Web Component。
-
 注意：模板引用变量的作用范围是整个模板。 不要在同一个模板中多次定义同一个变量名，否则它在运行期间的值是无法确定的。
 
 1. 模板变量可以循环
 
 
-```
+```html
   <div class="device-wrapper">
     <div
       class="device-item-wrapper"
@@ -31,9 +30,8 @@ https://angular.cn/guide/template-syntax#template-reference-variables--var-
 
 2. 可以通过方法传给后台
 
-
 demo.html
-```
+```html
   <fx-ad-group-private-deal *fxPermissions="['Internal Team Views']" #private_deal_editor
                             [cgid]="cid"
                             [private_deal]="formData.private_deal"
@@ -55,7 +53,7 @@ demo.html
 
 demo.ts
 
-```
+```typescript
 createAdGroup(private_deal_editor, targeting_editor) {
     if (private_deal_editor) {
         Object.assign(payload, private_deal_editor.getPayload());

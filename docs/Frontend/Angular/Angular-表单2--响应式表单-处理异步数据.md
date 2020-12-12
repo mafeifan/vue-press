@@ -3,7 +3,7 @@
 2. 根据数据修改表单中字段的值，最终体现在页面上。
 我们改造上一节的例子，成为异步获取数据。
 我们先创建service文件, 写一个loadUser方法，模拟HTTP请求
-```
+```typescript
 import { Injectable } from '@angular/core';
 import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
@@ -37,7 +37,7 @@ export class UserService {
 
 ```
 组件中，调用该方法
-```
+```typescript
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
@@ -81,7 +81,7 @@ export class AppComponent {
 
 ```
 修改模板
-```
+```html
 <form *ngIf="user$ | async; else loading" [formGroup]="form" (ngSubmit)="submit()">
   <label for="firstname">First Name</label>
   <input id="firstname" formControlName="firstName" />

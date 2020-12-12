@@ -13,7 +13,7 @@ Price：必填，只能输入不超过100的数字
 核心代码：
 form.model.ts
 该文件是表单模型文件，与业务无关。只包含一个收集表单错误信息的方法
-```
+```typescript
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 // 自定义验证器
 import { LimitValidator } from "./limit.formvalidator";
@@ -96,7 +96,7 @@ export class ProductFormGroup extends FormGroup {
 ```
 
 其中 limit.formvalidator.ts 封装了一个验证长度限制的自定义验证器
-```
+```typescript
 import { FormControl } from "@angular/forms";
 
 export class LimitValidator {
@@ -116,7 +116,7 @@ export class LimitValidator {
 ```
 
 最后在用到的组件中，直接引入 form.model
-```
+```typescript
 import { Component } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { Product } from "./product.model";
