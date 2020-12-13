@@ -1,5 +1,5 @@
 1. 使用setTimeout
-```
+```javascript
 for(let i = 0 ; i < 5 ; i++){
   setTimeout(function(){
     console.log(i);
@@ -9,7 +9,7 @@ for(let i = 0 ; i < 5 ; i++){
 
 
 2. 结合promise写法
-```
+```javascript
 function sleep(millis) {
   return new Promise(resolve => setTimeout(resolve, millis));
 }

@@ -47,7 +47,7 @@ module.exports = {
                 text: 'Frontend',
                 items: [
                     {text: 'Html & CSS', link: '/Frontend/HTML5/'},
-                    // {text: 'Javascript动画', link: '/Javascript-animate/'},
+                    {text: 'JavaScript', link: '/Frontend/JavaScript/'},
                     {text: 'Angular', link: '/Frontend/Angular/'},
                     // {text: 'React', link: '/React/'}
                 ]
@@ -193,8 +193,11 @@ module.exports = {
                 ['禁止内部元素的事件响应', '禁止内部元素的事件响应'],
             ],
 
-            '/Frontend/Javascript/': [
-                ['说下js中的bind', '说下js中的bind']
+            '/Frontend/JavaScript/': [
+                ['说下js中的bind', '说下JavaScript中的bind'],
+                ['关于JS中的循环', '关于JS中的循环'],
+                ['JavaScript中的事件相关', 'JavaScript中的事件相关'],
+                ['JS-面试总结-理论篇', 'JS-面试总结-理论篇']
             ],
 
             '/Frontend/Angular/': [

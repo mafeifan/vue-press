@@ -1,6 +1,6 @@
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-032f67c239c25f09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-```
+```javascript
 import { initMixin } from './init'
 import { stateMixin } from './state'
 import { renderMixin } from './render'
@@ -28,3 +28,6 @@ renderMixin(Vue)
 export default Vue
 
 ```
+
+
+它本质上就是⼀个⽤ Function 实现的 Class，然后它的原型 prototype 以及它本⾝都扩展了⼀系列的 ⽅法和属性
