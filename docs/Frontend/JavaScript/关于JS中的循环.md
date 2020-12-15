@@ -24,7 +24,7 @@ var arr = [3, 5, 7];
 
 for (let value of arr) {
   console.log(value);
-  if (value == 5) {
+  if (value === 5) {
     break;
   }
 }

@@ -1,3 +1,7 @@
+### 防抖和节流
+debounce 防抖：类似游戏施法条，读条过程中再按技能，就会重新读条
+throttle 节流：一直按技能键，但是单位时间内只有一次生效
+
 ### JS为什么是单线程？
 由于浏览器可以渲染DOM，JS也可以修改DOM结构，未避免冲突，JS执行的时候，浏览器DOM渲染会停止。
 两段JS不能同时执行。
@@ -177,6 +181,10 @@ class ErrorBoundary extends React.Component {
 let声明的变量只在它所在的代码块有效，不存在变量提升
 let实际上为 JavaScript 新增了块级作用域
 
+#### async, await
+* async 返回一个`Promise`对象，可以用`then`方法添加回调函数
+* 最好把`await`命令放到`try...catch`代码块中
+* `await`命令只能放到`async`函数中
 
 
 ## 参考

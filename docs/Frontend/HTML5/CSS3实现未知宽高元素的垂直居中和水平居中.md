@@ -37,3 +37,6 @@ ps：不考虑兼容问题（下次会写js实现元素的水平and垂直居中 
     vertical-align: middle; 
 }    
 ```
+
+## 参考
+https://codingwithalice.github.io/2019/07/07/%E5%AD%90%E7%9B%92%E5%AD%90%E5%9C%A8%E7%88%B6%E7%9B%92%E5%AD%90%E4%B8%AD%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%E6%9C%89%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95/
