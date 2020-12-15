@@ -168,5 +168,18 @@ class ErrorBoundary extends React.Component {
 ```
 
 
+
+## ES6部分
+
+
+#### var 和 let的区别
+
+let声明的变量只在它所在的代码块有效，不存在变量提升
+let实际上为 JavaScript 新增了块级作用域
+
+
+
 ## 参考
 https://www.cnblogs.com/luozhihao/p/8635507.html
+
+https://es6.ruanyifeng.com/
