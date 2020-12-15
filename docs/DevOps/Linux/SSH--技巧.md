@@ -1,4 +1,5 @@
-SSH 是 Linux 下进行远程连接的基本工具。
+SSH（Secure Shell 的缩写）是一种网络协议，用于加密两台计算机之间的通信，并且支持各种身份验证机制。
+
 一般情况下我们可以通过 `ssh username@xxx.xxx.xxx.xxx` 登录远程服务器，如果要管理多台服务器，这样太长了。
 可以在家目录的 .ssh 中新建config文件，设置别名。
 比如我有一台个人的云主机。IP是120.163.163.163，端口是4722(一般都是22，这里为了安全我改为了其他)，登录用户名是ubuntu，登录方式是私钥登录。
@@ -30,7 +31,7 @@ $ ssh -t cloud top
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-1832a664f7095765.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 再举个实际例子：
-`ssh -t flux sudo -u fueladminprd  ssh 192.168.1.100`
+`ssh -t flux sudo -u fueladminprd ssh 192.168.1.100`
 这句话实际执行了两步：
 1.  ssh -t flux #登录名为flux的服务器，因为需要交互式，加上-t
 2.  sudo -u fueladminprd  ssh 192.168.1.100 # 以 fueladminprd 用户在 flux 上执行 ssh 192.168.1.100
