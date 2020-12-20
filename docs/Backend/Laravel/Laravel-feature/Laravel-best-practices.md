@@ -377,12 +377,12 @@ return back()->with('message', __('app.article_added'));
 部署 | Laravel Forge | Deployer 或者其他解决方案
 自动化测试 | PHPUnit, Mockery | Phpspec
 页面预览测试 | Laravel Dusk | Codeception
-DB操纵 | Eloquent | SQL, Doctrine
+DB操作 | Eloquent | SQL, Doctrine
 模板 | Blade | Twig
-数据操纵 | Laravel集合 | 数组
+数据操作 | Laravel集合 | 数组
 表单验证| Request classes | 他第三方包,甚至在控制器中做验证
 权限 | Built-in | 他第三方包或者你自己解决
-API身份验证 | Laravel Passport | 第三方的JWT或者 OAuth 扩展包
+API身份验证 | Laravel Passport, Laravel Sanctum | 第三方的JWT或者 OAuth 扩展包
 创建 API | Built-in | Dingo API 或者类似的扩展包
 创建数据库结构 | Migrations | 直接用 DB 语句创建
 本土化 | Built-in |第三方包
