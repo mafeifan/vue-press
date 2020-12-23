@@ -191,6 +191,7 @@ module.exports = {
                 ['CSS3实现未知宽高元素的垂直居中和水平居中', 'CSS3 实现未知宽高元素的垂直居中和水平居中'],
                 ['巧解checkbox未选中不提交数据', '巧解checkbox未选中不提交数据'],
                 ['禁止内部元素的事件响应', '禁止内部元素的事件响应'],
+                ['前端安全', '前端安全总结'],
             ],
 
             '/Frontend/JavaScript/': [
@@ -228,13 +229,12 @@ module.exports = {
                 ['Laravel-best-practices.md', 'Laravel 开发最佳实践'],
                 ['Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
                 ['Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
-                ['Laravel-Route-Model-Binding.md', 'Laravel-路由模型绑定'],
+                ['Laravel-Route-Model-Binding.md', 'Laravel-路由模型的使用'],
                 ['Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
                 ['Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
                 ['Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
                 ['Laravel-view-composers.md', 'Laravel 视图合成器的使用场景'],
                 ['Laravel-collection.md', 'Laravel 集合与实例'],
-                ['Laravel-Route-Model-Binding.md', 'Laravel-路由模型的使用'],
             ],
 
             '/Backend/Laravel/Laravel-model/': [
