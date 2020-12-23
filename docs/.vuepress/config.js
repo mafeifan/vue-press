@@ -195,6 +195,7 @@ module.exports = {
 
             '/Frontend/JavaScript/': [
                 ['说下js中的bind', '说下JavaScript中的bind'],
+                ['JavaScript中reduce的使用', 'JavaScript中reduce的使用'],
                 ['关于JS中的循环', '关于JS中的循环'],
                 ['JavaScript中的事件相关', 'JavaScript中的事件相关'],
                 ['JS-面试总结-理论篇', 'JS-面试总结-理论篇']
