@@ -61,6 +61,31 @@ echo sum(1, 2, 3, 4);
 echo sum(1,2,3,4,5,6)
 ```
 
+### 4. 兼容数组和多参数的写法
+
+这是Laravel文件系统中删除文件方法的源码
+如果删除多个文件，可以传数组或多个参数
+
+```php
+    public function delete($paths)
+    {
+        $paths = is_array($paths) ? $paths : func_get_args();
+
+        $success = true;
+
+        foreach ($paths as $path) {
+            try {
+                if (! @unlink($path)) {
+                    $success = false;
+                }
+            } catch (ErrorException $e) {
+                $success = false;
+            }
+        }
+
+        return $success;
+    }
+```
 
 
 总结：该函数接受可变数量的参数。参数将作为数组传递给给定变量
