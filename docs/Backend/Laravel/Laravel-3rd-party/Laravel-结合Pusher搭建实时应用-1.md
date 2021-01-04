@@ -22,7 +22,7 @@ var pusher = new Pusher('APP_KEY', {
   cluster: 'APP_CLUSTER'
 });
 ```
-订阅频道,频道名为'my-channel'
+订阅频道, 频道名为'my-channel'
 `var channel = pusher.subscribe('my-channel');`
 监听频道发布消息事件,事件名叫做'my-event'
 ```javascript
