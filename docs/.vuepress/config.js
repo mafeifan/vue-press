@@ -154,6 +154,7 @@ module.exports = {
                 ['Docker-学习系列24-Docker-及-docker-compose-使用总结', '24 Docker 及 Docker-compose 使用总结'],
                 ['Docker-学习系列25-Dockerfile-中的-COPY-与-ADD-命令', '25 Dockerfile 中的 COPY 与 ADD 命令'],
                 ['Docker-学习系列26-hub-tool', '26-hub-tool工具介绍'],
+                ['Docker-学习系列27-Docker-in-Docker', '27-Docker-in-Docker'],
                 ['Docker-学习资源', 'Docker学习资源'],
             ],
 

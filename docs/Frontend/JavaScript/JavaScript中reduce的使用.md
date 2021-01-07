@@ -149,4 +149,5 @@ function computeScore(list) {
 ```
 
 第一步消重
+
 第二步累加个数
