@@ -3,6 +3,8 @@
 计算机科学里的宏（Macro)，是一种批量处理的称谓。
 比如有些重复的动作，可以打包记录为一个宏，给宏名字，调用这个宏，就等于执行这一系列动作了。
 
+下面看下Laravel中宏的源码实现
+
 ## 源码分析
 ```php
 <?php
@@ -84,7 +86,7 @@ trait Macroable
         $macro = static::$macros[$method];
 
         if ($macro instanceof Closure) {
-            return call_user_func_array(Closure::bind($macro, null, static::class), $parameters);
+            return call_user_func_array(  ($macro, null, static::class), $parameters);
         }
 
         return $macro(...$parameters);
