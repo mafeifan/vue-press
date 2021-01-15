@@ -1,5 +1,38 @@
 不同的操作系统方法有略微差异，这里以Ubuntu 18.04为例。
 
+## 更新
+
+证书过期续期方法
+
+执行`sudo /snap/bin/certbot renew --force-renewal`
+
+提示
+
+```
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/course.intogolf.nl.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Could not choose appropriate plugin: The manual plugin is not working; there may be problems with your existing configuration.
+The error was: PluginError('An authentication script must be provided with --manual-auth-hook when using the manual plugin non-interactively.')
+Failed to renew certificate course.intogolf.nl with error: The manual plugin is not working; there may be problems with your existing configuration.
+The error was: PluginError('An authentication script must be provided with --manual-auth-hook when using the manual plugin non-interactively.')
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+All renewals failed. The following certificates could not be renewed:
+  /etc/letsencrypt/live/course.intogolf.nl/fullchain.pem (failure)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1 renew failure(s), 0 parse failure(s)
+
+```
+
+经查，不管是申请还是续期，只要是通配符证书，只能采用 dns-01 的方式校验申请者的域名，也就是说 certbot 操作者必须手动添加 DNS TXT 记录。
+
+certbot 提供了一个 hook，可以编写一个 Shell 脚本，让脚本调用 DNS 服务商的 API 接口，动态添加 TXT 记录，这样就无需人工干预了。
+
+--manual-auth-hook：在执行命令的时候调用一个 hook 文件
+
 ### 安装生成工具
 ```shell script
 sudo apt update
@@ -115,4 +148,6 @@ server {
 
 
 ## 参考
+https://github.com/ywdblog/certbot-letencrypt-wildcardcertificates-alydns-au
+
 https://websiteforstudents.com/generate-free-wildcard-certificates-using-lets-encrypt-certbot-on-ubuntu-18-04/
