@@ -58,6 +58,7 @@ module.exports = {
                     text: 'Laravel',
                     items: [
                         {text: 'Model', link: '/Backend/Laravel/Laravel-model/Laravel-model-tips'},
+                        {text: '实时通信', link: '/Backend/Laravel/Laravel-echo-server/Laravel-echo构建实时应用'},
                         {text: '类库使用', link: '/Backend/Laravel/Laravel-3rd-party/Laravel-常用第三方类库'},
                         {text: '开发收集', link: '/Backend/Laravel/Laravel-feature/Laravel-best-practices'},
                     ]
@@ -227,6 +228,12 @@ module.exports = {
                 ['Laravel-tap.md', 'Laravel tap'],
             ],
 
+            '/Backend/Laravel/Laravel-echo-server/': [
+                ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
+                ['Laravel-结合Pusher搭建实时应用-1.md', 'Laravel-结合Pusher搭建实时应用-1'],
+                ['Laravel-结合Pusher搭建实时应用-2.md', 'Laravel-结合Pusher搭建实时应用-2'],
+            ],
+
             '/Backend/Laravel/Laravel-feature/': [
                 ['Laravel-best-practices.md', 'Laravel 开发最佳实践'],
                 ['Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
@@ -249,7 +256,6 @@ module.exports = {
 
             '/Backend/Laravel/Laravel-3rd-party/': [
                 ['Laravel-常用第三方类库.md', 'Laravel-常用第三方类库'],
-                ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
                 ['Laravel-mix.md', 'Laravel Mix介绍'],
                 ['Laravel-snappy生成PDF', 'Laravel-snappy生成PDF'],
                 ['Laravel-ingnition.md', 'Laravel Ignition异常详情组件介绍'],
