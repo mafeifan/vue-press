@@ -236,6 +236,7 @@ module.exports = {
                 ['Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
                 ['Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
                 ['Laravel-view-composers.md', 'Laravel 视图合成器的使用场景'],
+                ['Laravel-Server-Fetched-Partials-片段渲染.md', 'Laravel 片段渲染'],
                 ['Laravel-collection.md', 'Laravel 集合与实例'],
             ],
 
