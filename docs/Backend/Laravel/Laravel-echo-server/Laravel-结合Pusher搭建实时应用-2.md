@@ -1,6 +1,6 @@
 接上篇优化，我们使用Laravel的方式改造
 
-首先编辑`.env`，修改广播驱动为pusher
+首先编辑`.env`，修改广播驱动为`pusher`
 ```
 # BROADCAST_DRIVER=log
 BROADCAST_DRIVER=pusher
@@ -12,7 +12,10 @@ MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 ```
 
-前端创建一个vue组件，用来显示实时信息
+前端创建一个vue组件，
+Add按钮：往push服务端发送信息
+同时，打开页面时监听广播并显示push服务端传回来的信息
+
 resources/js/components/ExampleComponent.vue
 
 ```vue
@@ -22,10 +25,11 @@ resources/js/components/ExampleComponent.vue
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Example Component</div>
-
                     <div class="card-body">
+                        <button @click="add">Add</button>
+
                         <ul>
-                            <li v-for="item in items" :key="item.name">{{ item.name }} -- {{item.data}}</li>
+                            <li v-for="(item, index) in items" :key="index">{{ item.name }} -- {{ item.data }}</li>
                         </ul>
                     </div>
                 </div>
@@ -36,15 +40,18 @@ resources/js/components/ExampleComponent.vue
 
 <script>
 export default {
-    data () {
+    data() {
         return {
             items: []
         }
     },
+    methods: {
+        add() {
+            axios.post('/task/demo')
+        }
+    },
     mounted() {
         let that = this;
-        // task-event 频道名
-        // TaskEvent 是类名，我们还没创建，现在去创建
         Echo.channel('task-event')
             .listen('TaskEvent', (e) => {
                 console.log(e);
@@ -83,15 +90,18 @@ class TaskEvent implements ShouldBroadcast
 
     public $task;
 
+
     /**
-     * Create a new event instance.
-     *
-     * @return void
+     * TaskEvent constructor.
+     * @param $task
      */
     public function __construct($task)
     {
         //
         $this->task = $task;
+        // 这行很重要，有时候我们一条广播信息，我们只希望通知给其他监听者，自己不用接收
+        // 比如我们添加一条记录，本身就可以push到当前列表，同时又要显示广播来的记录，就会重复显示
+        // $this->dontBroadcastToCurrentUser();
     }
 
     /**
@@ -110,13 +120,36 @@ class TaskEvent implements ShouldBroadcast
     }
 }
 
+
 ```
 
-添加一条测试路由
+添加测试路由
 
 routes/web.php
 ```
-Route::get('/task/demo', function () {
-    event(new \App\Events\TaskEvent(['name' => 'foo', 'data' => rand(1000, 9999)]));
+Route::get('/task', 'TaskController@index')->name('task');
+
+Route::post('/task/demo', function () {
+    event(
+        (new App\Events\TaskEvent(['name' => 'foo', 'data' => rand(1000, 9999)]))
+    );
 });
+
+
+
 ```
+
+这里省略了 TaskController 和 view 的代码
+
+浏览器打开 `http://laravel6.test/task`
+
+
+![](https://pek3b.qingstor.com/hexo-blog/hexo-blog/20210119214647.png)
+
+点add，打开pusher后台，会看到调试日志，非常方便
+
+![](https://pek3b.qingstor.com/hexo-blog/hexo-blog/20210118143025.png)
+
+完整代码
+
+`https://github.com/mafeifan/chat-api-main/tree/echo-server`
