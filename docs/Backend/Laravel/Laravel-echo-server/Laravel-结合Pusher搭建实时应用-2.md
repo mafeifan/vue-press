@@ -126,7 +126,8 @@ class TaskEvent implements ShouldBroadcast
 添加测试路由
 
 routes/web.php
-```
+
+```php
 Route::get('/task', 'TaskController@index')->name('task');
 
 Route::post('/task/demo', function () {

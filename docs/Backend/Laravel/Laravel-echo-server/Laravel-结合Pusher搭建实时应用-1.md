@@ -1,8 +1,8 @@
 https://pusher.com/ 是一家国外网站，提供两款产品
 
-[Channel] 提供设备间，应用间的实时通信，适用于实时图表、实时用户列表、实时地图、多人游戏和许多其他类型的UI更新。
+* Channel 提供设备间，应用间的实时通信，适用于实时图表、实时用户列表、实时地图、多人游戏和许多其他类型的UI更新。
 
-[Beams] 跨平台的消息推送，iOS, Android and web
+* Beams 跨平台的消息推送，iOS, Android and web
 
 产品特点：SDK丰富，集成快速简单，debug调试也很人性。
 
@@ -88,6 +88,8 @@ require __DIR__ . '/vendor/autoload.php';
 $pusher = new Pusher\Pusher("APP_KEY", "APP_SECRET", "APP_ID", array('cluster' => 'APP_CLUSTER'));
 $pusher->trigger('my-channel', 'my-event', array('message' => 'hello world'));
 ```
+
+6. 正常下，每运行一次后台，前台就会多一条记录。
 
 ## 参考
 
