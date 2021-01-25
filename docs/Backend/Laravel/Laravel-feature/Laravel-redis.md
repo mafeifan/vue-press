@@ -105,6 +105,85 @@ foreach ($data as $order) {
 \RedisManager::publish('news', json_encode(['foo' => 'bar']));
 ```
 
+### 购物车处理
+
+需要存储用户ID(uid)，商品ID(gid)和商品数量(count)
+存储格式: cartuid:gid:count
+比如 cart:1:10:2
+表示用户ID1添加了2件id为10的商品
+用redis中的哈希比较方便
+
+```
+# 用户添加了两种商品，2个101，1个102
+127.0.0.1:6379> hset cart:1 101 2 102 1
+OK
+127.0.0.1:6379> hkeys cart:1
+1) "101"
+2) "102"
+127.0.0.1:6379> hget cart:1 101
+1) "2"
+127.0.0.1:6379>
+```
+
+```php
+class Cart 
+{
+
+	private $prefix = 'cart:';
+
+	private $redis = null;
+
+	public function __construct()
+	{
+        $this->redis = new Redis();
+        $this->redis->connect('127.0.0.1',6379);
+    }
+
+    public function userId()
+    {
+    	return 1;
+    }
+
+    public function addItem($goodId, $count)
+    {
+    	$key = $this->prefix . $this->userId();
+
+    	$oldCount = $this->getItem($goodId);
+
+        // 添加过该商品，累加个数
+    	if ($oldCount) {
+    		$newCount = $oldCount + $count;
+			$this->redis->hset($key, $goodId, $newCount);
+        // 首次添加商品，直接记录
+    	} else {
+    		$this->redis->hset($key, $goodId, $count);
+    	}
+    }
+
+	public function getItem($goodId)
+	{
+		$key = $this->prefix . $this->userId();
+		return $this->redis->hget($key, $goodId);
+	}
+}
+
+$cart = new Cart();
+
+$cart->addItem('103', 2);
+
+$cart->addItem('103', 1);
+
+$cart->addItem('105', 1);
+
+$cart->addItem('106', 3);
+
+$cart->addItem('106', -2);
+```   
+
+      
+::: warning
+根据Redis 4.0.0，HMSET被视为已弃用。请在新代码中使用HSET。              
+:::
 
 
 ## 参考
