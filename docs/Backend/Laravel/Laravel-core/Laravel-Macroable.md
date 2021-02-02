@@ -249,6 +249,14 @@ $macroableClass->anotherMixinMethod() // returns 'anotherMixinMethod';
 
 也就是说，我们可以通过宏扩展原有的功能，看这个例子，[往Query Build中添加list方法](https://stackoverflow.com/questions/43396489/add-lists-method-in-query-builder-in-laravel-5-4)
 
+把宏定义添加到`AppServiceProvider`文件的boot方法中，这样可以在全局使用啦
+```php
+Collection::macro('firstNth', function($take) {
+    // 加 static 确保返回 collection 类型
+    return new static(array_slice($this->item, 0, $take));
+});
+```
+
 ## 参考
 https://asklagbox.com/blog/laravel-macros
 
