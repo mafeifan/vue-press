@@ -9,7 +9,6 @@ https://learnku.com/articles/14292/laravel-uses-interventionimage-to-process-pic
 ### 媒体库
 https://github.com/spatie/laravel-medialibrary
 
-
 ### XSS 安全漏洞处理组件
 https://packagist.org/packages/mews/purifier
 

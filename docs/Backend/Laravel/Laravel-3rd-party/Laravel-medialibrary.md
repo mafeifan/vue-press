@@ -2,6 +2,8 @@
 
 支持多媒体文件上传，下载，多个上传，图片压缩，转换处理(需安装依赖)
 
+缺点：如果要结合Vue或React进行上传，需要使用的Pro版本，但是要额外收费
+
 使用起来比较简单，以v7版本为例
 
 1. 运行下面的命令
@@ -109,3 +111,6 @@ class Note extends Model implements HasMedia
 ```html
  <img src="{{$note->cover}}" alt="">
 ```
+
+## 参考
+https://spatie.be/docs/laravel-medialibrary/v7/installation-setup
