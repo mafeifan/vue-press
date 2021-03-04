@@ -260,6 +260,7 @@ module.exports = {
                 ['Laravel-snappy生成PDF', 'Laravel-snappy生成PDF'],
                 ['Laravel-ingnition.md', 'Laravel Ignition异常详情组件介绍'],
                 ['Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
+                ['Laravel-medialibrary.md', 'Laravel 媒体库'],
             ],
 
             '/Backend/Database/MySQL/': [

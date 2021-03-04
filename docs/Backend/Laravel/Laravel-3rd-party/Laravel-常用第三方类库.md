@@ -1,10 +1,14 @@
+
 ### 图片验证码(也依赖了下面的图片类库)
 https://github.com/mewebstudio/captcha
 
 ### 图片处理 裁剪，加水印
 http://image.intervention.io/
-
 https://learnku.com/articles/14292/laravel-uses-interventionimage-to-process-pictures
+
+### 媒体库
+https://github.com/spatie/laravel-medialibrary
+
 
 ### XSS 安全漏洞处理组件
 https://packagist.org/packages/mews/purifier
