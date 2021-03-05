@@ -7,7 +7,7 @@
 使用起来比较简单，以v7版本为例
 
 1. 运行下面的命令
-```php
+```shell script
 composer require spatie/laravel-medialibrary
 
 php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
@@ -20,7 +20,7 @@ php artisan migrate
 2. 建议添加一个filesystem配置项，与其他的区分开
 
 config/filesystems.php
-```
+```php
 'media' => [
     'driver' => 'local',
     'root'   => storage_path('app/public/media'),
@@ -33,7 +33,7 @@ config/filesystems.php
 
 4. 以Note模块为例，添加封面图功能
 
-```
+```php
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia\HasMedia;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
@@ -111,6 +111,8 @@ class Note extends Model implements HasMedia
 ```html
  <img src="{{$note->cover}}" alt="">
 ```
+
+laravel-medialibrary的功能还是比较强大的，对接也比较方便，详细内容可以参照官方文档
 
 ## 参考
 https://spatie.be/docs/laravel-medialibrary/v7/installation-setup
