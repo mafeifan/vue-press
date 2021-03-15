@@ -106,10 +106,10 @@ $user->name;    // John
 ```php
 class User extends Model
 {
- public function phone()
- {
-  return $this->hasOne('App\Phone');
- }
+  public function phone()
+  {
+    return $this->hasOne('App\Phone');
+  }
 }
 $user = User::first();
 $user->name = "Peter";
@@ -117,7 +117,6 @@ $user->phone->number = '1234567890';
 $user->save(); // 只更新 User Model
 $user->push(); // 更新 User 和 Phone Model
 ```
- 
  
 ### 8. 自定义软删除字段
 
@@ -140,11 +139,11 @@ class User extends Model
 ```php
 class User extends Model
 {
- use SoftDeletes;
+  use SoftDeletes;
   
- public function getDeletedAtColumn(){
-  return 'is_deleted';
- }
+  public function getDeletedAtColumn(){
+    return 'is_deleted';
+  }
 }
 ```
 
