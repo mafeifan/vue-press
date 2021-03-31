@@ -27,7 +27,7 @@ storybook本身提供了很多组件，也可以添加自己的组件作为story
 ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-d7e860d0ab76d9e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 4. 这个页面是咋生成的呢，我们打开`\src\stories\index.js`一看便知
-```
+```javascript
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
