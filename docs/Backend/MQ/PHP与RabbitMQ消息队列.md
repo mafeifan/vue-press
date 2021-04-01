@@ -148,3 +148,24 @@ client2:
 ![](https://pek3b.qingstor.com/hexo-blog/hexo-blog/20210315185326.png)
 
 
+## 队列属性
+
+* durable 持久化
+
+即指定队列是否是持久化的。使消息持久化，需要队列和消息都是持久化的，并且通常交换机也应该是持久化的。
+RabbitMQ的默认交换机“(AMQP default)”是持久化的，对于与其绑定的队列，将队列声明为持久化的队列，并发送持久化的消息，即可将消息持久化。
+	
+// 重启队列	
+rabbitmqctl stop_app
+rabbitmqctl start_app
+
+登录Web管理界面，可以看到，队列中依然保存着重启前的消息。队列列表中，特性（Features）列的“D”即表示该队列是持久化的（Durable）。
+
+可以验证，若队列不是持久化的，或发送的消息未设置持久化的属性，在RabbitMQ重启后，消息都会丢失。
+
+* exclusive 排他性
+
+对于排他队列，只有创建它的连接有权访问，连接断开后，排他队列将自动删除。
+这种队列适用于一个队列仅对应一个客户端收发消息的场景。在声明队列时，将exclusive参数设置为true即可声明一个排他队列。
+
+进入Web管理界面，Queues中Features列的“Excl”即表明该队列是排他的
