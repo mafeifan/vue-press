@@ -65,7 +65,7 @@ for ($i = 0; $i < 100; $i++) {
         'content' => 'helloweba-' . time()
     ];
     $data = json_encode($arr);
-    $msg = new AMQPMessage($data, ['delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT]); ////设置rabbitmq重启后也不会丢失队列，或者设置为'delivery_mode' => 2
+    $msg = new AMQPMessage($data, ['delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT]); ////设置RabbitMQ重启后也不会丢失队列，或者设置为'delivery_mode' => 2
     $channel->basic_publish($msg, '', $queue);
 
     echo 'Send message: ' . $data . PHP_EOL;
