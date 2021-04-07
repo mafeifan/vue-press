@@ -41,6 +41,9 @@ RabbitMQ安装部署完毕，会已经创建好一些交换机，进入Web管理
 
 ![](https://gitee.com/Finley/upic/raw/master/picGo/20210403231246.png)
 
+## 示例说明
+生产者（Producer）和消费者（Consumer）是消息队列的基本概念，生产者是指生产消息的一方，也是消息发送方，消费者就是消费消息的一方，也是消息接收方，队列就是存储消息的一个缓存区。
+
 本节中，我们创建一个消息的发送方（生产者）、接收方（消费者）和与默认交换机绑定的队列，发送方通过默认交换机向该队列中发送一条消息，接收方从该队列中取出消息。
 
 RabbitMQ支持多种编程语言的客户端，本文主要使用PHP
@@ -49,12 +52,10 @@ RabbitMQ支持多种编程语言的客户端，本文主要使用PHP
 
 ```php
 <?php
-
 /**
  * @sender.php
  * @消息生产者-发送端
  */
-
 
 require_once __DIR__ . '/vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -68,7 +69,7 @@ $connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest');
 $channel = $connection->channel();
 
 // 第3个参数设置为true，表示让消息队列持久化
-$channel->queue_declare($queue, false, true, false, false);
+$channel->queue_declare($queue, false, true, false, true);
 
 for ($i = 0; $i < 10; $i++) {
     $arr = [
@@ -85,14 +86,12 @@ for ($i = 0; $i < 10; $i++) {
 
 $channel->close();
 $connection->close();
-
 ```
 
 ## 接收方
 
 ```php
 <?php
-
 /**
  * @receiver.php
  * @消息消费者-接收端
@@ -107,7 +106,7 @@ $connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest');
 
 $channel = $connection->channel();
 
-$channel->queue_declare($queue, false, true, false, false);
+$channel->queue_declare($queue, false, true, false, true);
 
 echo ' [*] Waiting for messages. To exit press CTRL+C' . PHP_EOL;
 
@@ -129,8 +128,15 @@ while(count($channel->callbacks)) {
 
 $channel->close();
 $connection->close();
-
 ```
 
+先运行接收端，再运行发送端
+`php receiver.php`和 `php sender.php`
 
+进到管理平台会发现Queues多了名为work的队列
 
+![](https://gitee.com/Finley/upic/raw/master/picGo/20210407111622.png)
+
+在队列详情页面，可以发布消息，接收端可以收到消息了
+
+![](https://gitee.com/Finley/upic/raw/master/picGo/20210407111909.png)
