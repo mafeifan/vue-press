@@ -57,3 +57,32 @@ const demo = async function() {
 demo().then(res => console.log(1))
 
 ```
+
+#### 链判断运算符
+在项目开发中，我们经常会遇到要取结构深层数据的情况，下面的一行代码就在所难免：
+`const price = data.result.redPacket.price`
+
+那么当某一个key不存在时，undefined.key就会报错，通常我们会优化成下面的样子：
+
+`const price = (data&&data.result&&data.result.redPacket&&data.result.redPacket.price)||'default'`
+
+es6提供链判断运算符：
+
+`const price = data?.result?.redPacket?.price||'default'`
+
+这样即使某一个key不存在，也不会报错，只会返回undefined。
+
+相关语法：
+
+```javascript
+a?.b // 等同于 a == null ? undefined : a.b
+a?.[x] // 等同于 a == null ? undefined : a[x]
+a?.b() // 等同于 a == null ? undefined : a.b()
+a?.() // 等同于 a == null ? undefined : a()
+```
+
+
+
+## 参考
+
+https://jelly.jd.com/article/604f04069c61f9014c21ad81

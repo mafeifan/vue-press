@@ -246,6 +246,7 @@ module.exports = {
                 ['Laravel-view-composers.md', 'Laravel 视图合成器的使用场景'],
                 ['Laravel-Server-Fetched-Partials-片段渲染.md', 'Laravel 片段渲染'],
                 ['Laravel-collection.md', 'Laravel 集合与实例'],
+                ['Laravel-redis.md', 'Redis 在 Laravel 项目中的使用场景'],
             ],
 
             '/Backend/Laravel/Laravel-model/': [

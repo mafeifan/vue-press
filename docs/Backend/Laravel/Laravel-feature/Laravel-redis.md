@@ -1,5 +1,4 @@
-## redis 在 Laravel 项目中的使用场景
-
+## Redis 在 Laravel 项目中的使用场景
 
 ### 30 分钟未付款取消订单
 
@@ -60,7 +59,7 @@ Reading messages... (press Ctrl-C to quit)
 
 ```php
 $redis = new \Redis();
-$redis->connect('127.0.0.01', '6379');
+$redis->connect('127.0.0.1', '6379');
 $redis->setOption(\Redis::OPT_READ_TIMEOUT, -1);
 $cache_db = config('database.redis.default.database');
 $pattern = '__keyevent@' . $cache_db . '__:expired';
