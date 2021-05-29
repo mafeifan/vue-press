@@ -24,13 +24,17 @@ foreach ($unPaid as $order) {
 
 流程：
 
-1. 修改Redis的配置文件，加入`notify-keyspace-events "Ex"`
-E 表示 Keyevent事件
-x 过期事件
+1. 
+`brew info redis` 查看redis配置文件，Linux一般在`/etc/redis.conf`
+修改Redis的配置文件，加入`notify-keyspace-events "Ex"`
+* E 表示 Keyevent事件
+* x 过期事件
 
-2. 重启redis服务 `brew services restart redis`
+2. 
+重启redis服务 `brew services restart redis`
 
-3. 打开两个终端，先在命令行里测试功能，一个命令行中
+3. 
+打开两个终端，先在命令行里测试功能，一个命令行中
 ```shell
 redis-cli
 psubscribe __keyevent@0__:expired
