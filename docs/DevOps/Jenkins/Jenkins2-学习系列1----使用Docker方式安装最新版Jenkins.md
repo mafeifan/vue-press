@@ -37,7 +37,7 @@ services:
      - "8088:8080"
      - "50000:50000"
     environment:
-     - TZ=Asia/Shanghai
+     - JAVA_OPTS=-Duser.timezone=Asia/Shanghai
     volumes:
      - /var/run/docker.sock:/var/run/docker.sock
      - /usr/bin/docker:/usr/bin/docker
@@ -68,6 +68,11 @@ services:
 
 最终来到了欢迎页面
 > ![image.png](https://hexo-blog.pek3b.qingstor.com/2019/8/24/16cc3eaa697012dd?w=1240&h=671&f=png&s=99707)
+
+
+#### 修改时区
+在【系统管理】-【脚本命令行】里运行
+`System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai')`
 
 #### 问题：
 * Jenkins更新比较频繁，如何更新版本？
