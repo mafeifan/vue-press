@@ -74,6 +74,17 @@ services:
 在【系统管理】-【脚本命令行】里运行
 `System.setProperty('org.apache.commons.jelly.tags.fmt.timeZone', 'Asia/Shanghai')`
 
+#### 修改Jenkins插件为国内源
+首页 --> configure --> Manage Jenkins --> Advanced --> Update Site（页面最下方‘升级站点’）
+
+替换URL为 清华大学仓库地址：
+
+https://updates.jenkins.io/update-center.json
+改为
+https://mirror.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
+
+如果插件页面为空，把https改为http
+
 #### 问题：
 * Jenkins更新比较频繁，如何更新版本？
 见 medium 的这篇 [文章](https://medium.com/@jimkang/how-to-start-a-new-jenkins-container-and-update-jenkins-with-docker-cf628aa495e9)

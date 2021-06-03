@@ -73,6 +73,10 @@ Server Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.7", GitCom
 浏览器打开 `http://ingress.finley.demo/banana` 页面显示 banana
 其实就是个代理
 
+::: warning
+本地测试如果装了valet最好先关掉，否则容易看不到结果`valet stop`
+:::
+
 
 一图看流程
 ![](https://gitee.com/Finley/upic/raw/master/picGo/20210603144746.png)
@@ -83,3 +87,5 @@ Server Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.7", GitCom
 https://kubernetes.github.io/ingress-nginx/deploy/#docker-desktop
 
 https://developer.aliyun.com/article/759310
+
+http://threelambda.com/2020/07/06/run-ingress-example-on-mac/
