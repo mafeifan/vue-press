@@ -1,7 +1,11 @@
+**更新 2021-06-15**
+为防止恶意触发，建议在Jenkins->configure Generic Webhook Trigger 中配置white list 添加IP地址，即只接受这个IP去请求webhook地址
+
 **更新 2019-07-14**
 
 关于webhook触发job，其实有更简单的办法，在job的配置页面
-勾选`Build Triggers`选项卡的`Trigger builds remotely (e.g., from scripts)`，填入一个token
+勾选`Build Triggers`选项卡的`Trigger builds remotely (e.g., from scripts)`，填入一个token，但是有时候会报
+"Error 403 No valid crumb was included in the request"个人觉得还是Generic Webhook Trigger插件好用
 
 ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-fe35644cd7d95c18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -55,7 +59,8 @@ pipeline {
     }
 }
 ```
-4. 来到Gitee/Github，添加一个webhook地址，如果你的Jenkins地址是http://110.110.110.110:8080，job名称为gitee-hexo-blog-pipeline，那么根据规则，Generic Webhook Trigger的地址是` http://110.110.110.110:8080/generic-webhook-trigger/invoke?token=gitee-hexo-blog-pipeline`
+4. 来到Gitee/Github，添加一个webhook地址，如果你的Jenkins地址是http://110.110.110.110:8080，job名称为gitee-hexo-blog-pipeline，
+那么根据规则，Generic Webhook Trigger的地址是` http://110.110.110.110:8080/generic-webhook-trigger/invoke?token=gitee-hexo-blog-pipeline`
 配置完成，点测试，看返回内容是否是成功的。
 ![image.png](https://hexo-blog.pek3b.qingstor.com/upload_images/71414-7621263f95c91bad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
