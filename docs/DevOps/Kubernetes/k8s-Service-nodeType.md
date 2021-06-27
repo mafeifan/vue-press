@@ -7,7 +7,7 @@
 ### 解决问题：
 Service 为一组 Pod（通过 labels 来选择）提供一个统一的入口，并为它们提供负载均衡和自动服务发现。
 
-Service类型
+### Service类型
 
 * ClusterIP: 外界无法访问，集群内可访问
 * LoadBalance：需要云服务商支持
@@ -18,10 +18,14 @@ Service类型
 `kubectl expose deployment my-deployment --name my-cip-service \ 
 --type ClusterIP --protocol TCP --port 80 --target-port 8080`
 
-### 查看服务
+查看服务
 kubectl get svc
 
-### NodeType类型的Service
+#### NodeType类型的Service
+
+通过一个例子了解NodeType类型的Service
+首先创建一个deployment，里面会运行一个web服务，暴露端口是50000
+然后基于这个deployment创建NodeType类型的service，会把外部来的32049端口的流量转发到这个pod内部的50000端口
 
 my-deployment-50000.yaml
 
@@ -82,7 +86,6 @@ kubectl get pods
 
 kubectl apply -f my-np-service.yaml
 
-// 记下nodePort,也就是服务暴露出来的端口，范围是30000-32767，这里是 31544 nodePort
 kubectl get service my-np-service --output yaml
 
 // 记下任意一个 EXTERNAL-IP，如 35.236.136.94 | 35.194.201.238 |  35.234.56.229
