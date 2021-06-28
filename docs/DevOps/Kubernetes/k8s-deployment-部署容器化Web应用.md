@@ -1,3 +1,11 @@
+在 k8s 上进行部署前，首先需要了解一个基本概念 Deployment
+
+Deployment 译名为 部署。在k8s中，通过发布 Deployment，可以创建应用程序 (docker image) 的实例 (docker container)，这个实例会被包含在称为 Pod 的概念中，Pod 是 k8s 中最小可管理单元。
+
+在 k8s 集群中发布 Deployment 后，Deployment 将指示 k8s 如何创建和更新应用程序的实例，master 节点将应用程序实例调度到集群中的具体的节点上。
+
+创建应用程序实例后，Kubernetes Deployment Controller 会持续监控这些实例。如果运行实例的 worker 节点关机或被删除，则 Kubernetes Deployment Controller 将在群集中资源最优的另一个 worker 节点上重新创建一个新的实例。这提供了一种自我修复机制来解决机器故障或维护问题。
+
 本教程教你跑一个Web NodeJS项目在google cloud k8s集群上面。
 
 GKE 是 Google Kubernetes Engine (GKE) 集群
@@ -58,3 +66,4 @@ GKE 是 Google Kubernetes Engine (GKE) 集群
 ![image.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d3e71b923858458da55440347b870a5a~tplv-k3u1fbpfcp-watermark.image)
 
 至此部署完成，下篇介绍如何更新镜像
+

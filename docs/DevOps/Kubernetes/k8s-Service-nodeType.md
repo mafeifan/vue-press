@@ -3,15 +3,20 @@
 
 - Pod IP 会随着Pod的重建产生变化
 - Pod IP 仅仅是集群内可见的虚拟IP，外部无法访问
+- 需要一种机制，为前端系统屏蔽后端系统的 Pod（容器组）在销毁、创建过程中所带来的 IP 地址的变化。
 
 ### 解决问题：
+Kubernetes 中的 Service（服务） 提供了这样的一个抽象层，它选择具备某些特征的 Pod（容器组）并为它们定义一个访问方式。
+
 Service 为一组 Pod（通过 labels 来选择）提供一个统一的入口，并为它们提供负载均衡和自动服务发现。
+
+一个 Service（服务）选定哪些 Pod（容器组） 通常由 LabelSelector(标签选择器) 来决定。
 
 ### Service类型
 
-* ClusterIP: 外界无法访问，集群内可访问
-* LoadBalance：需要云服务商支持
-* NodePort：外界可以访问
+* ClusterIP: 在群集中的内部IP上公布服务,外界无法访问，集群内可访问（默认）
+* LoadBalance：在云环境中（需要云供应商可以支持）创建一个集群外部的负载均衡器，并为使用该负载均衡器的 IP 地址作为服务的访问地址。此时 ClusterIP 和 NodePort 的访问方式仍然可用。
+* NodePort：使用 NAT 在集群中每个的同一端口上公布服务。这种方式下，可以通过访问集群中任意节点+端口号的方式访问服务 <NodeIP>:<NodePort>。此时 ClusterIP 的访问方式仍然可用
 
 作为编写 Service 清单的替代方法，可以使用 kubectl expose 公开 Deployment，以创建 Service。
 
