@@ -16,7 +16,7 @@ Service 为一组 Pod（通过 labels 来选择）提供一个统一的入口，
 
 * ClusterIP: 在群集中的内部IP上公布服务,外界无法访问，集群内可访问（默认）
 * LoadBalance：在云环境中（需要云供应商可以支持）创建一个集群外部的负载均衡器，并为使用该负载均衡器的 IP 地址作为服务的访问地址。此时 ClusterIP 和 NodePort 的访问方式仍然可用。
-* NodePort：使用 NAT 在集群中每个的同一端口上公布服务。这种方式下，可以通过访问集群中任意节点+端口号的方式访问服务 <NodeIP>:<NodePort>。此时 ClusterIP 的访问方式仍然可用
+* NodePort：使用 NAT 在集群中每个的同一端口上公布服务。这种方式下，可以通过访问集群中任意节点+端口号的方式访问服务 `<NodeIP>:<NodePort>`。此时 ClusterIP 的访问方式仍然可用
 
 作为编写 Service 清单的替代方法，可以使用 kubectl expose 公开 Deployment，以创建 Service。
 

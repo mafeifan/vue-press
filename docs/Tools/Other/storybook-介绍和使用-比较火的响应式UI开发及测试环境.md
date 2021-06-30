@@ -1,7 +1,7 @@
 storybook是一套最近比较火的响应式UI 开发及测试环境。
 可以可视化开发调试react，vue组件
 官网：https://github.com/storybooks/storybook
-至于为什么叫storybook，应该是敏捷开发中的user story有关，找了篇 [文章](https://www.cnblogs.com/henryhappier/archive/2011/02/23/1962617.html)，不了解的同学可以看下
+至于为什么叫storybook，猜测是敏捷开发中的user story有关，找了篇 [文章](https://www.cnblogs.com/henryhappier/archive/2011/02/23/1962617.html)，不了解的同学可以看下
 
 根据官网介绍一个story是一个或多个UI组件的单一状态，基本上像一个可视化测试用例。
 打开 [这个](http://airbnb.io/react-dates)，这是airbnb公司实现的一个react的datepicker组件。这个组件配置很多，怎么让大家直观的查看学习呢？他就利用storybook写了很多story，左侧的每一项点开后是datepicker组件不同的状态或配置，就是一个个story。

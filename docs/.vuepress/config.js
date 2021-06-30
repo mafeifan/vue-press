@@ -41,6 +41,7 @@ module.exports = {
                 text: 'Tools',
                 items: [
                     {text: 'Git', link: '/Tools/Git/Git-和-GitHub：从入门到实践1-Git-和-GitHub-基础简介'},
+                    {text: 'Other', link: '/Tools/Other/使用frp内网穿透工具'},
                 ]
             },
             {
@@ -67,7 +68,8 @@ module.exports = {
                     text: 'Database',
                     items: [
                         {text: 'MySQL', link: '/Backend/Database/MySQL/总结'},
-          //              {text: 'RabbitMQ', link: '/Backend/MQ/1-RabbitMQ入门基础'},
+                        {text: 'MQTT', link: '/Backend/Database/MQTT/MQTT系列-MQTT基础概念'},
+                       // {text: 'RabbitMQ', link: '/Backend/MQ/1-RabbitMQ入门基础'},
                     ]
                 }],
             },
@@ -191,6 +193,14 @@ module.exports = {
                 ['Git-和-GitHub：从入门到实践5-分支策略管理', 'Git 进阶：分支策略管理']
             ],
 
+            '/Tools/Other/': [
+                ['当有个服务器可以干哪些事情', '当有个服务器可以干哪些事情?'],
+                ['使用frp内网穿透工具', '使用frp内网穿透工具'],
+                ['storybook-介绍和使用-比较火的响应式UI开发及测试环境', 'storybook-介绍和使用-响应式UI开发及测试环境'],
+                ['强大的Postman-----API管理工具', '强大的Postman--API管理工具'],
+                ['说下browserslist', '说下browserslist'],
+            ],
+
             '/Frontend/HTML5/': [
                 ['CSS3实现未知宽高元素的垂直居中和水平居中', 'CSS3 实现未知宽高元素的垂直居中和水平居中'],
                 ['巧解checkbox未选中不提交数据', '巧解checkbox未选中不提交数据'],
@@ -270,6 +280,12 @@ module.exports = {
                 ['索引.md', '索引'],
             ],
 
+            '/Backend/Database/MQTT/': [
+                ['MQTT系列-MQTT基础概念', 'MQTT基础概念'],
+                ['MQTT系列-MQTT的QoS介绍', 'MQTT的QoS介绍'],
+                ['MQTT系列-代码示例', '代码示例'],
+            ],
+
             // '/Backend/MQ/': [
             //     ['1-RabbitMQ入门基础.md', '1-安装入门'],
             //     ['2-RabbitMQ基本操作.md', '2-基本操作'],
@@ -283,6 +299,7 @@ module.exports = {
                 ['/DevOps/Docker/', 'Docker系列'],
                 ['/Frontend/HTML5/', 'HTML5&CSS3'],
                 ['/Backend/Laravel/', 'Laravel系列'],
+                ['/Backend/Database/MQTT/', 'MQTT系列'],
             ]
         }
     }

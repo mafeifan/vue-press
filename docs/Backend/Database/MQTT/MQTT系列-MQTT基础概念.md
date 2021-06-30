@@ -57,9 +57,9 @@ MQTT 协议数据包的消息格式为：固定头|可变头|消息体
 
 由下面三个部分组成：
 
-* 固定头（Fixed header）：**存在于所有的MQTT数据包中**，用于表示数据包类型及对应标志、数据包大小等；
-* 可变头（Variable header）：存在于部分类型的MQTT数据包中，具体内容是由相应类型的数据包决定的；
-* 消息体（Payload）：存在于部分的MQTT数据包中，存储消息的具体数据。
+* 固定头（Fixed header）: **存在于所有的MQTT数据包中**，用于表示数据包类型及对应标志、数据包大小等；
+* 可变头（Variable header）: 存在于部分类型的MQTT数据包中，具体内容是由相应类型的数据包决定的；
+* 消息体（Payload）: 存在于部分的MQTT数据包中，存储消息的具体数据。
 
 ### 4.1. 固定头
 
@@ -78,7 +78,7 @@ MQTT 协议数据包的消息格式为：固定头|可变头|消息体
 当MQTT发送的消息类型是CONNECT（连接）、PUBLISH（发布）、SUBSCRIBE（订阅）、SUBACK（订阅确认）、UNSUBSCRIBE（取消订阅）时，则会带有负荷。
 
 
-## 参考：
+## 参考
 
 https://blog.csdn.net/programguo/article/details/100035935
 
