@@ -67,7 +67,7 @@ module.exports = {
                     text: 'Database',
                     items: [
                         {text: 'MySQL', link: '/Backend/Database/MySQL/总结'},
-                        {text: 'RabbitMQ', link: '/Backend/MQ/1-RabbitMQ入门基础'},
+          //              {text: 'RabbitMQ', link: '/Backend/MQ/1-RabbitMQ入门基础'},
                     ]
                 }],
             },
@@ -270,10 +270,10 @@ module.exports = {
                 ['索引.md', '索引'],
             ],
 
-            '/Backend/MQ/': [
-                ['1-RabbitMQ入门基础.md', '1-安装入门'],
-                ['2-RabbitMQ基本操作.md', '2-基本操作'],
-            ],
+            // '/Backend/MQ/': [
+            //     ['1-RabbitMQ入门基础.md', '1-安装入门'],
+            //     ['2-RabbitMQ基本操作.md', '2-基本操作'],
+            // ],
 
             // fallback
             '/': [
