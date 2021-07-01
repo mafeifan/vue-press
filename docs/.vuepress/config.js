@@ -73,15 +73,6 @@ module.exports = {
                     ]
                 }],
             },
-            /*
-            {
-              text: 'WOW',
-              items: [
-                {text: '截图', link: '/_WOW/screenshots/'},
-              ],
-              link: '/_WOW/'
-            },
-            */
             {
                 text: 'Demo',
                 link: '/_DEMO/'
@@ -234,50 +225,50 @@ module.exports = {
             ],
 
             '/Backend/Laravel/Laravel-core/': [
-                ['Laravel-Macroable.md', '使用Laravel Macroable宏'],
-                ['Laravel-pipeline.md', 'Laravel Pipeline管道'],
-                ['Laravel-tap.md', 'Laravel tap'],
+                ['Laravel-Macroable', '使用Laravel Macroable宏'],
+                ['Laravel-pipeline', 'Laravel Pipeline管道'],
+                ['Laravel-tap', 'Laravel tap'],
             ],
 
             '/Backend/Laravel/Laravel-echo-server/': [
-                ['Laravel-echo构建实时应用.md', 'Laravel-echo构建实时应用'],
-                ['Laravel-结合Pusher搭建实时应用-1.md', 'Laravel-结合Pusher搭建实时应用-1'],
-                ['Laravel-结合Pusher搭建实时应用-2.md', 'Laravel-结合Pusher搭建实时应用-2'],
+                ['Laravel-echo构建实时应用', 'Laravel-echo构建实时应用'],
+                ['Laravel-结合Pusher搭建实时应用-1', 'Laravel-结合Pusher搭建实时应用-1'],
+                ['Laravel-结合Pusher搭建实时应用-2', 'Laravel-结合Pusher搭建实时应用-2'],
             ],
 
             '/Backend/Laravel/Laravel-feature/': [
-                ['Laravel-best-practices.md', 'Laravel 开发最佳实践'],
-                ['Laravel-translate功能.md', 'Laravel结合VueJs多语言处理'],
-                ['Laravel-实现多语言切换.md', 'Laravel-实现多语言切换'],
-                ['Laravel-Route-Model-Binding.md', 'Laravel-路由模型的使用'],
-                ['Laravel-记录邮件发送日志.md', 'Laravel-记录邮件发送日志'],
-                ['Laravel-事件的使用1.md', 'Laravel-事件的使用1'],
-                ['Laravel-事件的使用2.md', 'Laravel-事件的使用2'],
-                ['Laravel-view-composers.md', 'Laravel 视图合成器的使用场景'],
-                ['Laravel-Server-Fetched-Partials-片段渲染.md', 'Laravel 片段渲染'],
-                ['Laravel-collection.md', 'Laravel 集合与实例'],
-                ['Laravel-redis.md', 'Redis 在 Laravel 项目中的使用场景'],
+                ['Laravel-best-practices', 'Laravel 开发最佳实践'],
+                ['Laravel-translate功能', 'Laravel结合VueJs多语言处理'],
+                ['Laravel-实现多语言切换', 'Laravel-实现多语言切换'],
+                ['Laravel-Route-Model-Binding', 'Laravel-路由模型的使用'],
+                ['Laravel-记录邮件发送日志', 'Laravel-记录邮件发送日志'],
+                ['Laravel-事件的使用1', 'Laravel-事件的使用1'],
+                ['Laravel-事件的使用2', 'Laravel-事件的使用2'],
+                ['Laravel-view-composers', 'Laravel 视图合成器的使用场景'],
+                ['Laravel-Server-Fetched-Partials-片段渲染', 'Laravel 片段渲染'],
+                ['Laravel-collection', 'Laravel 集合与实例'],
+                ['Laravel-redis', 'Redis 在 Laravel 项目中的使用场景'],
             ],
 
             '/Backend/Laravel/Laravel-model/': [
-                ['Laravel-model-tips.md', 'Laravel model使用技巧'],
-                ['Laravel-Fix-non-object.md', '避免 Trying to get property of non-object 错误的几种方法'],
-                ['Laravel-useful-attribute.md', '模型常用属性'],
-                ['Laravel-Eloquent-提示和技巧.md', 'Eloquent提示和技巧'],
+                ['Laravel-model-tips', 'Laravel model使用技巧'],
+                ['Laravel-Fix-non-object', '避免 Trying to get property of non-object 错误的几种方法'],
+                ['Laravel-useful-attribute', '模型常用属性'],
+                ['Laravel-Eloquent-提示和技巧', 'Eloquent提示和技巧'],
             ],
 
             '/Backend/Laravel/Laravel-3rd-party/': [
-                ['Laravel-常用第三方类库.md', 'Laravel-常用第三方类库'],
-                ['Laravel-mix.md', 'Laravel Mix介绍'],
+                ['Laravel-常用第三方类库', 'Laravel-常用第三方类库'],
+                ['Laravel-mix', 'Laravel Mix介绍'],
                 ['Laravel-snappy生成PDF', 'Laravel-snappy生成PDF'],
-                ['Laravel-ingnition.md', 'Laravel Ignition异常详情组件介绍'],
-                ['Laravel-multitenancy.md', 'Laravel 多租户解决方案'],
-                ['Laravel-medialibrary.md', 'Laravel 媒体库'],
+                ['Laravel-ingnition', 'Laravel Ignition异常详情组件介绍'],
+                ['Laravel-multitenancy', 'Laravel 多租户解决方案'],
+                ['Laravel-medialibrary', 'Laravel 媒体库'],
             ],
 
             '/Backend/Database/MySQL/': [
-                ['总结.md', '总结'],
-                ['索引.md', '索引'],
+                ['总结', '总结'],
+                ['索引', '索引'],
             ],
 
             '/Backend/Database/MQTT/': [
@@ -299,7 +290,6 @@ module.exports = {
                 ['/DevOps/Docker/', 'Docker系列'],
                 ['/Frontend/HTML5/', 'HTML5&CSS3'],
                 ['/Backend/Laravel/', 'Laravel系列'],
-                ['/Backend/Database/MQTT/', 'MQTT系列'],
             ]
         }
     }
