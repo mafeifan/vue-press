@@ -118,6 +118,8 @@ module.exports = {
                 ['Jenkins2-学习系列28----优化多分支流水线任务', '28 优化多分支流水线任务'],
                 ['Jenkins2-学习系列29----安装指定版本插件', '29 安装指定版本插件'],
                 ['Jenkins2-学习系列30----从Jenkins迁移到GitHubActions', '30 从Jenkins迁移到GitHub Actions'],
+                ['Jenkins2-学习系列31---DockerInDocker', '31 DockerInDocker'],
+                ['Jenkins2-学习系列32---访问宿主机并执行命令', '32 访问宿主机并执行命令'],
                 ['Jenkins-学习资源', 'Jenkins资源收集'],
                 ['Jenkins-sh-step', 'Jenkins内置sh详讲'],
             ],
