@@ -5,7 +5,6 @@ Jenkins是在Docker容器里内跑的，现在需要Jenkins进到外部的宿主
 1. 我如何知道宿主机的IP
 2. 我如何通过IP访问宿主机
 
-
 ### 第1个问题,获取宿主机的IP
 
 方法1：宿主机执行`ifcong`
@@ -27,12 +26,13 @@ docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 方法2：容器内执行`ip route show | awk '/default/ {print $3}'`
 
-
 方法3：解决方案
 
 如果在MacOS或Windows运行docker，尝试直接在容器内运行`ping host.docker.internal` 
 
 对于Linux，在docker-compose.yaml加入
+
+> 注：需要docker版本在20.04及以上
 
 ```
 extra_hosts:
@@ -41,8 +41,22 @@ extra_hosts:
 
 重新进到容器内,查看hosts文件
 `cat /etc/hosts`
-发现新增了一条`172.17.0.1	host.docker.internal`
+就会发现新增了一条`172.17.0.1	host.docker.internal`
 直接ping host.docker.internal可以连通
+
+如果
+```
+extra_hosts:
+ - "somehost:162.242.195.82"
+ - "otherhost:50.31.209.229"
+```
+
+/etc/hosts 就会看到
+
+```
+162.242.195.82  somehost
+50.31.209.229   otherhost
+```
 
 ### 第2个问题，通过SSH协议访问宿主机
 
@@ -81,3 +95,9 @@ Host cloud2
 
 ## 参考
 https://stackoverflow.com/questions/31324981/how-to-access-host-port-from-docker-container/61424570#61424570
+
+https://github.com/qoomon/docker-host
+
+https://stackoverflow.com/questions/52925194/how-to-run-shell-script-on-host-from-jenkins-docker-container
+
+https://stackoverflow.com/questions/32163955/how-to-run-shell-script-on-host-from-docker-container
