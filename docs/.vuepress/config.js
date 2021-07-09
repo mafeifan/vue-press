@@ -257,6 +257,7 @@ module.exports = {
                 ['Laravel-Fix-non-object', '避免 Trying to get property of non-object 错误的几种方法'],
                 ['Laravel-useful-attribute', '模型常用属性'],
                 ['Laravel-Eloquent-提示和技巧', 'Eloquent提示和技巧'],
+                ['Laravel-relation-select', '关联查询指定表的字段'],
             ],
 
             '/Backend/Laravel/Laravel-3rd-party/': [
