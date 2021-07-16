@@ -278,6 +278,7 @@ module.exports = {
                 ['MQTT系列-MQTT基础概念', 'MQTT基础概念'],
                 ['MQTT系列-MQTT的QoS介绍', 'MQTT的QoS介绍'],
                 ['MQTT系列-代码示例', '代码示例'],
+                ['MQTT系列-保留消息', '保留消息'],
             ],
 
             // '/Backend/MQ/': [
