@@ -45,18 +45,6 @@ jobs:
         REMOTE_USER: ${{ secrets.USERNAME }}
         TARGET: "/home/ubuntu/blog"
 
-    - name: Deploy to Server Cloud 1
-      uses: easingthemes/ssh-deploy@v2.1.5
-      env:
-        # 本地公钥传到部署服务器的authorized_keys中，本地私钥存到secrets中
-        SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        ARGS: "-rltgoDzvO --delete"
-        SOURCE: "docs/.vuepress/dist/"
-        REMOTE_PORT : ${{ secrets.PORT }}
-        REMOTE_HOST: ${{ secrets.HOST }}
-        REMOTE_USER: ${{ secrets.USERNAME }}
-        TARGET: "/var/www/vue-press/docs/.vuepress/dist/"
-
     # Runs a set of commands using the runners shell
 #    - name: SSH Remote Commands
 #      uses: appleboy/ssh-action@v0.1.2
